@@ -11,8 +11,11 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new P0028_ImplementStrstr();
-            Console.WriteLine(test.StrStr("mississippi", "issipi"));
+            var test = new P0035_SearchInsertPosition();
+            Console.WriteLine(test.SearchInsert(new[] { 1, 3, 5, 6 }, 5));
+            Console.WriteLine(test.SearchInsert(new[] { 1, 3, 5, 6 }, 2));
+            Console.WriteLine(test.SearchInsert(new[] { 1, 3, 5, 6 }, 7));
+            Console.WriteLine(test.SearchInsert(new[] { 1, 3, 5, 6 }, 0));
             Console.ReadLine();
         }
     }
