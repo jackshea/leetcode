@@ -11,8 +11,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new P0013_RomanToInteger();
-            Console.WriteLine(test.RomanToInt("MCMXCIV"));
+            var test = new P0014_LongestCommonPrefix();
+            Console.WriteLine(test.LongestCommonPrefix(new string[] { "flower", "flow", "flight" }));
             Console.ReadLine();
         }
     }

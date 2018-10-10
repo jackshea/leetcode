@@ -46,6 +46,7 @@
     <Compile Include="Problems\P0007_ReverseInteger.cs" />
     <Compile Include="Problems\P0009_PalindromeNumber.cs" />
     <Compile Include="Problems\P0013_RomanToInteger.cs" />
+    <Compile Include="Problems\P0014_LongestCommonPrefix.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

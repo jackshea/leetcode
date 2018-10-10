@@ -1,1 +1,0 @@
-﻿Unity -quit -batchmode -logFile -buildTarget iOS -projectPath D:\Projects\HuangpuAR -executeMethod BuildAssetBundleTool.BuildAssetIos
