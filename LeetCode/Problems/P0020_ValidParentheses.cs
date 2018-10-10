@@ -39,8 +39,6 @@ namespace LeetCode.Problems
             }
 
             return stack.Count != 0;
-
-            return true;
         }
     }
 }

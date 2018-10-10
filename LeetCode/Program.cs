@@ -11,8 +11,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new P0014_LongestCommonPrefix();
-            Console.WriteLine(test.LongestCommonPrefix(new string[] { "flower", "flow", "flight" }));
+            var test = new P0028_ImplementStrstr();
+            Console.WriteLine(test.StrStr("mississippi", "issipi"));
             Console.ReadLine();
         }
     }

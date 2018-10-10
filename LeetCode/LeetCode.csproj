@@ -47,6 +47,11 @@
     <Compile Include="Problems\P0009_PalindromeNumber.cs" />
     <Compile Include="Problems\P0013_RomanToInteger.cs" />
     <Compile Include="Problems\P0014_LongestCommonPrefix.cs" />
+    <Compile Include="Problems\P0020_ValidParentheses.cs" />
+    <Compile Include="Problems\P0021_MergeTwoSortedLists.cs" />
+    <Compile Include="Problems\P0026_RemoveDuplicatesFromSortedArray.cs" />
+    <Compile Include="Problems\P0027_RemoveElement.cs" />
+    <Compile Include="Problems\P0028_ImplementStrstr.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
