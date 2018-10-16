@@ -54,6 +54,7 @@
     <Compile Include="Problems\P0028_ImplementStrstr.cs" />
     <Compile Include="Problems\P0035_SearchInsertPosition.cs" />
     <Compile Include="Problems\P0038_CountAndSay.cs" />
+    <Compile Include="Problems\P0053_MaximumSubarray.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
