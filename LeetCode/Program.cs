@@ -11,11 +11,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new P0035_SearchInsertPosition();
-            Console.WriteLine(test.SearchInsert(new[] { 1, 3, 5, 6 }, 5));
-            Console.WriteLine(test.SearchInsert(new[] { 1, 3, 5, 6 }, 2));
-            Console.WriteLine(test.SearchInsert(new[] { 1, 3, 5, 6 }, 7));
-            Console.WriteLine(test.SearchInsert(new[] { 1, 3, 5, 6 }, 0));
+            var test = new P0038_CountAndSay();
+            Console.WriteLine(test.CountAndSay(10));
+
             Console.ReadLine();
         }
     }
