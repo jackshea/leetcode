@@ -55,6 +55,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Problems\P0066_PlusOneTests.cs" />
+    <Compile Include="Problems\P0067_AddBinaryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

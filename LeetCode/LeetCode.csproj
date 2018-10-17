@@ -60,6 +60,7 @@
     <Compile Include="Problems\P0053_MaximumSubarray.cs" />
     <Compile Include="Problems\P0058_LengthOfLastWord.cs" />
     <Compile Include="Problems\P0066_PlusOne.cs" />
+    <Compile Include="Problems\P0067_AddBinary.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
