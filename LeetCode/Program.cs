@@ -11,8 +11,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new P0038_CountAndSay();
-            Console.WriteLine(test.CountAndSay(10));
+            var test = new P0058_LengthOfLastWord();
+            Console.WriteLine(test.LengthOfLastWord("a "));
 
             Console.ReadLine();
         }
