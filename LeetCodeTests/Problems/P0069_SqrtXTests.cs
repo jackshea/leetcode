@@ -3,7 +3,7 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 
-namespace LeetCode.Tests
+namespace LeetCode.Problems.Tests
 {
     [TestFixture()]
     public class P0069_SqrtXTests
