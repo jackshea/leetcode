@@ -59,6 +59,7 @@
     <Compile Include="Problems\P0069_SqrtXTests.cs" />
     <Compile Include="Problems\P0088_MergeSortedArrayTests.cs" />
     <Compile Include="Problems\P0110_BalancedBinaryTreeTests.cs" />
+    <Compile Include="Problems\P0111_MinimumDepthOfBinaryTreeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTreeTests.cs" />
   </ItemGroup>
