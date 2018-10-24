@@ -33,13 +33,5 @@
 
             return check(tn1.left, tn2.right) && check(tn1.right, tn2.left);
         }
-
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
     }
 }
