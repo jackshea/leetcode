@@ -68,6 +68,7 @@
     <Compile Include="Problems\P0100_SameTree.cs" />
     <Compile Include="Problems\P0101_SymmetricTree.cs" />
     <Compile Include="Problems\P0104_MaximumDepthOfBinaryTree.cs" />
+    <Compile Include="Problems\P0107_BinaryTreeLevelOrderTraversalII.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
