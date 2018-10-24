@@ -65,6 +65,7 @@
     <Compile Include="Problems\P0070_ClimbingStairs.cs" />
     <Compile Include="Problems\P0083_RemoveDuplicatesFromSortedList.cs" />
     <Compile Include="Problems\P0088_MergeSortedArray.cs" />
+    <Compile Include="Problems\P0100_SameTree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
