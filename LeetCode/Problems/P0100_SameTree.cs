@@ -1,5 +1,7 @@
 ﻿namespace LeetCode.Problems
 {
+    /// 相同的树
+    /// https://leetcode-cn.com/problems/same-tree/description/
     public class P0100_SameTree
     {
         public bool IsSameTree(TreeNode p, TreeNode q)
