@@ -70,13 +70,16 @@
     <Compile Include="Problems\P0104_MaximumDepthOfBinaryTree.cs" />
     <Compile Include="Problems\P0107_BinaryTreeLevelOrderTraversalII.cs" />
     <Compile Include="Problems\P0108_ConvertSortedArrayToBinarySearchTree.cs" />
+    <Compile Include="Problems\P0110_BalancedBinaryTree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
