@@ -73,9 +73,11 @@
     <Compile Include="Problems\P0110_BalancedBinaryTree.cs" />
     <Compile Include="Problems\P0111_MinimumDepthOfBinaryTree.cs" />
     <Compile Include="Problems\P0112_PathSum.cs" />
+    <Compile Include="Problems\P0113_PathSumII.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
+    <Compile Include="Tools\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

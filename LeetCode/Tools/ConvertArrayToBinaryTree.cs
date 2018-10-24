@@ -12,34 +12,42 @@ namespace LeetCode.Tools
                 return null;
             }
 
-            TreeNode root = new TreeNode(values[0].Value);
-
-            List<TreeNode> nodeList = new List<TreeNode>(values.Length);
-            nodeList.Add(root);
-
-            for (int i = 1; i < values.Length; i++)
+            var nodeArray = new List<TreeNode>(values.Length);
+            for (int i = 0; i < values.Length; i++)
             {
-                if (!values[i].HasValue)
+                var v = values[i];
+                if (v.HasValue)
                 {
-                    nodeList.Add(null);
-                    continue;
-                }
-
-                var node = new TreeNode(values[i].Value);
-                var parentNode = nodeList[(i - 1) / 2];
-                if (i % 2 == 1)
-                {
-                    parentNode.left = node;
+                    nodeArray.Add(new TreeNode(v.Value));
                 }
                 else
                 {
-                    parentNode.right = node;
+                    nodeArray.Add(null);
                 }
-
-                nodeList.Add(node);
             }
 
-            return root;
+
+            for (int i = 0; i < values.Length / 2; i++)
+            {
+                if (nodeArray[i] == null)
+                {
+                    continue;
+                }
+
+                int leftIndex = 2 * i + 1;
+                if (leftIndex < values.Length)
+                {
+                    nodeArray[i].left = nodeArray[leftIndex];
+                }
+
+                int rightIndex = 2 * i + 2;
+                if (rightIndex < values.Length)
+                {
+                    nodeArray[i].right = nodeArray[rightIndex];
+                }
+            }
+
+            return nodeArray[0];
         }
     }
 }
