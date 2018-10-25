@@ -74,6 +74,7 @@
     <Compile Include="Problems\P0111_MinimumDepthOfBinaryTree.cs" />
     <Compile Include="Problems\P0112_PathSum.cs" />
     <Compile Include="Problems\P0113_PathSumII.cs" />
+    <Compile Include="Problems\P0119_PascalsTriangleII.cs" />
     <Compile Include="Problems\P0118_PascalsTriangle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
