@@ -78,6 +78,7 @@
     <Compile Include="Problems\P0118_PascalsTriangle.cs" />
     <Compile Include="Problems\P0122_BestTimeToBuyAndSellStockII.cs" />
     <Compile Include="Problems\P0121_BestTimeToBuyAndSellStock.cs" />
+    <Compile Include="Problems\P0125_ValidPalindrome.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
