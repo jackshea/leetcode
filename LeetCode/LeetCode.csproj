@@ -76,6 +76,7 @@
     <Compile Include="Problems\P0113_PathSumII.cs" />
     <Compile Include="Problems\P0119_PascalsTriangleII.cs" />
     <Compile Include="Problems\P0118_PascalsTriangle.cs" />
+    <Compile Include="Problems\P0122_BestTimeToBuyAndSellStockII.cs" />
     <Compile Include="Problems\P0121_BestTimeToBuyAndSellStock.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
