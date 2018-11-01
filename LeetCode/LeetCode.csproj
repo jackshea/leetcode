@@ -84,6 +84,7 @@
     <Compile Include="Problems\P0141_LinkedListCycle.cs" />
     <Compile Include="Problems\P0155 MinStack.cs" />
     <Compile Include="Problems\P0160_IntersectionOfTwoLinkedLists.cs" />
+    <Compile Include="Problems\P0167_TwoSumII_InputArrayIsSorted.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
