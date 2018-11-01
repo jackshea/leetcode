@@ -3,6 +3,8 @@ using System.Collections.Generic;
 
 namespace LeetCode.Problems
 {
+    /// 最小栈
+    /// https://leetcode-cn.com/problems/min-stack/description/
     public class MinStack
     {
         private LinkedList<StackNode> stack;
