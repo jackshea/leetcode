@@ -89,6 +89,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
+    <Compile Include="Tools\P0169_MajorityElement.cs" />
     <Compile Include="Tools\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
