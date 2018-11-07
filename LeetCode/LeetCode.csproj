@@ -89,8 +89,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
-    <Compile Include="Tools\P0169_MajorityElement.cs" />
-    <Compile Include="Tools\P0171_ExcelSheetColumnNumber.cs" />
+    <Compile Include="Problems\P0169_MajorityElement.cs" />
+    <Compile Include="Problems\P0171_ExcelSheetColumnNumber.cs" />
+    <Compile Include="Problems\P0172_FactorialTrailingZeroes.cs" />
     <Compile Include="Tools\Utils.cs" />
   </ItemGroup>
   <ItemGroup>
