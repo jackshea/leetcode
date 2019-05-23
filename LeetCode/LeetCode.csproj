@@ -101,6 +101,7 @@
     <Compile Include="Problems\P0225_ImplementStackUsingQueues.cs" />
     <Compile Include="Problems\P0226_InvertBinaryTree.cs" />
     <Compile Include="Problems\P0231_PowerOfTwo.cs" />
+    <Compile Include="Problems\P0232_ImplementQueueUsingStacks.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
