@@ -107,6 +107,7 @@
     <Compile Include="Problems\P0237_DeleteNodeInALinkedList.cs" />
     <Compile Include="Problems\P0242_ValidAnagram.cs" />
     <Compile Include="Problems\P0257_BinaryTreePaths.cs" />
+    <Compile Include="Problems\P0258_AddDigits.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
