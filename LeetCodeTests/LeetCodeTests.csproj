@@ -70,6 +70,7 @@
     <Compile Include="Problems\P0204_CountPrimesTests.cs" />
     <Compile Include="Problems\P0205_IsomorphicStringsTests.cs" />
     <Compile Include="Problems\P0219_ContainsDuplicateIITests.cs" />
+    <Compile Include="Problems\P0231_PowerOfTwoTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTreeTests.cs" />
     <Compile Include="Tools\P0171_ExcelSheetColumnNumberTests.cs" />
