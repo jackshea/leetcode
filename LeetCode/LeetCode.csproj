@@ -105,6 +105,7 @@
     <Compile Include="Problems\P0234_PalindromeLinkedList.cs" />
     <Compile Include="Problems\P0235_LowestCommonAncestorOfABinarySearchTree.cs" />
     <Compile Include="Problems\P0237_DeleteNodeInALinkedList.cs" />
+    <Compile Include="Problems\P0242_ValidAnagram.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
