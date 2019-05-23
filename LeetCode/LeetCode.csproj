@@ -89,7 +89,9 @@
     <Compile Include="Problems\P0168_ExcelSheetColumnTitle.cs" />
     <Compile Include="Problems\P0189_RotateArray.cs" />
     <Compile Include="Problems\P0190_ReverseBits.cs" />
-    <Compile Include="Problems\P191_NumberOf1Bits.cs" />
+    <Compile Include="Problems\P0198_HouseRobber.cs" />
+    <Compile Include="Problems\P0191_NumberOf1Bits.cs" />
+    <Compile Include="Problems\P0202_HappyNumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
