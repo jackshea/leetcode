@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Problems\P0278_FirstBadVersion.cs" />
     <Compile Include="Problems\P0069_SqrtX.cs" />
     <Compile Include="Problems\P0001_TwoSum.cs" />
     <Compile Include="Problems\P0007_ReverseInteger.cs" />
