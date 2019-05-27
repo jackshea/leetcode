@@ -113,6 +113,7 @@
     <Compile Include="Problems\P0268_MissingNumber.cs" />
     <Compile Include="Problems\P0283_MoveZeroes.cs" />
     <Compile Include="Problems\P0290_WordPattern.cs" />
+    <Compile Include="Problems\P0292_NimGame.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
