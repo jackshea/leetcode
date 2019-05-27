@@ -117,6 +117,7 @@
     <Compile Include="Problems\P0303_RangeSumQueryImmutable.cs" />
     <Compile Include="Problems\P0326_PowerOfThree.cs" />
     <Compile Include="Problems\P0343_PowerOfFour.cs" />
+    <Compile Include="Problems\P0344_ReverseString.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
