@@ -72,6 +72,7 @@
     <Compile Include="Problems\P0219_ContainsDuplicateIITests.cs" />
     <Compile Include="Problems\P0231_PowerOfTwoTests.cs" />
     <Compile Include="Problems\P0234_PalindromeLinkedListTests.cs" />
+    <Compile Include="Problems\P0349_IntersectionOfTwoArraysTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTreeTests.cs" />
     <Compile Include="Tools\P0171_ExcelSheetColumnNumberTests.cs" />
