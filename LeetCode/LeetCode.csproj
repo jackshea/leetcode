@@ -124,6 +124,7 @@
     <Compile Include="Problems\P0367_ValidPerfectSquare.cs" />
     <Compile Include="Problems\P0371_SumOfTwoIntegers.cs" />
     <Compile Include="Problems\P0383_RansomNote.cs" />
+    <Compile Include="Problems\P0387_FirstUniqueCharacterInAString.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
