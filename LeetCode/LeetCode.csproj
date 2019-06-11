@@ -136,6 +136,7 @@
     <Compile Include="Problems\P0409_LongestPalindrome.cs" />
     <Compile Include="Problems\P0412_FizzBuzz.cs" />
     <Compile Include="Problems\P0414_ThirdMaximumNumber.cs" />
+    <Compile Include="Problems\P0415_AddStrings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
