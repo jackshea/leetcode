@@ -129,6 +129,7 @@
     <Compile Include="Problems\P0401_BinaryWatch.cs" />
     <Compile Include="Problems\P0404_SumOfLeftLeaves.cs" />
     <Compile Include="Problems\P0405_ConvertANumberToHexadecimal.cs" />
+    <Compile Include="Problems\P0409_LongestPalindrome.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
