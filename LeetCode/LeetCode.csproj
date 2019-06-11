@@ -126,6 +126,7 @@
     <Compile Include="Problems\P0383_RansomNote.cs" />
     <Compile Include="Problems\P0387_FirstUniqueCharacterInAString.cs" />
     <Compile Include="Problems\P0389_FindTheDifference.cs" />
+    <Compile Include="Problems\P0401_BinaryWatch.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
