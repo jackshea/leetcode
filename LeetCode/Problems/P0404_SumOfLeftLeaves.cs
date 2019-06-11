@@ -1,5 +1,7 @@
 ﻿namespace LeetCode.Problems
 {
+    /// 左叶子之和
+    /// https://leetcode-cn.com/problems/sum-of-left-leaves/comments/
     public class P0404_SumOfLeftLeaves
     {
         public int SumOfLeftLeaves(TreeNode root)
