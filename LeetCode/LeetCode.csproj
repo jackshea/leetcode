@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Problems\Node.cs" />
     <Compile Include="Problems\P0278_FirstBadVersion.cs" />
     <Compile Include="Problems\P0069_SqrtX.cs" />
     <Compile Include="Problems\P0001_TwoSum.cs" />
@@ -137,6 +138,7 @@
     <Compile Include="Problems\P0412_FizzBuzz.cs" />
     <Compile Include="Problems\P0414_ThirdMaximumNumber.cs" />
     <Compile Include="Problems\P0415_AddStrings.cs" />
+    <Compile Include="Problems\P0427_ConstructQuadTree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
