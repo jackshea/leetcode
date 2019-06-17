@@ -142,6 +142,7 @@
     <Compile Include="Problems\P0429_NAryTreeLevelOrderTraversal.cs" />
     <Compile Include="Problems\P0434_NumberOfSegmentsInAString.cs" />
     <Compile Include="Problems\P0437_PathSumIII.cs" />
+    <Compile Include="Problems\P0438_FindAllAnagramsInAString.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
