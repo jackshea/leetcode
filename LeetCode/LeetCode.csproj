@@ -147,6 +147,7 @@
     <Compile Include="Problems\P0443_StringCompression.cs" />
     <Compile Include="Problems\P0447_NumberOfBoomerangs.cs" />
     <Compile Include="Problems\P0448_FindAllNumbersDisappearedInAnArray.cs" />
+    <Compile Include="Problems\P0453_MinimumMovesToEqualArrayElements.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
