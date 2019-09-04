@@ -4,7 +4,7 @@ using System.Text;
 namespace LeetCode.Problems
 {
     /// 字符串相加
-    /// https://leetcode-cn.com/problems/add-strings/comments/
+    /// https://leetcode-cn.com/problems/add-strings/
     public class P0415_AddStrings
     {
         public string AddStrings(string num1, string num2)

@@ -3,7 +3,7 @@
 namespace LeetCode.Problems
 {
     /// 重复的子字符串
-    /// https://leetcode-cn.com/problems/repeated-substring-pattern/comments/
+    /// https://leetcode-cn.com/problems/repeated-substring-pattern/
     public class P0459_RepeatedSubstringPattern
     {
         public bool RepeatedSubstringPattern(string s)

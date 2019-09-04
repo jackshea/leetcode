@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace LeetCode.Problems
 {
     /// 二进制手表
-    /// https://leetcode-cn.com/problems/binary-watch/comments/
+    /// https://leetcode-cn.com/problems/binary-watch/
     public class P0401_BinaryWatch
     {
         public IList<string> ReadBinaryWatch(int num)

@@ -3,7 +3,7 @@
 namespace LeetCode.Problems
 {
     /// N叉树的层序遍历
-    /// https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/comments/
+    /// https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/
     public class P0429_NAryTreeLevelOrderTraversal
     {
         public IList<IList<int>> LevelOrder(Node root)

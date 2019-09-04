@@ -1,7 +1,7 @@
 ﻿namespace LeetCode.Problems
 {
     /// 各位相加
-    /// https://leetcode-cn.com/problems/add-digits/comments/
+    /// https://leetcode-cn.com/problems/add-digits/
     public class P0258_AddDigits
     {
         public int AddDigits(int num)
