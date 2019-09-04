@@ -149,6 +149,7 @@
     <Compile Include="Problems\P0448_FindAllNumbersDisappearedInAnArray.cs" />
     <Compile Include="Problems\P0453_MinimumMovesToEqualArrayElements.cs" />
     <Compile Include="Problems\P0455_AssignCookies.cs" />
+    <Compile Include="Problems\P0459_RepeatedSubstringPattern.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
