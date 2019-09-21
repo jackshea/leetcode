@@ -156,6 +156,7 @@
     <Compile Include="Problems\P0476_NumberComplement.cs" />
     <Compile Include="Problems\P0482_LicenseKeyFormatting.cs" />
     <Compile Include="Problems\P0485_MaxConsecutiveOnes.cs" />
+    <Compile Include="Problems\P0492_ConstructTheRectangle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
