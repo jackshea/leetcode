@@ -154,6 +154,7 @@
     <Compile Include="Problems\P0463_IslandPerimeter.cs" />
     <Compile Include="Problems\P0475_Heaters.cs" />
     <Compile Include="Problems\P0476_NumberComplement.cs" />
+    <Compile Include="Problems\P0482_LicenseKeyFormatting.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
