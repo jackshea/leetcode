@@ -163,6 +163,7 @@
     <Compile Include="Problems\P0506_RelativeRanks.cs" />
     <Compile Include="Problems\P0507_PerfectNumber.cs" />
     <Compile Include="Problems\P0509_FibonacciNumber.cs" />
+    <Compile Include="Problems\P0520_DetectCapital.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
