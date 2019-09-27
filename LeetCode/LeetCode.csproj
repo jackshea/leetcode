@@ -169,6 +169,7 @@
     <Compile Include="Problems\P0532_KDiffPairsInAnArray.cs" />
     <Compile Include="Problems\P0538_ConvertBstToGreaterTree.cs" />
     <Compile Include="Problems\P0541_ReverseStringII.cs" />
+    <Compile Include="Problems\P0543_DiameterOfBinaryTree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
