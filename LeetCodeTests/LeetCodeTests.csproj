@@ -80,6 +80,7 @@
     <Compile Include="Problems\P0427_ConstructQuadTreeTests.cs" />
     <Compile Include="Problems\P0434_NumberOfSegmentsInAStringTests.cs" />
     <Compile Include="Problems\P0437_PathSumIIITests.cs" />
+    <Compile Include="Problems\P0541_ReverseStringIITests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTreeTests.cs" />
     <Compile Include="Tools\P0171_ExcelSheetColumnNumberTests.cs" />
