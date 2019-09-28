@@ -170,6 +170,7 @@
     <Compile Include="Problems\P0538_ConvertBstToGreaterTree.cs" />
     <Compile Include="Problems\P0541_ReverseStringII.cs" />
     <Compile Include="Problems\P0543_DiameterOfBinaryTree.cs" />
+    <Compile Include="Problems\P0551_StudentAttendanceRecordI.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
