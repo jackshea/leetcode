@@ -28,7 +28,10 @@ namespace LeetCode.Problems
             public int val;
             public IList<Node> children;
 
-            public Node() { }
+            public Node()
+            {
+            }
+
             public Node(int _val, IList<Node> _children)
             {
                 val = _val;
@@ -36,3 +39,4 @@ namespace LeetCode.Problems
             }
         }
     }
+}

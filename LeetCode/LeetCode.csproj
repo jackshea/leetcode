@@ -173,6 +173,7 @@
     <Compile Include="Problems\P0551_StudentAttendanceRecordI.cs" />
     <Compile Include="Problems\P0558_QuadTreeIntersection.cs" />
     <Compile Include="Problems\P0559_MaximumDepthOfNAryTree.cs" />
+    <Compile Include="Problems\P0561_ArrayPartitionI.cs" />
     <Compile Include="Problems\P557_ReverseWordsInAStringIII.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
