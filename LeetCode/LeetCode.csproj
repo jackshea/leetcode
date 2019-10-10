@@ -177,6 +177,7 @@
     <Compile Include="Problems\P0563_BinaryTreeTilt.cs" />
     <Compile Include="Problems\P0566_ReshapeTheMatrix.cs" />
     <Compile Include="Problems\P0572_SubtreeOfAnotherTree.cs" />
+    <Compile Include="Problems\P0575_DistributeCandies.cs" />
     <Compile Include="Problems\P557_ReverseWordsInAStringIII.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
