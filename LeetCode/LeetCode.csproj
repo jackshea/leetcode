@@ -179,6 +179,7 @@
     <Compile Include="Problems\P0572_SubtreeOfAnotherTree.cs" />
     <Compile Include="Problems\P0575_DistributeCandies.cs" />
     <Compile Include="Problems\P0581_ShortestUnsortedContinuousSubarray.cs" />
+    <Compile Include="Problems\P0589_NAryTreePreorderTraversal.cs" />
     <Compile Include="Problems\P557_ReverseWordsInAStringIII.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
