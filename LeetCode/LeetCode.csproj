@@ -181,6 +181,7 @@
     <Compile Include="Problems\P0581_ShortestUnsortedContinuousSubarray.cs" />
     <Compile Include="Problems\P0589_NAryTreePreorderTraversal.cs" />
     <Compile Include="Problems\P0590_NAryTreePostorderTraversal.cs" />
+    <Compile Include="Problems\P0594_LongestHarmoniousSubsequence.cs" />
     <Compile Include="Problems\P557_ReverseWordsInAStringIII.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
