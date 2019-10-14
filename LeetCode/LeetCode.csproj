@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="P0606_ConstructStringFromBinaryTree.cs" />
     <Compile Include="Problems\Node.cs" />
     <Compile Include="Problems\P0278_FirstBadVersion.cs" />
     <Compile Include="Problems\P0069_SqrtX.cs" />
