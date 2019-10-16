@@ -54,6 +54,7 @@
     <Compile Include="P0617_MergeTwoBinaryTrees.cs" />
     <Compile Include="P0628_MaximumProductOfThreeNumbers.cs" />
     <Compile Include="P0633_SumOfSquareNumbers.cs" />
+    <Compile Include="P0637_AverageOfLevelsInBinaryTree.cs" />
     <Compile Include="Problems\Node.cs" />
     <Compile Include="Problems\P0278_FirstBadVersion.cs" />
     <Compile Include="Problems\P0069_SqrtX.cs" />
