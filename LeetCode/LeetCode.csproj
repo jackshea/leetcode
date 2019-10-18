@@ -194,6 +194,7 @@
     <Compile Include="Problems\P0645_SetMismatch.cs" />
     <Compile Include="Problems\P0653_TwoSumIVInputIsABst.cs" />
     <Compile Include="Problems\P0657_RobotReturnToOrigin.cs" />
+    <Compile Include="Problems\P0661_ImageSmoother.cs" />
     <Compile Include="Problems\P557_ReverseWordsInAStringIII.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
