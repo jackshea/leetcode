@@ -196,6 +196,7 @@
     <Compile Include="Problems\P0657_RobotReturnToOrigin.cs" />
     <Compile Include="Problems\P0661_ImageSmoother.cs" />
     <Compile Include="Problems\P0665_NonDecreasingArray.cs" />
+    <Compile Include="Problems\P0669_TrimABinarySearchTree.cs" />
     <Compile Include="Problems\P557_ReverseWordsInAStringIII.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
