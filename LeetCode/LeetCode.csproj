@@ -198,6 +198,7 @@
     <Compile Include="Problems\P0665_NonDecreasingArray.cs" />
     <Compile Include="Problems\P0669_TrimABinarySearchTree.cs" />
     <Compile Include="Problems\P0671_SecondMinimumNodeInABinaryTree.cs" />
+    <Compile Include="Problems\P0674_LongestContinuousIncreasingSubsequence.cs" />
     <Compile Include="Problems\P557_ReverseWordsInAStringIII.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
