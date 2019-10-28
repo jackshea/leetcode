@@ -1,7 +1,6 @@
 ﻿using System.Text;
-using LeetCode.Problems;
 
-namespace LeetCode
+namespace LeetCode.Problems
 {
     /// 根据二叉树创建字符串
     /// https://leetcode-cn.com/problems/construct-string-from-binary-tree/

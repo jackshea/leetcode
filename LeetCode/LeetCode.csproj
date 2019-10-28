@@ -50,12 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="P0606_ConstructStringFromBinaryTree.cs" />
-    <Compile Include="P0617_MergeTwoBinaryTrees.cs" />
-    <Compile Include="P0628_MaximumProductOfThreeNumbers.cs" />
-    <Compile Include="P0633_SumOfSquareNumbers.cs" />
-    <Compile Include="P0637_AverageOfLevelsInBinaryTree.cs" />
-    <Compile Include="P0643_MaximumAverageSubarrayI.cs" />
+    <Compile Include="Problems\P0606_ConstructStringFromBinaryTree.cs" />
+    <Compile Include="Problems\P0617_MergeTwoBinaryTrees.cs" />
+    <Compile Include="Problems\P0628_MaximumProductOfThreeNumbers.cs" />
+    <Compile Include="Problems\P0633_SumOfSquareNumbers.cs" />
+    <Compile Include="Problems\P0637_AverageOfLevelsInBinaryTree.cs" />
+    <Compile Include="Problems\P0643_MaximumAverageSubarrayI.cs" />
     <Compile Include="Problems\Node.cs" />
     <Compile Include="Problems\P0278_FirstBadVersion.cs" />
     <Compile Include="Problems\P0069_SqrtX.cs" />
@@ -199,7 +199,8 @@
     <Compile Include="Problems\P0669_TrimABinarySearchTree.cs" />
     <Compile Include="Problems\P0671_SecondMinimumNodeInABinaryTree.cs" />
     <Compile Include="Problems\P0674_LongestContinuousIncreasingSubsequence.cs" />
-    <Compile Include="Problems\P557_ReverseWordsInAStringIII.cs" />
+    <Compile Include="Problems\P0557_ReverseWordsInAStringIII.cs" />
+    <Compile Include="Problems\P0680_ValidPalindromeII.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />

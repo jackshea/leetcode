@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using LeetCode.Problems;
 
-namespace LeetCode
+namespace LeetCode.Problems
 {
     /// 二叉树的层平均值
     /// https://leetcode-cn.com/problems/average-of-levels-in-binary-tree/

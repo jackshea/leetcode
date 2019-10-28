@@ -4,7 +4,7 @@ namespace LeetCode.Problems
 {
     /// 反转字符串中的单词 III
     /// https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/submissions/
-    public class P557_ReverseWordsInAStringIII
+    public class P0557_ReverseWordsInAStringIII
     {
         public string ReverseWords(string s)
         {

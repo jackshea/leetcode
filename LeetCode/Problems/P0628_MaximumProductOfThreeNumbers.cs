@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode
+namespace LeetCode.Problems
 {
     /// 三个数的最大乘积
     /// https://leetcode-cn.com/problems/maximum-product-of-three-numbers/

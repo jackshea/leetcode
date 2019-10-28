@@ -1,6 +1,4 @@
-﻿using LeetCode.Problems;
-
-namespace LeetCode
+﻿namespace LeetCode.Problems
 {
     /// 合并二叉树
     /// https://leetcode-cn.com/problems/merge-two-binary-trees/
