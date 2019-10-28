@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Tools
+﻿namespace LeetCode.Problems
 {
     /// 求众数
     /// https://leetcode-cn.com/problems/majority-element/description/

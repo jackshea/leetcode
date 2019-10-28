@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Tools
+﻿namespace LeetCode.Problems
 {
     public class P0171_ExcelSheetColumnNumber
     {
