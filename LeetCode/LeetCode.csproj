@@ -202,6 +202,7 @@
     <Compile Include="Problems\P0557_ReverseWordsInAStringIII.cs" />
     <Compile Include="Problems\P0680_ValidPalindromeII.cs" />
     <Compile Include="Problems\P0682_BaseballGame.cs" />
+    <Compile Include="Problems\P0686_RepeatedStringMatch.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
