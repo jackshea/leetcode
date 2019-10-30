@@ -6,8 +6,8 @@
     {
         public bool HasAlternatingBits(int n)
         {
-            int m = n & (n >> 1);
-            return (m & (m - 1)) == 0;
+            int m = n ^ (n >> 1);
+            return (m & (m + 1)) == 0;
         }
     }
 }
