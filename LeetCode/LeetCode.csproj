@@ -207,6 +207,7 @@
     <Compile Include="Problems\P0693_BinaryNumberWithAlternatingBits.cs" />
     <Compile Include="Problems\P0696_CountBinarySubstrings.cs" />
     <Compile Include="Problems\P0697_DegreeOfAnArray.cs" />
+    <Compile Include="Problems\P0700_SearchInABinarySearchTree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
