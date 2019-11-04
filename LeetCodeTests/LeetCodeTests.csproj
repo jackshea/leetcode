@@ -54,6 +54,7 @@
     <Otherwise />
   </Choose>
   <ItemGroup>
+    <Compile Include="Problems\MyHashMapTests.cs" />
     <Compile Include="Problems\MyHashSetTests.cs" />
     <Compile Include="Problems\P0066_PlusOneTests.cs" />
     <Compile Include="Problems\P0067_AddBinaryTests.cs" />
