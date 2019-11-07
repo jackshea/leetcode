@@ -214,6 +214,7 @@
     <Compile Include="Problems\P0706_DesignHashmap.cs" />
     <Compile Include="Problems\P0709_ToLowerCase.cs" />
     <Compile Include="Problems\P0717_P1BitAnd2BitCharacters.cs" />
+    <Compile Include="Problems\P0720_LongestWordInDictionary.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
