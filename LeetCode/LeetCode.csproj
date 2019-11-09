@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="P0746_MinCostClimbingStairsComments.cs" />
     <Compile Include="Problems\P0606_ConstructStringFromBinaryTree.cs" />
     <Compile Include="Problems\P0617_MergeTwoBinaryTrees.cs" />
     <Compile Include="Problems\P0628_MaximumProductOfThreeNumbers.cs" />
