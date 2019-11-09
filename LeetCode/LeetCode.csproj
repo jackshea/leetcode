@@ -50,7 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="P0746_MinCostClimbingStairsComments.cs" />
+    <Compile Include="Problems\P0746_MinCostClimbingStairsComments.cs" />
     <Compile Include="Problems\P0606_ConstructStringFromBinaryTree.cs" />
     <Compile Include="Problems\P0617_MergeTwoBinaryTrees.cs" />
     <Compile Include="Problems\P0628_MaximumProductOfThreeNumbers.cs" />
@@ -220,6 +220,7 @@
     <Compile Include="Problems\P0728_SelfDividingNumbers.cs" />
     <Compile Include="Problems\P0733_FloodFill.cs" />
     <Compile Include="Problems\P0744_FindSmallestLetterGreaterThanTarget.cs" />
+    <Compile Include="Problems\P0747_LargestNumberAtLeastTwiceOfOthers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
