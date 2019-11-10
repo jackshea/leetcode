@@ -10,7 +10,7 @@ namespace LeetCode.Problems
         {
             target = Math.Abs(target);
             int i = 0;
-            while (target >= 0)
+            while (target > 0)
             {
                 target -= ++i;
             }
