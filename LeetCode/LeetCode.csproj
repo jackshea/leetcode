@@ -224,6 +224,7 @@
     <Compile Include="Problems\P0748_ShortestCompletingWord.cs" />
     <Compile Include="Problems\P0754_ReachANumber.cs" />
     <Compile Include="Problems\P0762_PrimeNumberOfSetBitsInBinaryRepresentation.cs" />
+    <Compile Include="Problems\P0766_ToeplitzMatrix.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
