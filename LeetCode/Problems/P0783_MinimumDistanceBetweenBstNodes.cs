@@ -2,6 +2,8 @@
 
 namespace LeetCode.Problems
 {
+    /// 二叉搜索树结点最小距离
+    /// https://leetcode-cn.com/problems/minimum-distance-between-bst-nodes/
     public class P0783_MinimumDistanceBetweenBstNodes
     {
         private int minDist = Int32.MaxValue;
