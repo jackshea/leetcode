@@ -228,6 +228,7 @@
     <Compile Include="Problems\P0771_JewelsAndStones.cs" />
     <Compile Include="Problems\P0783_MinimumDistanceBetweenBstNodes.cs" />
     <Compile Include="Problems\P0784_LetterCasePermutation.cs" />
+    <Compile Include="Problems\P0788_RotatedDigits.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
