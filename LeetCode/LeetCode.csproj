@@ -230,6 +230,7 @@
     <Compile Include="Problems\P0784_LetterCasePermutation.cs" />
     <Compile Include="Problems\P0788_RotatedDigits.cs" />
     <Compile Include="Problems\P0796_RotateString.cs" />
+    <Compile Include="Problems\P0804_UniqueMorseCodeWords.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
