@@ -234,6 +234,7 @@
     <Compile Include="Problems\P0806_NumberOfLinesToWriteString.cs" />
     <Compile Include="Problems\P0811_SubdomainVisitCount.cs" />
     <Compile Include="Problems\P0812_LargestTriangleArea.cs" />
+    <Compile Include="Problems\P0819_MostCommonWord.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
