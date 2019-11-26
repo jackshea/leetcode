@@ -237,6 +237,7 @@
     <Compile Include="Problems\P0819_MostCommonWord.cs" />
     <Compile Include="Problems\P0821_ShortestDistanceToACharacter.cs" />
     <Compile Include="Problems\P0824_GoatLatin.cs" />
+    <Compile Include="Problems\P0830_PositionsOFLargeGroups.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
