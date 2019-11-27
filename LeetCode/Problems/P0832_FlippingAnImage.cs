@@ -30,7 +30,7 @@
 
         private int Invert(int a)
         {
-            return a == 0 ? 1 : 0;
+            return a ^ 1;
         }
     }
 }
