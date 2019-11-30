@@ -241,6 +241,7 @@
     <Compile Include="Problems\P0832_FlippingAnImage.cs" />
     <Compile Include="Problems\P0836_RectangleOverlap.cs" />
     <Compile Include="Problems\P0840_MagicSquaresInGrid.cs" />
+    <Compile Include="Problems\P0844_BackspaceStringCompare.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
