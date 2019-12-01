@@ -87,6 +87,7 @@
     <Compile Include="Problems\P0724_FindPivotIndexTests.cs" />
     <Compile Include="Problems\P0748_ShortestCompletingWordTests.cs" />
     <Compile Include="Problems\P0819_MostCommonWordTests.cs" />
+    <Compile Include="Problems\P0849_MaximizeDistanceToClosestPersonTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTreeTests.cs" />
     <Compile Include="Tools\P0171_ExcelSheetColumnNumberTests.cs" />
