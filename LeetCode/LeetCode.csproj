@@ -246,6 +246,7 @@
     <Compile Include="Problems\P0852_PeakIndexInAMountainArray.cs" />
     <Compile Include="Problems\P0859_BuddyStrings.cs" />
     <Compile Include="Problems\P0860_LemonadeChange.cs" />
+    <Compile Include="Problems\P0867_TransposeMatrix.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
