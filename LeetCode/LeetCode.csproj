@@ -249,6 +249,7 @@
     <Compile Include="Problems\P0867_TransposeMatrix.cs" />
     <Compile Include="Problems\P0868_BinaryGap.cs" />
     <Compile Include="Problems\P0872_LeafSimilarTrees.cs" />
+    <Compile Include="Problems\P0874_WalkingRobotSimulation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
