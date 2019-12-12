@@ -26,7 +26,7 @@ namespace LeetCode.Problems
             List<string> ans = new List<string>();
             foreach (var kvp in word2Count)
             {
-                if (kvp.Value==1)
+                if (kvp.Value == 1)
                 {
                     ans.Add(kvp.Key);
                 }
