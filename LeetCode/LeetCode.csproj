@@ -255,6 +255,7 @@
     <Compile Include="Problems\P0884_UncommonWordsFromTwoSentences.cs" />
     <Compile Include="Problems\P0888_FairCandySwap.cs" />
     <Compile Include="Problems\P0892_SurfaceAreaOf3dShapes.cs" />
+    <Compile Include="Problems\P0893_GroupsOfSpecialEquivalentStrings.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
