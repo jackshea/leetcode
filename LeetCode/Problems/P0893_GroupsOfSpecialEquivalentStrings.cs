@@ -4,6 +4,8 @@ using NUnit.Framework;
 
 namespace LeetCode.Problems
 {
+    /// 特殊等价字符串组
+    /// https://leetcode-cn.com/problems/groups-of-special-equivalent-strings/
     public class P0893_GroupsOfSpecialEquivalentStrings
     {
         public int NumSpecialEquivGroups(string[] A)
