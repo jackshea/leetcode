@@ -257,6 +257,7 @@
     <Compile Include="Problems\P0892_SurfaceAreaOf3dShapes.cs" />
     <Compile Include="Problems\P0893_GroupsOfSpecialEquivalentStrings.cs" />
     <Compile Include="Problems\P0896_MonotonicArray.cs" />
+    <Compile Include="Problems\P0897_IncreasingOrderSearchTree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
