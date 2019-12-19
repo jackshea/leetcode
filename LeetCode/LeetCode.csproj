@@ -260,6 +260,7 @@
     <Compile Include="Problems\P0897_IncreasingOrderSearchTree.cs" />
     <Compile Include="Problems\P0905_SortArrayByParity.cs" />
     <Compile Include="Problems\P0908_SmallestRangeI.cs" />
+    <Compile Include="Problems\P0914_XOfAKindInADeckOfCards.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />

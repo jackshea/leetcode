@@ -23,7 +23,7 @@ namespace LeetCode.Problems
                 }
             }
 
-            var diff = max - min -2*K;
+            var diff = max - min - 2 * K;
             return Math.Max(0, diff);
         }
     }
