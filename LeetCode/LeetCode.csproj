@@ -264,6 +264,7 @@
     <Compile Include="Problems\P0917_ReverseOnlyLetters.cs" />
     <Compile Include="Problems\P0922_SortArrayByParityII.cs" />
     <Compile Include="Problems\P0925_LongPressedName.cs" />
+    <Compile Include="Problems\P0929_UniqueEmailAddresses.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
