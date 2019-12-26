@@ -11,21 +11,16 @@
                 return 0;
             }
 
-            int sum = 0;
-            if (root.val >= L && root.val <= R)
+            if (root.val < L)
             {
-                sum += root.val + RangeSumBST(root.left, L, R) + RangeSumBST(root.right, L, R);
-            }
-            else if (root.val < L)
-            {
-                sum += RangeSumBST(root.right, L, R);
+                return RangeSumBST(root.right, L, R);
             }
             else if (root.val > R)
             {
-                sum += RangeSumBST(root.left, L, R);
+                return RangeSumBST(root.left, L, R);
             }
 
-            return sum;
+            return root.val + RangeSumBST(root.left, L, R) + RangeSumBST(root.right, L, R);
         }
     }
 }
