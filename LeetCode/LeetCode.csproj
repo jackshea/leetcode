@@ -271,6 +271,7 @@
     <Compile Include="Problems\P0941_ValidMountainArray.cs" />
     <Compile Include="Problems\P0942_DiStringMatch.cs" />
     <Compile Include="Problems\P0944_DeleteColumnsToMakeSorted.cs" />
+    <Compile Include="Problems\P0949_LargestTimeForGivenDigits.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
