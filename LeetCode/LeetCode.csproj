@@ -275,6 +275,7 @@
     <Compile Include="Problems\P0953_VerifyingAnAlienDictionary.cs" />
     <Compile Include="Problems\P0961_NRepeatedElementInSize2nArray.cs" />
     <Compile Include="Problems\P0965_UnivaluedBinaryTree.cs" />
+    <Compile Include="Problems\P0970_PowerfulIntegers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />

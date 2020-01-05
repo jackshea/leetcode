@@ -1,0 +1,37 @@
+﻿using System.Collections.Generic;
+using System.Linq;
+
+namespace LeetCode.Problems
+{
+    /// 强整数
+    /// https://leetcode-cn.com/problems/powerful-integers/
+    public class P0970_PowerfulIntegers
+    {
+        public IList<int> PowerfulIntegers(int x, int y, int bound)
+        {
+            HashSet<int> ans = new HashSet<int>();
+            int xx = 1;
+            int yy = 1;
+            while (xx < bound)
+            {
+                yy = 1;
+                while (xx + yy <= bound)
+                {
+                    ans.Add(xx + yy);
+                    yy *= y;
+                    if (yy == 1)
+                    {
+                        break;
+                    }
+                }
+                xx *= x;
+                if (xx == 1)
+                {
+                    break;
+                }
+            }
+
+            return ans.ToList();
+        }
+    }
+}
