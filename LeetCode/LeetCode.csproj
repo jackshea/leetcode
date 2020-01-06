@@ -277,6 +277,7 @@
     <Compile Include="Problems\P0965_UnivaluedBinaryTree.cs" />
     <Compile Include="Problems\P0970_PowerfulIntegers.cs" />
     <Compile Include="Problems\P0976_LargestPerimeterTriangle.cs" />
+    <Compile Include="Problems\P0977_SquaresOfASortedArray.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
