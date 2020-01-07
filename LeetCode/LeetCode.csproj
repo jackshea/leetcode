@@ -283,6 +283,7 @@
     <Compile Include="Problems\P0993_CousinsInBinaryTree.cs" />
     <Compile Include="Problems\P0994_RottingOranges.cs" />
     <Compile Include="Problems\P0997_FindTheTownJudge.cs" />
+    <Compile Include="Problems\P0999_AvailableCapturesForRook.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
