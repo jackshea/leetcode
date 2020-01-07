@@ -281,6 +281,7 @@
     <Compile Include="Problems\P0985_SumOfEvenNumbersAfterQueries.cs" />
     <Compile Include="Problems\P0989_AddToArrayFormOfInteger.cs" />
     <Compile Include="Problems\P0993_CousinsInBinaryTree.cs" />
+    <Compile Include="Problems\P0994_RottingOranges.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
