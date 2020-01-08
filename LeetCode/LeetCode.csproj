@@ -285,6 +285,7 @@
     <Compile Include="Problems\P0997_FindTheTownJudge.cs" />
     <Compile Include="Problems\P0999_AvailableCapturesForRook.cs" />
     <Compile Include="Problems\P1002_FindCommonCharacters.cs" />
+    <Compile Include="Problems\P1005_MaximizeSumOfArrayAfterKNegations.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
