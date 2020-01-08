@@ -91,6 +91,7 @@
     <Compile Include="Problems\P0872_LeafSimilarTreesTests.cs" />
     <Compile Include="Problems\P0965_UnivaluedBinaryTreeTests.cs" />
     <Compile Include="Problems\P0994_RottingOrangesTests.cs" />
+    <Compile Include="Problems\P1013_PartitionArrayIntoThreePartsWithEqualSumTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTreeTests.cs" />
     <Compile Include="Tools\P0171_ExcelSheetColumnNumberTests.cs" />
