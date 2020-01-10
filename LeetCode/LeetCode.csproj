@@ -293,6 +293,7 @@
     <Compile Include="Problems\P1021_RemoveOutermostParentheses.cs" />
     <Compile Include="Problems\P1022_SumOfRootToLeafBinaryNumbers.cs" />
     <Compile Include="Problems\P1025_DivisorGame.cs" />
+    <Compile Include="Problems\P1029_TwoCityScheduling.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
