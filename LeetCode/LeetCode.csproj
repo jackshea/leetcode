@@ -299,6 +299,7 @@
     <Compile Include="Problems\P1037_ValidBoomerang.cs" />
     <Compile Include="Problems\P1046_LastStoneWeight.cs" />
     <Compile Include="Problems\P1047_RemoveAllAdjacentDuplicatesInString.cs" />
+    <Compile Include="Problems\P1051_HeightChecker.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
