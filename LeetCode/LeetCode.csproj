@@ -303,6 +303,7 @@
     <Compile Include="Problems\P1071_GreatestCommonDivisorOfStrings.cs" />
     <Compile Include="Problems\P1078_OccurrencesAfterBigram.cs" />
     <Compile Include="Problems\P1089_DuplicateZeros.cs" />
+    <Compile Include="Problems\P1103_DistributeCandiesToPeople.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
