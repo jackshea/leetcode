@@ -310,6 +310,7 @@
     <Compile Include="Problems\P1128_NumberOfEquivalentDominoPairs.cs" />
     <Compile Include="Problems\P1137_NThTribonacciNumber.cs" />
     <Compile Include="Problems\P1154_DayOfTheYear.cs" />
+    <Compile Include="Problems\P1160_FindWordsThatCanBeFormedByCharacters.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
