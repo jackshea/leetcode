@@ -307,6 +307,7 @@
     <Compile Include="Problems\P1108_DefangingAnIpAddress.cs" />
     <Compile Include="Problems\P1114_PrintInOrder.cs" />
     <Compile Include="Problems\P1122_RelativeSortArray.cs" />
+    <Compile Include="Problems\P1128_NumberOfEquivalentDominoPairs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
