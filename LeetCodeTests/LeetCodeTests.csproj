@@ -94,6 +94,7 @@
     <Compile Include="Problems\P1013_PartitionArrayIntoThreePartsWithEqualSumTests.cs" />
     <Compile Include="Problems\P1022_SumOfRootToLeafBinaryNumbersTests.cs" />
     <Compile Include="Problems\P1046_LastStoneWeightTests.cs" />
+    <Compile Include="Problems\P1175_PrimeArrangementsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTreeTests.cs" />
     <Compile Include="Tools\P0171_ExcelSheetColumnNumberTests.cs" />
