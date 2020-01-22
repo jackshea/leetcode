@@ -313,6 +313,7 @@
     <Compile Include="Problems\P1160_FindWordsThatCanBeFormedByCharacters.cs" />
     <Compile Include="Problems\P1170_CompareStringsByFrequencyOfTheSmallestCharacter.cs" />
     <Compile Include="Problems\P1175_PrimeArrangements.cs" />
+    <Compile Include="Problems\P1184_DistanceBetweenBusStops.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
