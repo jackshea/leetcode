@@ -316,6 +316,7 @@
     <Compile Include="Problems\P1184_DistanceBetweenBusStops.cs" />
     <Compile Include="Problems\P1185_DayOfTheWeek.cs" />
     <Compile Include="Problems\P1189_MaximumNumberOfBalloons.cs" />
+    <Compile Include="Problems\P1200_MinimumAbsoluteDifference.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
