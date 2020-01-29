@@ -323,6 +323,7 @@
     <Compile Include="Problems\P1232_CheckIfItIsAStraightLine.cs" />
     <Compile Include="Problems\P1237_FindPositiveIntegerSolutionForAGivenEquation.cs" />
     <Compile Include="Problems\P1252_CellsWithOddValuesInAMatrix.cs" />
+    <Compile Include="Problems\P1260_Shift2dGrid.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
