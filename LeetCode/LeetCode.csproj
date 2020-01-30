@@ -325,6 +325,7 @@
     <Compile Include="Problems\P1252_CellsWithOddValuesInAMatrix.cs" />
     <Compile Include="Problems\P1260_Shift2dGrid.cs" />
     <Compile Include="Problems\P1266_MinimumTimeVisitingAllPoints.cs" />
+    <Compile Include="Problems\P1275_FindWinnerOnATicTacToeGame.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tools\ConvertArrayToBinaryTree.cs" />
