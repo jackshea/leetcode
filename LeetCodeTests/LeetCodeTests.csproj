@@ -97,7 +97,7 @@
     <Compile Include="Problems\Easy\P1175_PrimeArrangementsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\ConvertArrayToBinaryTreeTests.cs" />
-    <Compile Include="Common\P0171_ExcelSheetColumnNumberTests.cs" />
+    <Compile Include="Problems\Easy\P0171_ExcelSheetColumnNumberTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

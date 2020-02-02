@@ -1,7 +1,7 @@
 ﻿using LeetCode.Problems.Easy;
 using NUnit.Framework;
 
-namespace LeetCodeTests.Common
+namespace LeetCodeTests.Problems.Easy
 {
     [TestFixture()]
     public class P0171_ExcelSheetColumnNumberTests
