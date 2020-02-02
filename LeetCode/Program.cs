@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using LeetCode.Problems;
+using LeetCode.Problems.Easy;
 
 namespace LeetCode
 {
