@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 字母大小写全排列
     /// https://leetcode-cn.com/problems/letter-case-permutation/

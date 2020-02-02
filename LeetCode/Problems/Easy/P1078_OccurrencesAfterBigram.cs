@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// Bigram 分词
     /// https://leetcode-cn.com/problems/occurrences-after-bigram/

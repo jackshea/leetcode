@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// K 次取反后最大化的数组和
     /// https://leetcode-cn.com/problems/maximize-sum-of-array-after-k-negations/

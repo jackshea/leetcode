@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 三角形的最大周长
     /// https://leetcode-cn.com/problems/largest-perimeter-triangle/

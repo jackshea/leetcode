@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 长按键入
     /// https://leetcode-cn.com/problems/long-pressed-name/

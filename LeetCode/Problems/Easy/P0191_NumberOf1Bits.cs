@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 位1的个数
     /// https://leetcode-cn.com/problems/number-of-1-bits/

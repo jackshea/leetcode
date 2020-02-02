@@ -1,13 +1,8 @@
-﻿using NUnit.Framework;
-using LeetCode.Problems;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using LeetCode.Tools;
+﻿using LeetCode.Common;
+using LeetCode.Problems.Easy;
+using NUnit.Framework;
 
-namespace LeetCode.Problems.Tests
+namespace LeetCodeTests.Problems.Easy
 {
     [TestFixture()]
     public class P1022_SumOfRootToLeafBinaryNumbersTests

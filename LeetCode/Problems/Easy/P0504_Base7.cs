@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 七进制数
     /// https://leetcode-cn.com/problems/base-7/

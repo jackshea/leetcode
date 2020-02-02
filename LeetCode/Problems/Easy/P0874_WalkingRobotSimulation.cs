@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using System.Collections.Specialized;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 模拟行走机器人
     /// https://leetcode-cn.com/problems/walking-robot-simulation/

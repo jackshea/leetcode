@@ -1,7 +1,6 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 三维形体投影面积
     /// https://leetcode-cn.com/problems/projection-area-of-3d-shapes/

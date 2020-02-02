@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 宝石与石头
     /// https://leetcode-cn.com/problems/jewels-and-stones/

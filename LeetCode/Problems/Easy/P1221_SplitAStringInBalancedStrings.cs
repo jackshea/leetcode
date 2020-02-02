@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 分割平衡字符串
     /// https://leetcode-cn.com/problems/split-a-string-in-balanced-strings/

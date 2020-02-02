@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 两数之和 IV - 输入 BST
     /// https://leetcode-cn.com/problems/two-sum-iv-input-is-a-bst/

@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 图片平滑器
     /// https://leetcode-cn.com/problems/image-smoother/

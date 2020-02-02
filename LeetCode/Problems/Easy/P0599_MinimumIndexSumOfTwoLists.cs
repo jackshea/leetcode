@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 两个列表的最小索引总和
     /// https://leetcode-cn.com/problems/minimum-index-sum-of-two-lists/

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 构造矩形
     /// https://leetcode-cn.com/problems/construct-the-rectangle/submissions/

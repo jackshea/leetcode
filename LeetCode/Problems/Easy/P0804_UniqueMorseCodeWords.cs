@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 唯一摩尔斯密码词
     /// https://leetcode-cn.com/problems/unique-morse-code-words/

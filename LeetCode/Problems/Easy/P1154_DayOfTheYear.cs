@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 一年中的第几天
     /// https://leetcode-cn.com/problems/day-of-the-year/

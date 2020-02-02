@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 压缩字符串
     /// https://leetcode-cn.com/problems/string-compression/

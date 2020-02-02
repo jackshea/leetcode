@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 合并两个有序链表
     /// https://leetcode-cn.com/problems/merge-two-sorted-lists/description/

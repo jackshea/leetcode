@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 一周中的第几天
     /// https://leetcode-cn.com/problems/day-of-the-week/

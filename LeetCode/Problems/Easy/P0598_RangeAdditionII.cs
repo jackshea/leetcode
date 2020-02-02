@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 范围求和 II
     /// https://leetcode-cn.com/problems/range-addition-ii/

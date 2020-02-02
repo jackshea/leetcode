@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 数组拆分 I
     /// https://leetcode-cn.com/problems/array-partition-i/

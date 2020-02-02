@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 旋转数字
     /// https://leetcode-cn.com/problems/rotated-digits/

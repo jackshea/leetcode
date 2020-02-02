@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 亲密字符串
     /// https://leetcode-cn.com/problems/buddy-strings/

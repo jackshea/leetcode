@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 矩形重叠
     /// https://leetcode-cn.com/problems/rectangle-overlap/

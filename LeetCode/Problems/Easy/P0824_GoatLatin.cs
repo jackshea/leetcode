@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 山羊拉丁文
     /// https://leetcode-cn.com/problems/goat-latin/

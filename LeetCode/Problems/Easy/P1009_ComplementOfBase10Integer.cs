@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 十进制整数的反码
     /// https://leetcode-cn.com/problems/complement-of-base-10-integer/

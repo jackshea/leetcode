@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 字符串的最大公因子
     /// https://leetcode-cn.com/problems/greatest-common-divisor-of-strings/

@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 柠檬水找零
     /// https://leetcode-cn.com/problems/lemonade-change/

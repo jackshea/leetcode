@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 数组中的K-diff数对
     /// https://leetcode-cn.com/problems/k-diff-pairs-in-an-array/

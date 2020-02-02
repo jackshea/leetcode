@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 公平的糖果交换
     /// https://leetcode-cn.com/problems/fair-candy-swap/

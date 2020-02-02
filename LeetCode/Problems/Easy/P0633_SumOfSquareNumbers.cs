@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 平方数之和
     /// https://leetcode-cn.com/problems/sum-of-square-numbers/

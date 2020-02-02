@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 整数的各位积和之差
     /// https://leetcode-cn.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/

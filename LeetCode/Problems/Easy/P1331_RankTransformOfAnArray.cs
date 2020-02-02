@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using NUnit.Framework;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 数组序号转换
     /// https://leetcode-cn.com/problems/rank-transform-of-an-array/

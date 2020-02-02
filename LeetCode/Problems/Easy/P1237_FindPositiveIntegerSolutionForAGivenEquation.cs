@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 找出给定方程的正整数解
     /// https://leetcode-cn.com/problems/find-positive-integer-solution-for-a-given-equation/

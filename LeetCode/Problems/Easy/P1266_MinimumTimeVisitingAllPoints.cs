@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 访问所有点的最小时间
     /// https://leetcode-cn.com/problems/minimum-time-visiting-all-points/

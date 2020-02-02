@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 有效的括号
     /// https://leetcode-cn.com/problems/valid-parentheses/description/

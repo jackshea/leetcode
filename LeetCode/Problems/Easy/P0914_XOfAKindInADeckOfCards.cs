@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 卡牌分组
     /// https://leetcode-cn.com/problems/x-of-a-kind-in-a-deck-of-cards/

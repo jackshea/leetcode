@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 第三大的数
     /// https://leetcode-cn.com/problems/third-maximum-number/

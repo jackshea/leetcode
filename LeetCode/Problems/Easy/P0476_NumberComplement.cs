@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 数字的补数
     /// https://leetcode-cn.com/problems/number-complement/

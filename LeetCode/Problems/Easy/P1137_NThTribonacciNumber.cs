@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 第 N 个泰波那契数
     /// https://leetcode-cn.com/problems/n-th-tribonacci-number/

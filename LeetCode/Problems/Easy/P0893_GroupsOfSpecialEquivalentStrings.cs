@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using NUnit.Framework;
+﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 特殊等价字符串组
     /// https://leetcode-cn.com/problems/groups-of-special-equivalent-strings/

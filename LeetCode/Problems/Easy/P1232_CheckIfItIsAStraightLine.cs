@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 缀点成线
     /// https://leetcode-cn.com/problems/check-if-it-is-a-straight-line/

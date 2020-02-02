@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 将每个元素替换为右侧最大元素
     /// https://leetcode-cn.com/problems/replace-elements-with-greatest-element-on-right-side/

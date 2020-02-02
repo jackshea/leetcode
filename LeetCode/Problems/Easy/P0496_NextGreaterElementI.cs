@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 下一个更大元素 I
     /// https://leetcode-cn.com/problems/next-greater-element-i/

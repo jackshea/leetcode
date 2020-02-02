@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 删除链表中的节点
     /// https://leetcode-cn.com/problems/delete-node-in-a-linked-list/

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 两地调度
     /// https://leetcode-cn.com/problems/two-city-scheduling/

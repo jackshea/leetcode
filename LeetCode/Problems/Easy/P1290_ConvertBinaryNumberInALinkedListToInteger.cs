@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 二进制链表转整数
     /// https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer/

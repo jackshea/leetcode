@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 找到字符串中所有字母异位词
     /// https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/

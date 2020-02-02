@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 距离顺序排列矩阵单元格
     /// https://leetcode-cn.com/problems/matrix-cells-in-distance-order/

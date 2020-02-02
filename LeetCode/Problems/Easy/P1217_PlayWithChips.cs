@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 玩筹码
     /// https://leetcode-cn.com/problems/play-with-chips/

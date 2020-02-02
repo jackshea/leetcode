@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// x 的平方根
     /// https://leetcode-cn.com/problems/sqrtx/description/

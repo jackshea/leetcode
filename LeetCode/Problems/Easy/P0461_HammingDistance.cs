@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 汉明距离
     /// https://leetcode-cn.com/problems/hamming-distance/

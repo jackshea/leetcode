@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 解码字母到整数映射
     /// https://leetcode-cn.com/problems/decrypt-string-from-alphabet-to-integer-mapping/

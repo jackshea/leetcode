@@ -1,7 +1,6 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     ///  “气球” 的最大数量
     /// https://leetcode-cn.com/problems/maximum-number-of-balloons/

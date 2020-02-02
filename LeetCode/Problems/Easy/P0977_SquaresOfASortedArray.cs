@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 有序数组的平方
     /// https://leetcode-cn.com/problems/squares-of-a-sorted-array/

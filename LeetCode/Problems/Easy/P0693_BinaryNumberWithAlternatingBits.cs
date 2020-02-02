@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 交替位二进制数
     /// https://leetcode-cn.com/problems/binary-number-with-alternating-bits/

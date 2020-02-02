@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 最短完整词
     /// https://leetcode-cn.com/problems/shortest-completing-word/

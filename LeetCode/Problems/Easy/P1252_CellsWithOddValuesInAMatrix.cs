@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 奇数值单元格的数目
     /// https://leetcode-cn.com/problems/cells-with-odd-values-in-a-matrix/

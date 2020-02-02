@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 统计位数为偶数的数字
     /// https://leetcode-cn.com/problems/find-numbers-with-even-number-of-digits/

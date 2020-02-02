@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 重塑矩阵
     /// https://leetcode-cn.com/problems/reshape-the-matrix/

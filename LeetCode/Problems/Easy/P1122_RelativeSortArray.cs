@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 数组的相对排序
     /// https://leetcode-cn.com/problems/relative-sort-array/

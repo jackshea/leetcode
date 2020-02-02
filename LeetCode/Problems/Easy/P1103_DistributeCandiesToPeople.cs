@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 分糖果 II
     /// https://leetcode-cn.com/problems/distribute-candies-to-people/

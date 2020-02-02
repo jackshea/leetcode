@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 二叉搜索树结点最小距离
     /// https://leetcode-cn.com/problems/minimum-distance-between-bst-nodes/

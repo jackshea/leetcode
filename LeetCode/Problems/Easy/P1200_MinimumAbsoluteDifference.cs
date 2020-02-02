@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 最小绝对差
     /// https://leetcode-cn.com/problems/minimum-absolute-difference/

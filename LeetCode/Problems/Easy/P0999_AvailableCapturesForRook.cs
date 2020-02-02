@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 车的可用捕获量
     /// https://leetcode-cn.com/problems/available-captures-for-rook/

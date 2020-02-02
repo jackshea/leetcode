@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 按序打印
     /// https://leetcode-cn.com/problems/print-in-order/

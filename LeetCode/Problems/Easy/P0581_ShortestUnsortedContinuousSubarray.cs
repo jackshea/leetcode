@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 最短无序连续子数组
     /// https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/

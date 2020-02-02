@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 找出井字棋的获胜者
     /// https://leetcode-cn.com/problems/find-winner-on-a-tic-tac-toe-game/

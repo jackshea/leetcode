@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 解压缩编码列表
     /// https://leetcode-cn.com/problems/decompress-run-length-encoded-list/

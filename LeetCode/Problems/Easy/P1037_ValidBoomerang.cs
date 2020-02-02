@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 有效的回旋镖
     /// https://leetcode-cn.com/problems/valid-boomerang/

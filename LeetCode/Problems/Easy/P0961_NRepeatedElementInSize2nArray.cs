@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 重复 N 次的元素
     /// https://leetcode-cn.com/problems/n-repeated-element-in-size-2n-array/

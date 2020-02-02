@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 供暖器
     /// https://leetcode-cn.com/problems/heaters/submissions/

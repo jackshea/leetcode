@@ -1,6 +1,4 @@
-﻿using System.Runtime.InteropServices;
-
-namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 转置矩阵
     /// https://leetcode-cn.com/problems/transpose-matrix/

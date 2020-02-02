@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 完美数
     /// https://leetcode-cn.com/problems/perfect-number/

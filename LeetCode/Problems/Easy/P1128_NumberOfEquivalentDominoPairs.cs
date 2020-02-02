@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 等价多米诺骨牌对的数量
     /// https://leetcode-cn.com/problems/number-of-equivalent-domino-pairs/

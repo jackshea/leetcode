@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 二叉树的堂兄弟节点
     /// https://leetcode-cn.com/problems/cousins-in-binary-tree/

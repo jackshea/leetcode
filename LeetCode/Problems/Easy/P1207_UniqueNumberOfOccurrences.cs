@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 独一无二的出现次数
     /// https://leetcode-cn.com/problems/unique-number-of-occurrences/

@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 排列硬币
     /// https://leetcode-cn.com/problems/arranging-coins/

@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 斐波那契数
     /// https://leetcode-cn.com/problems/fibonacci-number/

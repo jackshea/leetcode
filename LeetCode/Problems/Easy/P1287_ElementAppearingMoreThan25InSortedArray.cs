@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 有序数组中出现次数超过25%的元素
     /// https://leetcode-cn.com/problems/element-appearing-more-than-25-in-sorted-array/

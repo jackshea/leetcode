@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 有效的山脉数组
     /// https://leetcode-cn.com/problems/valid-mountain-array/

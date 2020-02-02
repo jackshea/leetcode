@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Problems
+﻿using LeetCode.Common;
+
+namespace LeetCode.Problems.Easy
 {
     /// 建立四叉树
     /// https://leetcode-cn.com/problems/construct-quad-tree/

@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 验证回文字符串 Ⅱ
     /// https://leetcode-cn.com/problems/valid-palindrome-ii/comments/

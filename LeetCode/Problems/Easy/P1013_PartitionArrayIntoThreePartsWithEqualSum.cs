@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 将数组分成和相等的三个部分
     /// https://leetcode-cn.com/problems/partition-array-into-three-parts-with-equal-sum/

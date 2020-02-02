@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 使用最小花费爬楼梯
     /// https://leetcode-cn.com/problems/min-cost-climbing-stairs/comments/

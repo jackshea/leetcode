@@ -1,6 +1,4 @@
-﻿using System.Text;
-
-namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 重复的子字符串
     /// https://leetcode-cn.com/problems/repeated-substring-pattern/

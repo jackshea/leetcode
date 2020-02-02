@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 删列造序
     /// https://leetcode-cn.com/problems/delete-columns-to-make-sorted/

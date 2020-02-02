@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 子数组最大平均数 I
     /// https://leetcode-cn.com/problems/maximum-average-subarray-i/

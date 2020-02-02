@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 罗马数字转整数
     /// https://leetcode-cn.com/problems/roman-to-integer/description/

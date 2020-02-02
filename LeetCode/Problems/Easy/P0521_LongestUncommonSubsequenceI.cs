@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 最长特殊序列 Ⅰ
     /// https://leetcode-cn.com/problems/longest-uncommon-subsequence-i/

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 移动石子直到连续
     /// https://leetcode-cn.com/problems/moving-stones-until-consecutive/

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 6 和 9 组成的最大数字
     /// https://leetcode-cn.com/problems/maximum-69-number/

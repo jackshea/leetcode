@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 重新排列日志文件
     /// https://leetcode-cn.com/problems/reorder-data-in-log-files/

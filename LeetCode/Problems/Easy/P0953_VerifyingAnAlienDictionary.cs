@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 验证外星语词典
     /// https://leetcode-cn.com/problems/verifying-an-alien-dictionary/

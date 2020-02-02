@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 旋转字符串
     /// https://leetcode-cn.com/problems/rotate-string/

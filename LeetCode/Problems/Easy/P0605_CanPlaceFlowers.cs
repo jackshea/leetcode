@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 种花问题
     /// https://leetcode-cn.com/problems/can-place-flowers/

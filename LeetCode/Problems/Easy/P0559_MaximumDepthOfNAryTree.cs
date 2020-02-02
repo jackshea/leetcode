@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// N叉树的最大深度
     /// https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree/

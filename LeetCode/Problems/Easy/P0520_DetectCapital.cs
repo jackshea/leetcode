@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 检测大写字母
     /// https://leetcode-cn.com/problems/detect-capital/

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 最后一块石头的重量
     /// https://leetcode-cn.com/problems/last-stone-weight/

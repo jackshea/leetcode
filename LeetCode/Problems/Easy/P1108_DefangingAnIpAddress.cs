@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// IP 地址无效化
     /// https://leetcode-cn.com/problems/defanging-an-ip-address/

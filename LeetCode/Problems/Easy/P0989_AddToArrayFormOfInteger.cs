@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 数组形式的整数加法
     /// https://leetcode-cn.com/problems/add-to-array-form-of-integer/

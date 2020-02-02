@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Text;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 字符串相加
     /// https://leetcode-cn.com/problems/add-strings/

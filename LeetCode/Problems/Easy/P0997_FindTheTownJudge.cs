@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 找到小镇的法官
     /// https://leetcode-cn.com/problems/find-the-town-judge/

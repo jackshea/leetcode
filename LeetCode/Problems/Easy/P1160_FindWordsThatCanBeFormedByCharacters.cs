@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 拼写单词
     /// https://leetcode-cn.com/problems/find-words-that-can-be-formed-by-characters/

@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 和为零的N个唯一整数
     /// https://leetcode-cn.com/problems/find-n-unique-integers-sum-up-to-zero/

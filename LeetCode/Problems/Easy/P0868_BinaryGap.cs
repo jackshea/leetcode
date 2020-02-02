@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 二进制间距
     /// https://leetcode-cn.com/problems/binary-gap/

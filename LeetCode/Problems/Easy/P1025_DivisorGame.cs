@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 除数博弈
     /// https://leetcode-cn.com/problems/divisor-game/

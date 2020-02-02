@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 最长回文串
     /// https://leetcode-cn.com/problems/longest-palindrome/submissions/

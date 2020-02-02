@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 公交站间的距离
     /// https://leetcode-cn.com/problems/distance-between-bus-stops/

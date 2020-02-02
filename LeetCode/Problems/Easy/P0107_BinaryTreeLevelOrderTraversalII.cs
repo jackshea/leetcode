@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 二叉树的层次遍历
     /// https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii/description/

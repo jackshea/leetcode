@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 单调数列
     /// https://leetcode-cn.com/problems/monotonic-array/

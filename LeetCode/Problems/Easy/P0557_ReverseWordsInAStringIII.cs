@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 反转字符串中的单词 III
     /// https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/submissions/

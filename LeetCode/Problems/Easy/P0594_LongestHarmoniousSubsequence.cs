@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 最长和谐子序列
     /// https://leetcode-cn.com/problems/longest-harmonious-subsequence/

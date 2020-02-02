@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 字符的最短距离
     /// https://leetcode-cn.com/problems/shortest-distance-to-a-character/

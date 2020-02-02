@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 错误的集合
     /// https://leetcode-cn.com/problems/set-mismatch/

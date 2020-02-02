@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 删除最外层的括号
     /// https://leetcode-cn.com/problems/remove-outermost-parentheses/

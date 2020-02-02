@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 分发饼干
     /// https://leetcode-cn.com/problems/assign-cookies/

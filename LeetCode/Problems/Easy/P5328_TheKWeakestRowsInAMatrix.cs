@@ -1,7 +1,6 @@
 ﻿using System.Collections.Generic;
-using NUnit.Framework;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 方阵中战斗力最弱的 K 行
     /// https://leetcode-cn.com/problems/the-k-weakest-rows-in-a-matrix/

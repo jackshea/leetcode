@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 高度检查器
     /// https://leetcode-cn.com/problems/height-checker/

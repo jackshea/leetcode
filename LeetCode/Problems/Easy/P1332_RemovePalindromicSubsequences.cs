@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 删除回文子序列
     /// https://leetcode-cn.com/problems/remove-palindromic-subsequences/

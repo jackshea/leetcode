@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 查询后的偶数和
     /// https://leetcode-cn.com/problems/sum-of-even-numbers-after-queries/

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 腐烂的橘子
     /// https://leetcode-cn.com/problems/rotting-oranges/

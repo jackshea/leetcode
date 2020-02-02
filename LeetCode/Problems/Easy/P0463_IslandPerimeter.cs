@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 岛屿的周长
     /// https://leetcode-cn.com/problems/island-perimeter/

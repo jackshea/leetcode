@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 可被 5 整除的二进制前缀
     /// https://leetcode-cn.com/problems/binary-prefix-divisible-by-5/

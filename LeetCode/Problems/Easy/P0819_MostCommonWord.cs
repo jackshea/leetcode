@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Text;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 最常见的单词
     /// https://leetcode-cn.com/problems/most-common-word/

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Easy
 {
     /// 最小差值 I
     /// https://leetcode-cn.com/problems/smallest-range-i/

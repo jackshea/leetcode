@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems
+﻿namespace LeetCode.Problems.Easy
 {
     /// 二分查找
     /// https://leetcode-cn.com/problems/binary-search/
