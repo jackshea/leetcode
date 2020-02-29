@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Problems.Easy
+﻿using LeetCode.Common;
+
+namespace LeetCode.Problems.Easy
 {
     /// 合并两个有序链表
     /// https://leetcode-cn.com/problems/merge-two-sorted-lists/description/
@@ -68,12 +70,5 @@
             return mergeListHeadNode;
         }
 
-    }
-
-    public class ListNode
-    {
-        public int val;
-        public ListNode next;
-        public ListNode(int x) { val = x; }
     }
 }

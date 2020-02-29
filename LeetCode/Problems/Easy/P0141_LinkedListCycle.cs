@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Problems.Easy
+﻿using LeetCode.Common;
+
+namespace LeetCode.Problems.Easy
 {
     /// 环形链表
     /// https://leetcode-cn.com/problems/linked-list-cycle/description/

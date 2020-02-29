@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Problems.Easy
+﻿using LeetCode.Common;
+
+namespace LeetCode.Problems.Easy
 {
     /// 链表的中间结点
     /// https://leetcode-cn.com/problems/middle-of-the-linked-list/

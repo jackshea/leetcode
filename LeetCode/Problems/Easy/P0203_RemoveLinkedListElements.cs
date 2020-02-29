@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Problems.Easy
+﻿using LeetCode.Common;
+
+namespace LeetCode.Problems.Easy
 {
     /// 移除链表元素
     /// https://leetcode-cn.com/problems/remove-linked-list-elements/

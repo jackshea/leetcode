@@ -1,4 +1,5 @@
-﻿using LeetCode.Problems.Easy;
+﻿using LeetCode.Common;
+using LeetCode.Problems.Easy;
 using NUnit.Framework;
 
 namespace LeetCodeTests.Problems.Easy
