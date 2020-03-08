@@ -2,10 +2,10 @@
 
 namespace LeetCode.Problems.Medium
 {
+    /// 最接近的三数之和
+    /// https://leetcode-cn.com/problems/3sum-closest/
     public class P0016_3SumClosest
     {
-        /// 最接近的三数之和
-        /// https://leetcode-cn.com/problems/3sum-closest/
         public int ThreeSumClosest(int[] nums, int target)
         {
             int minDiff = Int32.MaxValue;
