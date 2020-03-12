@@ -353,6 +353,7 @@
     <Compile Include="Problems\Medium\P0018_4Sum.cs" />
     <Compile Include="Problems\Medium\P0019_RemoveNthNodeFromEndOfList.cs" />
     <Compile Include="Problems\Medium\P0022_GenerateParentheses.cs" />
+    <Compile Include="Problems\Medium\P0024_SwapNodesInPairs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\ConvertArrayToBinaryTree.cs" />
