@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Problems.Easy
+﻿using LeetCode.Common;
+
+namespace LeetCode.Problems.Easy
 {
     /// 另一个树的子树
     /// https://leetcode-cn.com/problems/subtree-of-another-tree/

@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Problems.Easy
+﻿using LeetCode.Common;
+
+namespace LeetCode.Problems.Easy
 {
     /// 二叉树的堂兄弟节点
     /// https://leetcode-cn.com/problems/cousins-in-binary-tree/

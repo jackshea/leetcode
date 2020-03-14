@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Problems.Easy
+﻿using LeetCode.Common;
+
+namespace LeetCode.Problems.Easy
 {
     /// 左叶子之和
     /// https://leetcode-cn.com/problems/sum-of-left-leaves/

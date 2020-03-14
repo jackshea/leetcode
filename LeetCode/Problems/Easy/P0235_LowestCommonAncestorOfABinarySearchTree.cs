@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Problems.Easy
+﻿using LeetCode.Common;
+
+namespace LeetCode.Problems.Easy
 {
     /// 二叉搜索树的最近公共祖先
     /// https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/

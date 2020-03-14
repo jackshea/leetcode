@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LeetCode.Common;
+using System;
 
 namespace LeetCode.Problems.Easy
 {

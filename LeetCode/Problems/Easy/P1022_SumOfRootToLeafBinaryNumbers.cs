@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Problems.Easy
+﻿using LeetCode.Common;
+
+namespace LeetCode.Problems.Easy
 {
     /// 从根到叶的二进制数之和
     /// https://leetcode-cn.com/problems/sum-of-root-to-leaf-binary-numbers/

@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Problems.Easy
+﻿using LeetCode.Common;
+
+namespace LeetCode.Problems.Easy
 {
     /// 相同的树
     /// https://leetcode-cn.com/problems/same-tree/description/
@@ -25,13 +27,5 @@
                 return IsSameTree(p.left, q.left) && IsSameTree(p.right, q.right);
             }
         }
-    }
-
-    public class TreeNode
-    {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-        public TreeNode(int x) { val = x; }
     }
 }

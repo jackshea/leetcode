@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Problems.Easy
+﻿using LeetCode.Common;
+
+namespace LeetCode.Problems.Easy
 {
     /// 翻转二叉树
     /// https://leetcode-cn.com/problems/invert-binary-tree/submissions/

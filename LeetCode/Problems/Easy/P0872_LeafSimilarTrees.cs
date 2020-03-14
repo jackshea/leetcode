@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using LeetCode.Common;
+using System.Collections.Generic;
 
 namespace LeetCode.Problems.Easy
 {

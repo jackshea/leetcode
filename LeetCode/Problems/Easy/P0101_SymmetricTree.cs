@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Problems.Easy
+﻿using LeetCode.Common;
+
+namespace LeetCode.Problems.Easy
 {
     /// 对称二叉树
     /// https://leetcode-cn.com/problems/symmetric-tree/description/
