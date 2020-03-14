@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using LeetCode.Problems;
 using LeetCode.Problems.Easy;
+using LeetCode.Problems.Hard;
 
 namespace LeetCode
 {
@@ -12,10 +13,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new P0058_LengthOfLastWord();
-            Console.WriteLine(test.LengthOfLastWord("a "));
-
-            Console.ReadLine();
+            var test = new P0051_NQueens();
+            test.SolveNQueens(4);
         }
     }
 }
