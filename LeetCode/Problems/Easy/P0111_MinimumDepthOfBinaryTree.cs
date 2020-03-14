@@ -16,25 +16,58 @@ namespace LeetCode.Problems.Easy
                 return 0;
             }
 
-            Traval(root, 1);
+            Traversal(root, 1);
             return minDepth;
         }
 
-        private void Traval(TreeNode node, int depth)
+        private void Traversal(TreeNode node, int depth)
         {
             if (node == null)
             {
                 return;
             }
 
-            if (node.left == null && node.right == null)
+            if (depth > minDepth)
             {
-                minDepth = Math.Min(minDepth, depth);
                 return;
             }
 
-            Traval(node.left, depth + 1);
-            Traval(node.right, depth + 1);
+            if (node.left == null && node.right == null)
+            {
+                minDepth = depth;
+                return;
+            }
+
+            Traversal(node.left, depth + 1);
+            Traversal(node.right, depth + 1);
+        }
+    }
+
+    public class P0111_MinimumDepthOfBinaryTree_1
+    {
+        public int MinDepth(TreeNode root)
+        {
+            if (root == null)
+            {
+                return 0;
+            }
+
+            if (root.left == null && root.right == null)
+            {
+                return 1;
+            }
+
+            if (root.left == null)
+            {
+                return 1 + MinDepth(root.right);
+            }
+
+            if (root.right == null)
+            {
+                return 1 + MinDepth(root.left);
+            }
+
+            return 1 + Math.Min(MinDepth(root.left), MinDepth(root.right));
         }
     }
 }
