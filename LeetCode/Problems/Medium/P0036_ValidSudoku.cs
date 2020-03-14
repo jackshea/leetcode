@@ -1,5 +1,7 @@
 ﻿namespace LeetCode.Problems.Medium
 {
+    /// 有效的数独
+    /// https://leetcode-cn.com/problems/valid-sudoku/
     public class P0036_ValidSudoku
     {
         public bool IsValidSudoku(char[][] board)
