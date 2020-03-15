@@ -1,5 +1,7 @@
 ﻿namespace LeetCode.Problems.Easy
 {
+    /// 旋转数组
+    /// https://leetcode-cn.com/problems/rotate-array/
     public class P0189_RotateArray
     {
         public void Rotate(int[] nums, int k)
