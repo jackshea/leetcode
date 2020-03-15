@@ -361,6 +361,7 @@
     <Compile Include="Problems\Medium\P0036_ValidSudoku.cs" />
     <Compile Include="Problems\Medium\P0050_PowXN.cs" />
     <Compile Include="Problems\Medium\P0102_BinaryTreeLevelOrderTraversal.cs" />
+    <Compile Include="Problems\Medium\P0208_ImplementTriePrefixTree.cs" />
     <Compile Include="Problems\Medium\P0236_LowestCommonAncestorOfABinaryTree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
