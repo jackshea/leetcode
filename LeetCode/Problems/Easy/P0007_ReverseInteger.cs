@@ -3,7 +3,7 @@ using System.Text;
 
 namespace LeetCode.Problems.Easy
 {
-    /// 反转整数
+    /// 整数反转
     /// https://leetcode-cn.com/problems/reverse-integer/description/
     public class P0007_ReverseInteger
     {

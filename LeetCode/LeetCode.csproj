@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Common\ListNode.cs" />
     <Compile Include="Common\TreeNode.cs" />
+    <Compile Include="Problems\Easy\MST0106_CompressStringLcci.cs" />
     <Compile Include="Problems\Easy\P0746_MinCostClimbingStairsComments.cs" />
     <Compile Include="Problems\Easy\P0606_ConstructStringFromBinaryTree.cs" />
     <Compile Include="Problems\Easy\P0617_MergeTwoBinaryTrees.cs" />
