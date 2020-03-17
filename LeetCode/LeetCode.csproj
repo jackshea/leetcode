@@ -364,6 +364,7 @@
     <Compile Include="Problems\Medium\P0050_PowXN.cs" />
     <Compile Include="Problems\Medium\P0102_BinaryTreeLevelOrderTraversal.cs" />
     <Compile Include="Problems\Medium\P0120_Triangle.cs" />
+    <Compile Include="Problems\Medium\P0152_MaximumProductSubarray.cs" />
     <Compile Include="Problems\Medium\P0208_ImplementTriePrefixTree.cs" />
     <Compile Include="Problems\Medium\P0236_LowestCommonAncestorOfABinaryTree.cs" />
     <Compile Include="Problems\Medium\P0695_MaxAreaOfIsland.cs" />
