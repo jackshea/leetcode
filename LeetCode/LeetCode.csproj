@@ -361,6 +361,7 @@
     <Compile Include="Problems\Medium\P0024_SwapNodesInPairs.cs" />
     <Compile Include="Problems\Medium\P0031_NextPermutation.cs" />
     <Compile Include="Problems\Medium\P0036_ValidSudoku.cs" />
+    <Compile Include="Problems\Medium\P0046_Permutations.cs" />
     <Compile Include="Problems\Medium\P0048_RotateImage.cs" />
     <Compile Include="Problems\Medium\P0050_PowXN.cs" />
     <Compile Include="Problems\Medium\P0102_BinaryTreeLevelOrderTraversal.cs" />
