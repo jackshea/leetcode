@@ -360,6 +360,7 @@
     <Compile Include="Problems\Medium\P0022_GenerateParentheses.cs" />
     <Compile Include="Problems\Medium\P0024_SwapNodesInPairs.cs" />
     <Compile Include="Problems\Medium\P0031_NextPermutation.cs" />
+    <Compile Include="Problems\Medium\P0033_SearchInRotatedSortedArray.cs" />
     <Compile Include="Problems\Medium\P0036_ValidSudoku.cs" />
     <Compile Include="Problems\Medium\P0047_PermutationsII.cs" />
     <Compile Include="Problems\Medium\P0046_Permutations.cs" />
