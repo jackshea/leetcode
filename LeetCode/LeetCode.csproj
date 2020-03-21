@@ -373,6 +373,7 @@
     <Compile Include="Problems\Medium\P0200_NumberOfIslands.cs" />
     <Compile Include="Problems\Medium\P0208_ImplementTriePrefixTree.cs" />
     <Compile Include="Problems\Medium\P0236_LowestCommonAncestorOfABinaryTree.cs" />
+    <Compile Include="Problems\Medium\P0365_WaterAndJugProblem.cs" />
     <Compile Include="Problems\Medium\P0695_MaxAreaOfIsland.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
