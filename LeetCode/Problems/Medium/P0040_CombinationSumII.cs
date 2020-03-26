@@ -44,7 +44,7 @@ namespace LeetCode.Problems.Medium
                     if (j > selected.Count || candidates[i] != selected[selected.Count - j])
                     {
                         needcut = true;
-                        continue;
+                        break;
                     }
                 }
 
