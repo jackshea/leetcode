@@ -363,6 +363,7 @@
     <Compile Include="Problems\Medium\P0024_SwapNodesInPairs.cs" />
     <Compile Include="Problems\Medium\P0031_NextPermutation.cs" />
     <Compile Include="Problems\Medium\P0033_SearchInRotatedSortedArray.cs" />
+    <Compile Include="Problems\Medium\P0034_FindFirstAndLastPositionOfElementInSortedArray.cs" />
     <Compile Include="Problems\Medium\P0036_ValidSudoku.cs" />
     <Compile Include="Problems\Medium\P0039_CombinationSum.cs" />
     <Compile Include="Problems\Medium\P0040_CombinationSumII.cs" />
