@@ -13,6 +13,7 @@ namespace LeetCode.Problems.Medium
             return nums;
         }
 
+        /// 快速排序
         public void QuickSort(int[] nums, int start, int end)
         {
             if (start >= end)
@@ -25,6 +26,7 @@ namespace LeetCode.Problems.Medium
             QuickSort(nums, p + 1, end);
         }
 
+        /// 拆分
         private int Partition(int[] nums, int start, int end)
         {
             int p = nums[start];
@@ -49,6 +51,7 @@ namespace LeetCode.Problems.Medium
             return start;
         }
 
+        /// 洗牌。随机化
         private void Shuffle(int[] nums)
         {
             var random = new Random((int)DateTime.Now.Ticks);
@@ -64,6 +67,23 @@ namespace LeetCode.Problems.Medium
             int temp = nums[i];
             nums[i] = nums[j];
             nums[j] = temp;
+        }
+
+        /// 插入排序
+        private void InsertionSort(int[] nums, int start, int end)
+        {
+            for (int i = start + 1; i <= end; i++)
+            {
+                int n = nums[i];
+                int j = i - 1;
+                while (j >= start && nums[j] > n)
+                {
+                    nums[j + 1] = nums[j];
+                    j--;
+                }
+
+                nums[j + 1] = n;
+            }
         }
     }
 }
