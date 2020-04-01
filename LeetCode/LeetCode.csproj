@@ -376,6 +376,7 @@
     <Compile Include="Problems\Medium\P0054_SpiralMatrix.cs" />
     <Compile Include="Problems\Medium\P0055_JumpGame.cs" />
     <Compile Include="Problems\Medium\P0056_MergeIntervals.cs" />
+    <Compile Include="Problems\Medium\P0059_SpiralMatrixII.cs" />
     <Compile Include="Problems\Medium\P0102_BinaryTreeLevelOrderTraversal.cs" />
     <Compile Include="Problems\Medium\P0120_Triangle.cs" />
     <Compile Include="Problems\Medium\P0152_MaximumProductSubarray.cs" />
