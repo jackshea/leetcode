@@ -97,6 +97,7 @@
     <Compile Include="Problems\Easy\P1175_PrimeArrangementsTests.cs" />
     <Compile Include="Problems\Medium\MST40_LCOF_1Tests.cs" />
     <Compile Include="Problems\Medium\P0059_SpiralMatrixIITests.cs" />
+    <Compile Include="Problems\Medium\P0060_PermutationSequenceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\ConvertArrayToBinaryTreeTests.cs" />
     <Compile Include="Problems\Easy\P0171_ExcelSheetColumnNumberTests.cs" />
