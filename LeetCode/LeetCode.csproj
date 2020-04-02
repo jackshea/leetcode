@@ -345,6 +345,7 @@
     <Compile Include="Problems\Hard\P0037_SudokuSolver.cs" />
     <Compile Include="Problems\Hard\P0051_NQueens.cs" />
     <Compile Include="Problems\Hard\P0052_NQueensII.cs" />
+    <Compile Include="Problems\Hard\P0174_DungeonGame.cs" />
     <Compile Include="Problems\Medium\MST1716_TheMasseuselcci.cs" />
     <Compile Include="Problems\Medium\MST40_LCOF.cs" />
     <Compile Include="Problems\Easy\MST62.cs" />
