@@ -382,6 +382,7 @@
     <Compile Include="Problems\Medium\P0062_UniquePaths.cs" />
     <Compile Include="Problems\Medium\P0063_UniquePathsII.cs" />
     <Compile Include="Problems\Medium\P0064_MinimumPathSum.cs" />
+    <Compile Include="Problems\Medium\P0091_DecodeWays.cs" />
     <Compile Include="Problems\Medium\P0102_BinaryTreeLevelOrderTraversal.cs" />
     <Compile Include="Problems\Medium\P0120_Triangle.cs" />
     <Compile Include="Problems\Medium\P0152_MaximumProductSubarray.cs" />
