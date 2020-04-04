@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using LeetCode.Problems;
 using LeetCode.Problems.Easy;
 using LeetCode.Problems.Hard;
+using LeetCode.Problems.Medium;
 
 namespace LeetCode
 {
@@ -13,8 +14,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new P0051_NQueens();
-            test.SolveNQueens(4);
+            var test = new P0071_SimplifyPath();
+            test.SimplifyPath("/home/");
         }
     }
 }
