@@ -380,6 +380,7 @@
     <Compile Include="Problems\Medium\P0056_MergeIntervals.cs" />
     <Compile Include="Problems\Medium\P0059_SpiralMatrixII.cs" />
     <Compile Include="Problems\Medium\P0060_PermutationSequence.cs" />
+    <Compile Include="Problems\Medium\P0061_RotateList.cs" />
     <Compile Include="Problems\Medium\P0062_UniquePaths.cs" />
     <Compile Include="Problems\Medium\P0063_UniquePathsII.cs" />
     <Compile Include="Problems\Medium\P0064_MinimumPathSum.cs" />
