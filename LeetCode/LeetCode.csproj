@@ -389,6 +389,7 @@
     <Compile Include="Problems\Medium\P0074_SearchA2dMatrix.cs" />
     <Compile Include="Problems\Medium\P0075_SortColors.cs" />
     <Compile Include="Problems\Medium\P0077_Combinations.cs" />
+    <Compile Include="Problems\Medium\P0078_Subsets.cs" />
     <Compile Include="Problems\Medium\P0091_DecodeWays.cs" />
     <Compile Include="Problems\Medium\P0102_BinaryTreeLevelOrderTraversal.cs" />
     <Compile Include="Problems\Medium\P0120_Triangle.cs" />
