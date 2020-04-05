@@ -387,6 +387,7 @@
     <Compile Include="Problems\Medium\P0071_SimplifyPath.cs" />
     <Compile Include="Problems\Medium\P0073_SetMatrixZeroes.cs" />
     <Compile Include="Problems\Medium\P0074_SearchA2dMatrix.cs" />
+    <Compile Include="Problems\Medium\P0075_SortColors.cs" />
     <Compile Include="Problems\Medium\P0091_DecodeWays.cs" />
     <Compile Include="Problems\Medium\P0102_BinaryTreeLevelOrderTraversal.cs" />
     <Compile Include="Problems\Medium\P0120_Triangle.cs" />
