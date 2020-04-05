@@ -14,8 +14,13 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new P0071_SimplifyPath();
-            test.SimplifyPath("/home/");
+            var test = new P0079_WordSearch();
+            char[][] board = {
+                new []{'A', 'B', 'C', 'E'},
+                new []{'S', 'F', 'C', 'S'},
+                new []{'A', 'D', 'E', 'E'}
+                };
+            test.Exist(board, "ABCCED");
         }
     }
 }
