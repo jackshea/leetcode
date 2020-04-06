@@ -16,7 +16,7 @@ namespace LeetCode.Problems.Medium.Tests
         {
             var test = new MST40_LCOF_1();
             var res = test.GetLeastNumbers(new[] { 3, 2, 1 }, 2);
-            Assert.AreEqual(new[] { 1, 2 }, res);
+            Assert.AreEqual(new[] { 2, 1 }, res);
         }
 
         [Test()]
