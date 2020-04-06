@@ -391,6 +391,7 @@
     <Compile Include="Problems\Medium\P0077_Combinations.cs" />
     <Compile Include="Problems\Medium\P0078_Subsets.cs" />
     <Compile Include="Problems\Medium\P0079_WordSearch.cs" />
+    <Compile Include="Problems\Medium\P0080_RemoveDuplicatesFromSortedArrayII.cs" />
     <Compile Include="Problems\Medium\P0091_DecodeWays.cs" />
     <Compile Include="Problems\Medium\P0102_BinaryTreeLevelOrderTraversal.cs" />
     <Compile Include="Problems\Medium\P0120_Triangle.cs" />
