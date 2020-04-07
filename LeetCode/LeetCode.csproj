@@ -396,6 +396,7 @@
     <Compile Include="Problems\Medium\P0082_RemoveDuplicatesFromSortedListII.cs" />
     <Compile Include="Problems\Medium\P0086_PartitionList.cs" />
     <Compile Include="Problems\Medium\P0089_GrayCode.cs" />
+    <Compile Include="Problems\Medium\P0090_SubsetsII.cs" />
     <Compile Include="Problems\Medium\P0091_DecodeWays.cs" />
     <Compile Include="Problems\Medium\P0102_BinaryTreeLevelOrderTraversal.cs" />
     <Compile Include="Problems\Medium\P0120_Triangle.cs" />
