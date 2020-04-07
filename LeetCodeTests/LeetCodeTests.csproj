@@ -100,6 +100,7 @@
     <Compile Include="Problems\Medium\P0060_PermutationSequenceTests.cs" />
     <Compile Include="Problems\Medium\P0082_RemoveDuplicatesFromSortedListIITests.cs" />
     <Compile Include="Problems\Medium\P0086_PartitionListTests.cs" />
+    <Compile Include="Problems\Medium\P0092_ReverseLinkedListIITests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\ConvertArrayToBinaryTreeTests.cs" />
     <Compile Include="Problems\Easy\P0171_ExcelSheetColumnNumberTests.cs" />
