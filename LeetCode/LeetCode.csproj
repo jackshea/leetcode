@@ -402,6 +402,7 @@
     <Compile Include="Problems\Medium\P0092_ReverseLinkedListII.cs" />
     <Compile Include="Problems\Medium\P0093_RestoreIpAddresses.cs" />
     <Compile Include="Problems\Medium\P0094_BinaryTreeInorderTraversal.cs" />
+    <Compile Include="Problems\Medium\P0095_UniqueBinarySearchTreesII.cs" />
     <Compile Include="Problems\Medium\P0102_BinaryTreeLevelOrderTraversal.cs" />
     <Compile Include="Problems\Medium\P0120_Triangle.cs" />
     <Compile Include="Problems\Medium\P0152_MaximumProductSubarray.cs" />
