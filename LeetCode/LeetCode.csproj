@@ -418,6 +418,7 @@
     <Compile Include="Problems\Medium\P0213_HouseRobberII.cs" />
     <Compile Include="Problems\Medium\P0236_LowestCommonAncestorOfABinaryTree.cs" />
     <Compile Include="Problems\Medium\P0289_GameOfLife.cs" />
+    <Compile Include="Problems\Medium\P0300_LongestIncreasingSubsequence.cs" />
     <Compile Include="Problems\Medium\P0365_WaterAndJugProblem.cs" />
     <Compile Include="Problems\Medium\P0695_MaxAreaOfIsland.cs" />
     <Compile Include="Problems\Medium\P0912_SortAnArray.cs" />
