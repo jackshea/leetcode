@@ -407,6 +407,7 @@
     <Compile Include="Problems\Medium\P0098_ValidateBinarySearchTree.cs" />
     <Compile Include="Problems\Medium\P0102_BinaryTreeLevelOrderTraversal.cs" />
     <Compile Include="Problems\Medium\P0103_BinaryTreeZigzagLevelOrderTraversal.cs" />
+    <Compile Include="Problems\Medium\P0105_ConstructBinaryTreeFromPreorderAndInorderTraversal.cs" />
     <Compile Include="Problems\Medium\P0120_Triangle.cs" />
     <Compile Include="Problems\Medium\P0152_MaximumProductSubarray.cs" />
     <Compile Include="Problems\Medium\P0200_NumberOfIslands.cs" />
