@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace LeetCode.Problems.Medium
+namespace LeetCode.Problems.Hard
 {
     /// 俄罗斯套娃信封问题
     /// https://leetcode-cn.com/problems/russian-doll-envelopes/
