@@ -1,8 +1,26 @@
-﻿namespace LeetCode.Problems.Easy
+﻿using System;
+
+namespace LeetCode.Problems.Easy
 {
     /// 买卖股票的最佳时机 II
     /// https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/description/
     public class P0122_BestTimeToBuyAndSellStockII
+    {
+        public int MaxProfit(int[] prices)
+        {
+            int dp0 = 0;
+            int dp1 = int.MinValue;
+            foreach (var price in prices)
+            {
+                dp1 = Math.Max(dp1, dp0 - price);
+                dp0 = Math.Max(dp0, dp1 + price);
+            }
+
+            return dp0;
+        }
+    }
+
+    public class P0122_BestTimeToBuyAndSellStockII_1
     {
         public int MaxProfit(int[] prices)
         {
