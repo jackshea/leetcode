@@ -428,6 +428,7 @@
     <Compile Include="Problems\Medium\P0309_BestTimeToBuyAndSellStockWithCooldown.cs" />
     <Compile Include="Problems\Medium\P0365_WaterAndJugProblem.cs" />
     <Compile Include="Problems\Medium\P0435_NonOverlappingIntervals.cs" />
+    <Compile Include="Problems\Medium\P0452_MinimumNumberOfArrowsToBurstBalloons.cs" />
     <Compile Include="Problems\Medium\P0516_LongestPalindromicSubsequence.cs" />
     <Compile Include="Problems\Medium\P0695_MaxAreaOfIsland.cs" />
     <Compile Include="Problems\Medium\P0714_BestTimeToBuyAndSellStockWithTransactionFee.cs" />
