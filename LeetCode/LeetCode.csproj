@@ -350,6 +350,7 @@
     <Compile Include="Problems\Hard\P0123_BestTimeToBuyAndSellStockIII.cs" />
     <Compile Include="Problems\Hard\P0174_DungeonGame.cs" />
     <Compile Include="Problems\Hard\P0188_BestTimeToBuyAndSellStockIV.cs" />
+    <Compile Include="Problems\Hard\P0887_SuperEggDrop.cs" />
     <Compile Include="Problems\Medium\MST0107.cs" />
     <Compile Include="Problems\Medium\MST13.cs" />
     <Compile Include="Problems\Medium\MST1716_TheMasseuselcci.cs" />
