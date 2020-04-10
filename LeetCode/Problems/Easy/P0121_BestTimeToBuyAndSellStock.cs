@@ -8,6 +8,22 @@ namespace LeetCode.Problems.Easy
     {
         public int MaxProfit(int[] prices)
         {
+            int maxProfit = 0;
+            int lowest = int.MaxValue;
+            foreach (var price in prices)
+            {
+                lowest = Math.Min(lowest, price);
+                maxProfit = Math.Max(maxProfit, price - lowest);
+            }
+
+            return maxProfit;
+        }
+    }
+
+    public class P0121_BestTimeToBuyAndSellStock_1
+    {
+        public int MaxProfit(int[] prices)
+        {
             if (prices == null || prices.Length <= 0)
             {
                 return 0;
