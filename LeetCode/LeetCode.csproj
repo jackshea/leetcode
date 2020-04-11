@@ -342,6 +342,7 @@
     <Compile Include="Problems\Easy\P1331_RankTransformOfAnArray.cs" />
     <Compile Include="Problems\Easy\P1332_RemovePalindromicSubsequences.cs" />
     <Compile Include="Problems\Easy\P5328_TheKWeakestRowsInAMatrix.cs" />
+    <Compile Include="Problems\Hard\P0010_RegularExpressionMatching.cs" />
     <Compile Include="Problems\Hard\P0037_SudokuSolver.cs" />
     <Compile Include="Problems\Hard\P0042_TrappingRainWater.cs" />
     <Compile Include="Problems\Hard\P0051_NQueens.cs" />
