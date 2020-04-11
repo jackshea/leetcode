@@ -1,8 +1,8 @@
 ﻿namespace LeetCode.Problems.Hard
 {
-    /// 正则表达式匹配
-    /// https://leetcode-cn.com/problems/regular-expression-matching/
-    public class P0010_RegularExpressionMatching
+    /// 通配符匹配
+    /// https://leetcode-cn.com/problems/wildcard-matching/
+    public class P0044_WildcardMatching
     {
         private string s;
         private string p;
@@ -12,7 +12,7 @@
         {
             this.s = s;
             this.p = p;
-            memo = new bool?[s.Length + 1, p.Length + 1];
+            memo = new bool?[s.Length + 2, p.Length + 2];
             return IsMatch(0, 0);
         }
 
@@ -28,13 +28,13 @@
                 return memo[si, pi].Value;
             }
 
-            var firstMatch = si < s.Length && (s[si] == p[pi] || p[pi] == '.');
+            var firstMatch = si < s.Length && (s[si] == p[pi] || p[pi] == '?' || p[pi] == '*');
 
             // 处理*的情况
-            if (pi + 1 < p.Length && p[pi + 1] == '*')
+            if (pi < p.Length && p[pi] == '*')
             {
-                memo[si, pi] = IsMatch(si, pi + 2) // 不匹配
-                              || firstMatch && IsMatch(si + 1, pi); // 匹配
+                memo[si, pi] = IsMatch(si, pi + 1) // 跳过*
+                               || firstMatch && IsMatch(si + 1, pi); // 匹配*
             }
             else
             {
