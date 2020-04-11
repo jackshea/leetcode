@@ -14,13 +14,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new P0079_WordSearch();
-            char[][] board = {
-                new []{'A', 'B', 'C', 'E'},
-                new []{'S', 'F', 'C', 'S'},
-                new []{'A', 'D', 'E', 'E'}
-                };
-            test.Exist(board, "ABCCED");
+            var test = new P0044_WildcardMatching_1();
+            Console.WriteLine(test.IsMatch("adceb", "*a*b"));
         }
     }
 }
