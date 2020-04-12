@@ -8,7 +8,7 @@ namespace LeetCode.Problems.Medium
     {
         public int CoinChange(int[] coins, int amount)
         {
-            // dp[m]==n 其中m为金额总数，n为方案数
+            // dp[m]==n 其中m为金额总数，n为最少硬币数
             // dp[m]=Min(dp[m],dp[m-coins[i]]+1)
             int[] dp = new int[amount + 1];
             for (int i = 1; i < dp.Length; i++)
