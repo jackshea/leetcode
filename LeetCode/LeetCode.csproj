@@ -418,6 +418,7 @@
     <Compile Include="Problems\Medium\P0109_ConvertSortedListToBinarySearchTree.cs" />
     <Compile Include="Problems\Medium\P0114_FlattenBinaryTreeToLinkedList.cs" />
     <Compile Include="Problems\Medium\P0120_Triangle.cs" />
+    <Compile Include="Problems\Medium\P0139_WordBreak.cs" />
     <Compile Include="Problems\Medium\P0151_ReverseWordsInAString.cs" />
     <Compile Include="Problems\Medium\P0152_MaximumProductSubarray.cs" />
     <Compile Include="Problems\Medium\P0200_NumberOfIslands.cs" />
