@@ -426,6 +426,7 @@
     <Compile Include="Problems\Medium\P0213_HouseRobberII.cs" />
     <Compile Include="Problems\Medium\P0221_MaximalSquare.cs" />
     <Compile Include="Problems\Medium\P0236_LowestCommonAncestorOfABinaryTree.cs" />
+    <Compile Include="Problems\Medium\P0264_UglyNumberII.cs" />
     <Compile Include="Problems\Medium\P0289_GameOfLife.cs" />
     <Compile Include="Problems\Medium\P0300_LongestIncreasingSubsequence.cs" />
     <Compile Include="Problems\Hard\P0354_RussianDollEnvelopes.cs" />
