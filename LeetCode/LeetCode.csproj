@@ -432,6 +432,7 @@
     <Compile Include="Problems\Medium\P0309_BestTimeToBuyAndSellStockWithCooldown.cs" />
     <Compile Include="Problems\Medium\P0322_CoinChange.cs" />
     <Compile Include="Problems\Medium\P0337_HouseRobberIII.cs" />
+    <Compile Include="Problems\Medium\P0355_DesignTwitter.cs" />
     <Compile Include="Problems\Medium\P0365_WaterAndJugProblem.cs" />
     <Compile Include="Problems\Medium\P0416_PartitionEqualSubsetSum.cs" />
     <Compile Include="Problems\Medium\P0435_NonOverlappingIntervals.cs" />
