@@ -448,6 +448,7 @@
     <Compile Include="Problems\Medium\P0494_TargetSum.cs" />
     <Compile Include="Problems\Medium\P0516_LongestPalindromicSubsequence.cs" />
     <Compile Include="Problems\Medium\P0518_CoinChange2.cs" />
+    <Compile Include="Problems\Medium\P0542_01Matrix.cs" />
     <Compile Include="Problems\Medium\P0695_MaxAreaOfIsland.cs" />
     <Compile Include="Problems\Medium\P0714_BestTimeToBuyAndSellStockWithTransactionFee.cs" />
     <Compile Include="Problems\Medium\P0912_SortAnArray.cs" />
