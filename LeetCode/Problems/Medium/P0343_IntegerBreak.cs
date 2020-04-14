@@ -2,6 +2,8 @@
 
 namespace LeetCode.Problems.Medium
 {
+    /// 整数拆分
+    /// https://leetcode-cn.com/problems/integer-break/
     public class P0343_IntegerBreak
     {
         public int IntegerBreak(int n)
