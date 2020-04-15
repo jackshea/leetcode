@@ -421,6 +421,7 @@
     <Compile Include="Problems\Medium\P0117_PopulatingNextRightPointersInEachNodeII.cs" />
     <Compile Include="Problems\Medium\P0120_Triangle.cs" />
     <Compile Include="Problems\Medium\P0127_WordLadder.cs" />
+    <Compile Include="Problems\Medium\P0129_SumRootToLeafNumbers.cs" />
     <Compile Include="Problems\Medium\P0139_WordBreak.cs" />
     <Compile Include="Problems\Medium\P0151_ReverseWordsInAString.cs" />
     <Compile Include="Problems\Medium\P0152_MaximumProductSubarray.cs" />
