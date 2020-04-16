@@ -424,6 +424,7 @@
     <Compile Include="Problems\Medium\P0129_SumRootToLeafNumbers.cs" />
     <Compile Include="Problems\Medium\P0130_SurroundedRegions.cs" />
     <Compile Include="Problems\Medium\P0131_PalindromePartitioning.cs" />
+    <Compile Include="Problems\Medium\P0133_CloneGraph.cs" />
     <Compile Include="Problems\Medium\P0139_WordBreak.cs" />
     <Compile Include="Problems\Medium\P0151_ReverseWordsInAString.cs" />
     <Compile Include="Problems\Medium\P0152_MaximumProductSubarray.cs" />
