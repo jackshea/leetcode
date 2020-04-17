@@ -427,6 +427,7 @@
     <Compile Include="Problems\Medium\P0131_PalindromePartitioning.cs" />
     <Compile Include="Problems\Medium\P0133_CloneGraph.cs" />
     <Compile Include="Problems\Medium\P0134_GasStation.cs" />
+    <Compile Include="Problems\Medium\P0138_CopyListWithRandomPointer.cs" />
     <Compile Include="Problems\Medium\P0139_WordBreak.cs" />
     <Compile Include="Problems\Medium\P0151_ReverseWordsInAString.cs" />
     <Compile Include="Problems\Medium\P0152_MaximumProductSubarray.cs" />
