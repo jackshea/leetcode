@@ -430,6 +430,7 @@
     <Compile Include="Problems\Medium\P0138_CopyListWithRandomPointer.cs" />
     <Compile Include="Problems\Medium\P0139_WordBreak.cs" />
     <Compile Include="Problems\Medium\P0142_LinkedListCycleII.cs" />
+    <Compile Include="Problems\Medium\P0143_ReorderList.cs" />
     <Compile Include="Problems\Medium\P0151_ReverseWordsInAString.cs" />
     <Compile Include="Problems\Medium\P0152_MaximumProductSubarray.cs" />
     <Compile Include="Problems\Medium\P0200_NumberOfIslands.cs" />
