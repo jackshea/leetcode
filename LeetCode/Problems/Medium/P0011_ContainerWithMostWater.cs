@@ -9,15 +9,18 @@ namespace LeetCode.Problems.Medium
         public int MaxArea(int[] height)
         {
             int maxArea = 0;
-            for (int i = 0; i < height.Length; i++)
+            int left = 0;
+            int right = height.Length - 1;
+            while (left < right)
             {
-                for (int j = i + 1; j < height.Length; j++)
+                maxArea = Math.Max(maxArea, (right - left) * Math.Min(height[left], height[right]));
+                if (height[left] < height[right])
                 {
-                    int area = (j - i) * Math.Min(height[i], height[j]);
-                    if (maxArea < area)
-                    {
-                        maxArea = area;
-                    }
+                    left++;
+                }
+                else
+                {
+                    right--;
                 }
             }
 
