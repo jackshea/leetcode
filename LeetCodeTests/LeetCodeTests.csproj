@@ -105,6 +105,7 @@
     <Compile Include="Problems\Medium\P0093_RestoreIpAddressesTests.cs" />
     <Compile Include="Problems\Medium\P0139_WordBreakTests.cs" />
     <Compile Include="Problems\Medium\P0143_ReorderListTests.cs" />
+    <Compile Include="Problems\Medium\P0147_InsertionSortListTests.cs" />
     <Compile Include="Problems\Medium\P0264_UglyNumberIITests.cs" />
     <Compile Include="Problems\Medium\P0322_CoinChangeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
