@@ -4,43 +4,49 @@
     /// https://leetcode-cn.com/problems/sudoku-solver/
     public class P0037_SudokuSolver
     {
+        private char[][] board;
+
         public void SolveSudoku(char[][] board)
         {
-            Solve(board);
+            this.board = board;
+            Solve(0, 0);
         }
 
-        private bool Solve(char[][] board)
+        private bool Solve(int r, int c)
         {
-            for (int i = 0; i < board.Length; i++)
+            if (r >= board.Length)
             {
-                for (int j = 0; j < board[0].Length; j++)
-                {
-                    if (board[i][j] == '.')
-                    {
-                        for (char k = '1'; k <= '9'; k++)
-                        {
-                            if (isValid(board, i, j, k))
-                            {
-                                board[i][j] = k;
-                                if (Solve(board))
-                                {
-                                    return true;
-                                }
-                                else
-                                {
-                                    board[i][j] = '.';
-                                }
-                            }
-                        }
-                        return false;
-                    }
-                }
+                return true;
             }
 
-            return true;
+            if (c >= board[0].Length)
+            {
+                return Solve(r + 1, 0);
+            }
+
+            if (board[r][c] == '.')
+            {
+                for (char k = '1'; k <= '9'; k++)
+                {
+                    if (isValid(r, c, k))
+                    {
+                        board[r][c] = k;
+                        if (Solve(r, c + 1))
+                        {
+                            return true;
+                        }
+                        board[r][c] = '.';
+                    }
+                }
+                return false;
+            }
+            else
+            {
+                return Solve(r, c + 1);
+            }
         }
 
-        private bool isValid(char[][] board, int row, int col, char num)
+        private bool isValid(int row, int col, char num)
         {
             for (int i = 0; i < board.Length; i++)
             {
