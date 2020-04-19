@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems.Medium
+﻿namespace LeetCode.Problems.Hard
 {
     /// 基本计算器
     /// https://leetcode-cn.com/problems/basic-calculator/

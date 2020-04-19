@@ -442,7 +442,7 @@
     <Compile Include="Problems\Medium\P0208_ImplementTriePrefixTree.cs" />
     <Compile Include="Problems\Medium\P0213_HouseRobberII.cs" />
     <Compile Include="Problems\Medium\P0221_MaximalSquare.cs" />
-    <Compile Include="Problems\Medium\P0224_BasicCalculator.cs" />
+    <Compile Include="Problems\Hard\P0224_BasicCalculator.cs" />
     <Compile Include="Problems\Medium\P0227_BasicCalculatorII.cs" />
     <Compile Include="Problems\Medium\P0236_LowestCommonAncestorOfABinaryTree.cs" />
     <Compile Include="Problems\Medium\P0264_UglyNumberII.cs" />
@@ -472,6 +472,7 @@
     <Compile Include="Problems\Medium\P0714_BestTimeToBuyAndSellStockWithTransactionFee.cs" />
     <Compile Include="Problems\Medium\P0912_SortAnArray.cs" />
     <Compile Include="Problems\Medium\P0945_MinimumIncrementToMakeArrayUnique.cs" />
+    <Compile Include="Problems\Medium\P0991_BrokenCalculator.cs" />
     <Compile Include="Problems\Medium\P1143_LngestCmmonSubsequence.cs" />
     <Compile Include="Problems\Medium\P1162_AsFarFromLandAsPossible.cs" />
     <Compile Include="Program.cs" />
