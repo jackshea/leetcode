@@ -442,6 +442,7 @@
     <Compile Include="Problems\Medium\P0208_ImplementTriePrefixTree.cs" />
     <Compile Include="Problems\Medium\P0213_HouseRobberII.cs" />
     <Compile Include="Problems\Medium\P0221_MaximalSquare.cs" />
+    <Compile Include="Problems\Medium\P0227_BasicCalculatorII.cs" />
     <Compile Include="Problems\Medium\P0236_LowestCommonAncestorOfABinaryTree.cs" />
     <Compile Include="Problems\Medium\P0264_UglyNumberII.cs" />
     <Compile Include="Problems\Medium\P0279_PerfectSquares.cs" />
