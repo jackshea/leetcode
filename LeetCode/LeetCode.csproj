@@ -435,6 +435,7 @@
     <Compile Include="Problems\Medium\P0144_BinaryTreePreorderTraversal.cs" />
     <Compile Include="Problems\Medium\P0146_LRUCache.cs" />
     <Compile Include="Problems\Medium\P0147_InsertionSortList.cs" />
+    <Compile Include="Problems\Medium\P0148_SortList.cs" />
     <Compile Include="Problems\Medium\P0150_EvaluateReversePolishNotation.cs" />
     <Compile Include="Problems\Medium\P0151_ReverseWordsInAString.cs" />
     <Compile Include="Problems\Medium\P0152_MaximumProductSubarray.cs" />
