@@ -439,6 +439,7 @@
     <Compile Include="Problems\Medium\P0150_EvaluateReversePolishNotation.cs" />
     <Compile Include="Problems\Medium\P0151_ReverseWordsInAString.cs" />
     <Compile Include="Problems\Medium\P0152_MaximumProductSubarray.cs" />
+    <Compile Include="Problems\Medium\P0153_FindMinimumInRotatedSortedArray.cs" />
     <Compile Include="Problems\Medium\P0200_NumberOfIslands.cs" />
     <Compile Include="Problems\Medium\P0208_ImplementTriePrefixTree.cs" />
     <Compile Include="Problems\Medium\P0213_HouseRobberII.cs" />
