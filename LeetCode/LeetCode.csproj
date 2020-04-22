@@ -446,6 +446,7 @@
     <Compile Include="Problems\Medium\P0187_RepeatedDnaSequences.cs" />
     <Compile Include="Problems\Medium\P0199_BinaryTreeRightSideView.cs" />
     <Compile Include="Problems\Medium\P0200_NumberOfIslands.cs" />
+    <Compile Include="Problems\Medium\P0201_BitwiseAndOfNumbersRange.cs" />
     <Compile Include="Problems\Medium\P0208_ImplementTriePrefixTree.cs" />
     <Compile Include="Problems\Medium\P0213_HouseRobberII.cs" />
     <Compile Include="Problems\Medium\P0221_MaximalSquare.cs" />
