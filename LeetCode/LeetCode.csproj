@@ -361,6 +361,7 @@
     <Compile Include="Problems\Medium\MST1716_TheMasseuselcci.cs" />
     <Compile Include="Problems\Medium\MST40_LCOF.cs" />
     <Compile Include="Problems\Easy\MST62.cs" />
+    <Compile Include="Problems\Medium\MST51.cs" />
     <Compile Include="Problems\Medium\P0002_AddTwoNumbers.cs" />
     <Compile Include="Problems\Medium\P0003_LongestSubstringWithoutRepeatingCharacters.cs" />
     <Compile Include="Problems\Medium\P0005_LongestPalindromicSubstring.cs" />
