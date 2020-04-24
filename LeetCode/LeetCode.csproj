@@ -457,6 +457,7 @@
     <Compile Include="Problems\Medium\P0216_CombinationSumIII.cs" />
     <Compile Include="Problems\Medium\P0221_MaximalSquare.cs" />
     <Compile Include="Problems\Hard\P0224_BasicCalculator.cs" />
+    <Compile Include="Problems\Medium\P0222_CountCompleteTreeNodes.cs" />
     <Compile Include="Problems\Medium\P0227_BasicCalculatorII.cs" />
     <Compile Include="Problems\Medium\P0236_LowestCommonAncestorOfABinaryTree.cs" />
     <Compile Include="Problems\Medium\P0264_UglyNumberII.cs" />
