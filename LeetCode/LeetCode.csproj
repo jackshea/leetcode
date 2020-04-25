@@ -375,6 +375,7 @@
     <Compile Include="Problems\Medium\P0018_4Sum.cs" />
     <Compile Include="Problems\Medium\P0019_RemoveNthNodeFromEndOfList.cs" />
     <Compile Include="Problems\Medium\P0022_GenerateParentheses.cs" />
+    <Compile Include="Problems\Medium\P0023_MergeKSortedLists.cs" />
     <Compile Include="Problems\Medium\P0024_SwapNodesInPairs.cs" />
     <Compile Include="Problems\Medium\P0031_NextPermutation.cs" />
     <Compile Include="Problems\Medium\P0033_SearchInRotatedSortedArray.cs" />
