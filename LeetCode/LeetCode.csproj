@@ -462,6 +462,7 @@
     <Compile Include="Problems\Medium\P0227_BasicCalculatorII.cs" />
     <Compile Include="Problems\Medium\P0228_SummaryRanges.cs" />
     <Compile Include="Problems\Medium\P0229_MajorityElementII.cs" />
+    <Compile Include="Problems\Medium\P0230_KthSmallestElementInABst.cs" />
     <Compile Include="Problems\Medium\P0236_LowestCommonAncestorOfABinaryTree.cs" />
     <Compile Include="Problems\Medium\P0264_UglyNumberII.cs" />
     <Compile Include="Problems\Medium\P0279_PerfectSquares.cs" />
