@@ -7,7 +7,7 @@ namespace LeetCode.Problems.Medium
     class PeekingIterator
     {
         private IEnumerator<int> iterator;
-        private bool hasNext;
+        private bool hasNext = true;
 
         // iterators refers to the first element of the array.
         public PeekingIterator(IEnumerator<int> iterator)
