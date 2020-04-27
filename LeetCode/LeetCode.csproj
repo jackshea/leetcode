@@ -470,6 +470,7 @@
     <Compile Include="Problems\Medium\P0241_DifferentWaysToAddParentheses.cs" />
     <Compile Include="Problems\Medium\P0260_SingleNumberIII.cs" />
     <Compile Include="Problems\Medium\P0264_UglyNumberII.cs" />
+    <Compile Include="Problems\Medium\P0274_HIndex.cs" />
     <Compile Include="Problems\Medium\P0279_PerfectSquares.cs" />
     <Compile Include="Problems\Medium\P0289_GameOfLife.cs" />
     <Compile Include="Problems\Medium\P0300_LongestIncreasingSubsequence.cs" />
