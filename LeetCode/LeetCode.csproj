@@ -474,6 +474,7 @@
     <Compile Include="Problems\Medium\P0275_HIndexII.cs" />
     <Compile Include="Problems\Medium\P0279_PerfectSquares.cs" />
     <Compile Include="Problems\Medium\P0284_PeekingIterator.cs" />
+    <Compile Include="Problems\Medium\P0287_FindTheDuplicateNumber.cs" />
     <Compile Include="Problems\Medium\P0289_GameOfLife.cs" />
     <Compile Include="Problems\Medium\P0300_LongestIncreasingSubsequence.cs" />
     <Compile Include="Problems\Hard\P0354_RussianDollEnvelopes.cs" />
