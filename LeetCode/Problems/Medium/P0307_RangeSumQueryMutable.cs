@@ -1,5 +1,7 @@
 ﻿namespace LeetCode.Problems.Medium
 {
+    /// 区域和检索 - 数组可修改
+    /// https://leetcode-cn.com/problems/range-sum-query-mutable/
     public class NumArray
     {
         private SegTreeNode[] tree;
