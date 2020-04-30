@@ -361,6 +361,7 @@
     <Compile Include="Problems\Hard\P0887_SuperEggDrop.cs" />
     <Compile Include="Problems\Medium\MST0105.cs" />
     <Compile Include="Problems\Medium\MST0107.cs" />
+    <Compile Include="Problems\Medium\MST0108.cs" />
     <Compile Include="Problems\Medium\MST0811.cs" />
     <Compile Include="Problems\Medium\MST13.cs" />
     <Compile Include="Problems\Medium\MST1716_TheMasseuselcci.cs" />
