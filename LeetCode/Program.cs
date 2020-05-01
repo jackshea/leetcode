@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LeetCode.Common;
 using LeetCode.Problems;
 using LeetCode.Problems.Easy;
 using LeetCode.Problems.Hard;
@@ -14,8 +15,18 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new P0044_WildcardMatching_1();
-            Console.WriteLine(test.IsMatch("adceb", "*a*b"));
+            PriorityQueue<int> pq = new PriorityQueue<int>();
+            pq.Push(1);
+            pq.Push(3);
+            pq.Push(2);
+            pq.Push(1);
+
+            while (pq.Count != 0)
+            {
+                Console.Write(pq.Pop() + " ");
+            }
+
+            Console.ReadLine();
         }
     }
 }
