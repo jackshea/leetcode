@@ -56,5 +56,17 @@ namespace LeetCode.Common
 
             return nums.ToArray();
         }
+
+        public static ListNode ConnectList(ListNode listA, ListNode listB)
+        {
+            ListNode last = listA;
+            while (last.next != null)
+            {
+                last = last.next;
+            }
+
+            last.next = listB;
+            return listA;
+        }
     }
 }

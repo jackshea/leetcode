@@ -55,6 +55,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Common\PriorityQueueTests.cs" />
+    <Compile Include="Problems\Easy\MST0207Tests.cs" />
     <Compile Include="Problems\Easy\MyHashMapTests.cs" />
     <Compile Include="Problems\Easy\MyHashSetTests.cs" />
     <Compile Include="Problems\Easy\P0066_PlusOneTests.cs" />
