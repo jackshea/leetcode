@@ -358,6 +358,7 @@
     <Compile Include="Problems\Hard\P0037_SudokuSolver.cs" />
     <Compile Include="Problems\Hard\P0042_TrappingRainWater.cs" />
     <Compile Include="Problems\Hard\P0044_WildcardMatching.cs" />
+    <Compile Include="Problems\Hard\P0045_JumpGameII.cs" />
     <Compile Include="Problems\Hard\P0051_NQueens.cs" />
     <Compile Include="Problems\Hard\P0052_NQueensII.cs" />
     <Compile Include="Problems\Hard\P0072_EditDistance.cs" />
