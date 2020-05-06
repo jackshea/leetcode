@@ -526,6 +526,7 @@
     <Compile Include="Problems\Medium\P0714_BestTimeToBuyAndSellStockWithTransactionFee.cs" />
     <Compile Include="Problems\Medium\P0912_SortAnArray.cs" />
     <Compile Include="Problems\Medium\P0945_MinimumIncrementToMakeArrayUnique.cs" />
+    <Compile Include="Problems\Medium\P0983_MinimumCostForTickets.cs" />
     <Compile Include="Problems\Medium\P0991_BrokenCalculator.cs" />
     <Compile Include="Problems\Medium\P1143_LngestCmmonSubsequence.cs" />
     <Compile Include="Problems\Medium\P1162_AsFarFromLandAsPossible.cs" />
