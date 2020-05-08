@@ -387,7 +387,8 @@
     <Compile Include="Problems\Medium\MST0408.cs" />
     <Compile Include="Problems\Medium\MST0410.cs" />
     <Compile Include="Problems\Medium\MST0412.cs" />
-    <Compile Include="Problems\Medium\MST0501.cs" />
+    <Compile Include="Problems\Easy\MST0501.cs" />
+    <Compile Include="Problems\Medium\MST0502.cs" />
     <Compile Include="Problems\Medium\MST0811.cs" />
     <Compile Include="Problems\Medium\MST13.cs" />
     <Compile Include="Problems\Medium\MST1716_TheMasseuselcci.cs" />

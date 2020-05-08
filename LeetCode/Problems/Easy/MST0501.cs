@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems.Medium
+﻿namespace LeetCode.Problems.Easy
 {
     /// 插入
     /// https://leetcode-cn.com/problems/insert-into-bits-lcci/
