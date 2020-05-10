@@ -4,7 +4,7 @@ namespace LeetCode.Problems.Easy
 {
     /// 面试题 01.06. 字符串压缩
     /// https://leetcode-cn.com/problems/compress-string-lcci/
-    public class MST0106_CompressStringLcci
+    public class MST0106
     {
         public string CompressString(string S)
         {

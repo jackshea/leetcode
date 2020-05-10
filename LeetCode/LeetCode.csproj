@@ -57,7 +57,7 @@
     <Compile Include="Problems\Easy\MST0102.cs" />
     <Compile Include="Problems\Easy\MST0103.cs" />
     <Compile Include="Problems\Easy\MST0104.cs" />
-    <Compile Include="Problems\Easy\MST0106_CompressStringLcci.cs" />
+    <Compile Include="Problems\Easy\MST0106.cs" />
     <Compile Include="Problems\Easy\MST0109.cs" />
     <Compile Include="Problems\Easy\MST0201.cs" />
     <Compile Include="Problems\Easy\MST0202.cs" />
@@ -361,6 +361,7 @@
     <Compile Include="Problems\Easy\P1331_RankTransformOfAnArray.cs" />
     <Compile Include="Problems\Easy\P1332_RemovePalindromicSubsequences.cs" />
     <Compile Include="Problems\Easy\P5328_TheKWeakestRowsInAMatrix.cs" />
+    <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
     <Compile Include="Problems\Hard\P0010_RegularExpressionMatching.cs" />
     <Compile Include="Problems\Hard\P0037_SudokuSolver.cs" />
     <Compile Include="Problems\Hard\P0042_TrappingRainWater.cs" />
@@ -533,6 +534,7 @@
     <Compile Include="Problems\Medium\P0494_TargetSum.cs" />
     <Compile Include="Problems\Medium\P0516_LongestPalindromicSubsequence.cs" />
     <Compile Include="Problems\Medium\P0518_CoinChange2.cs" />
+    <Compile Include="Problems\Medium\P5405_CountTripletsThatCanFormTwoArraysOfEqualXor.cs" />
     <Compile Include="Problems\Medium\P0542_01Matrix.cs" />
     <Compile Include="Problems\Medium\P0695_MaxAreaOfIsland.cs" />
     <Compile Include="Problems\Medium\P0714_BestTimeToBuyAndSellStockWithTransactionFee.cs" />
