@@ -252,6 +252,7 @@
     <Compile Include="Problems\Easy\P0784_LetterCasePermutation.cs" />
     <Compile Include="Problems\Easy\P0788_RotatedDigits.cs" />
     <Compile Include="Problems\Easy\P0796_RotateString.cs" />
+    <Compile Include="Problems\Easy\MST0801.cs" />
     <Compile Include="Problems\Easy\P0804_UniqueMorseCodeWords.cs" />
     <Compile Include="Problems\Easy\P0806_NumberOfLinesToWriteString.cs" />
     <Compile Include="Problems\Easy\P0811_SubdomainVisitCount.cs" />
