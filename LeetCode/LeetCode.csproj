@@ -74,6 +74,7 @@
     <Compile Include="Problems\Easy\MST0507.cs" />
     <Compile Include="Problems\Easy\MST0803.cs" />
     <Compile Include="Problems\Easy\MST0806.cs" />
+    <Compile Include="Problems\Easy\MST0810.cs" />
     <Compile Include="Problems\Easy\P0746_MinCostClimbingStairsComments.cs" />
     <Compile Include="Problems\Easy\P0606_ConstructStringFromBinaryTree.cs" />
     <Compile Include="Problems\Easy\P0617_MergeTwoBinaryTrees.cs" />
