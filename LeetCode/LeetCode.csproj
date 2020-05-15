@@ -367,6 +367,7 @@
     <Compile Include="Problems\Easy\P5328_TheKWeakestRowsInAMatrix.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
     <Compile Include="Problems\Hard\MST0812.cs" />
+    <Compile Include="Problems\Hard\MST0813.cs" />
     <Compile Include="Problems\Hard\P0010_RegularExpressionMatching.cs" />
     <Compile Include="Problems\Hard\P0037_SudokuSolver.cs" />
     <Compile Include="Problems\Hard\P0042_TrappingRainWater.cs" />
