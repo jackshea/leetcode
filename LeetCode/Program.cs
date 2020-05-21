@@ -15,15 +15,11 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            PriorityQueue<int> pq = new PriorityQueue<int>();
-            pq.Push(1);
-            pq.Push(3);
-            pq.Push(2);
-            pq.Push(1);
-
-            while (pq.Count != 0)
+            var test = new MST1622();
+            var ans = test.PrintKMoves(100000);
+            foreach (var row in ans)
             {
-                Console.Write(pq.Pop() + " ");
+                Console.WriteLine(row);
             }
 
             Console.ReadLine();
