@@ -428,6 +428,7 @@
     <Compile Include="Problems\Medium\MST1620.cs" />
     <Compile Include="Problems\Medium\MST1621.cs" />
     <Compile Include="Problems\Medium\MST1622.cs" />
+    <Compile Include="Problems\Medium\MST1624.cs" />
     <Compile Include="Problems\Medium\MST1716_TheMasseuselcci.cs" />
     <Compile Include="Problems\Medium\MST40_LCOF.cs" />
     <Compile Include="Problems\Easy\MST62.cs" />
