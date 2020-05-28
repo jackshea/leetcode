@@ -114,6 +114,7 @@
     <Compile Include="Problems\Medium\P0224_BasicCalculatorTests.cs" />
     <Compile Include="Problems\Medium\P0264_UglyNumberIITests.cs" />
     <Compile Include="Problems\Medium\P0322_CoinChangeTests.cs" />
+    <Compile Include="Problems\Medium\P0394_DecodeStringTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Common\ConvertArrayToBinaryTreeTests.cs" />
     <Compile Include="Problems\Easy\P0171_ExcelSheetColumnNumberTests.cs" />
