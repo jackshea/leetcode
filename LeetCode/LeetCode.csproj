@@ -373,6 +373,7 @@
     <Compile Include="Problems\Easy\P1323_Maximum69Number.cs" />
     <Compile Include="Problems\Easy\P1331_RankTransformOfAnArray.cs" />
     <Compile Include="Problems\Easy\P1332_RemovePalindromicSubsequences.cs" />
+    <Compile Include="Problems\Easy\P1431_KidsWithTheGreatestNumberOfCandies.cs" />
     <Compile Include="Problems\Easy\P5328_TheKWeakestRowsInAMatrix.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
     <Compile Include="Problems\Hard\MST0812.cs" />
