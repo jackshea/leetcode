@@ -6,33 +6,68 @@
     {
         public int Compress(char[] chars)
         {
-            int charPoint = 0;
-            int count = 1;
-            for (int i = 0; i < chars.Length; i++)
+            if (chars == null || chars.Length == 0)
             {
-                if (chars[i] == chars[i + 1])
+                return 0;
+            }
+
+            if (chars.Length == 1)
+            {
+                return 1;
+            }
+
+            char c = chars[0];
+            int count = 1;
+            int writeIndex = 0;
+            int div = 1000;
+            for (int i = 1; i < chars.Length; i++)
+            {
+                if (c == chars[i])
                 {
                     count++;
                 }
                 else
                 {
-                    chars[charPoint++] = chars[i];
-                    if (count >= 2)
+                    chars[writeIndex++] = c;
+                    if (count > 1)
                     {
-                        var charArray = count.ToString().ToCharArray();
-                        for (var j = 0; j < charArray.Length; j++)
+                        div = 1000;
+                        while (div > count)
                         {
-                            chars[charPoint++] = charArray[j];
+                            div /= 10;
+                        }
+
+                        while (div != 0)
+                        {
+                            chars[writeIndex++] = (char)(count / div + '0');
+                            count %= div;
+                            div /= 10;
                         }
                     }
-                    else
-                    {
-                        count = 1;
-                    }
+
+                    c = chars[i];
+                    count = 1;
                 }
             }
 
-            return charPoint;
+            chars[writeIndex++] = c;
+            if (count > 1)
+            {
+                div = 1000;
+                while (div > count)
+                {
+                    div /= 10;
+                }
+
+                while (div != 0)
+                {
+                    chars[writeIndex++] = (char)(count / div + '0');
+                    count %= div;
+                    div /= 10;
+                }
+            }
+
+            return writeIndex;
         }
     }
 }
