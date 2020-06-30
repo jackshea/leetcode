@@ -337,6 +337,7 @@
     <Compile Include="Problems\Easy\P1030_MatrixCellsInDistanceOrder.cs" />
     <Compile Include="Problems\Easy\P1033_MovingStonesUntilConsecutive.cs" />
     <Compile Include="Problems\Easy\P1037_ValidBoomerang.cs" />
+    <Compile Include="Problems\Easy\P1042_FlowerPlantingWithNoAdjacent.cs" />
     <Compile Include="Problems\Easy\P1046_LastStoneWeight.cs" />
     <Compile Include="Problems\Easy\P1047_RemoveAllAdjacentDuplicatesInString.cs" />
     <Compile Include="Problems\Easy\P1051_HeightChecker.cs" />
