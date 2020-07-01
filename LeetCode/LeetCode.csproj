@@ -382,6 +382,7 @@
     <Compile Include="Problems\Easy\P1342_NumberOfStepsToReduceANumberToZero.cs" />
     <Compile Include="Problems\Easy\P1346_CheckIfNAndItsDoubleExist.cs" />
     <Compile Include="Problems\Easy\P1351_CountNegativeNumbersInASortedMatrix.cs" />
+    <Compile Include="Problems\Easy\P1356_SortIntegersByTheNumberOf1Bits.cs" />
     <Compile Include="Problems\Easy\P1431_KidsWithTheGreatestNumberOfCandies.cs" />
     <Compile Include="Problems\Easy\P5328_TheKWeakestRowsInAMatrix.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
