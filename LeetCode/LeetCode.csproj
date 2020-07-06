@@ -387,6 +387,7 @@
     <Compile Include="Problems\Easy\P1365_HowManyNumbersAreSmallerThanTheCurrentNumber.cs" />
     <Compile Include="Problems\Easy\P1370_IncreasingDecreasingString.cs" />
     <Compile Include="Problems\Easy\P1374_GenerateAStringWithCharactersThatHaveOddCounts.cs" />
+    <Compile Include="Problems\Easy\P1380_LuckyNumbersInAMatrix.cs" />
     <Compile Include="Problems\Easy\P1431_KidsWithTheGreatestNumberOfCandies.cs" />
     <Compile Include="Problems\Easy\P5328_TheKWeakestRowsInAMatrix.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
