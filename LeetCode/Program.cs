@@ -15,13 +15,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new MST1622();
-            var ans = test.PrintKMoves(100000);
-            foreach (var row in ans)
-            {
-                Console.WriteLine(row);
-            }
-
+            var test = new P1399_CountLargestGroup();
+            var ans = test.CountLargestGroup(13);
+            Console.WriteLine(ans);
             Console.ReadLine();
         }
     }
