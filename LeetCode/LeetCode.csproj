@@ -392,6 +392,7 @@
     <Compile Include="Problems\Easy\P1389_CreateTargetArrayInTheGivenOrder.cs" />
     <Compile Include="Problems\Easy\P1394_FindLuckyIntegerInAnArray.cs" />
     <Compile Include="Problems\Easy\P1399_CountLargestGroup.cs" />
+    <Compile Include="Problems\Easy\P1403_MinimumSubsequenceInNonIncreasingOrder.cs" />
     <Compile Include="Problems\Easy\P1431_KidsWithTheGreatestNumberOfCandies.cs" />
     <Compile Include="Problems\Easy\P5328_TheKWeakestRowsInAMatrix.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
