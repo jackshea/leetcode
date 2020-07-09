@@ -15,8 +15,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new P1399_CountLargestGroup();
-            var ans = test.CountLargestGroup(13);
+            var test = new MST1713();
+            var dic = new[] { "looked", "just", "like", "her", "brother" };
+            var ans = test.Respace(dic, "jesslookedjustliketimherbrother");
             Console.WriteLine(ans);
             Console.ReadLine();
         }
