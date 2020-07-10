@@ -48,7 +48,12 @@ namespace LeetCode.Problems.Easy
                 ans.Append(longer[i]);
                 ans.Append(shorter[i]);
             }
-            ans.Append(longer[letters.Count - 1]);
+
+            if (longer.Count > shorter.Count)
+            {
+                ans.Append(longer[longer.Count - 1]);
+            }
+
             return ans.ToString();
         }
     }
