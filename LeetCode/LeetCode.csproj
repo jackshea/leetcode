@@ -395,6 +395,7 @@
     <Compile Include="Problems\Easy\P1403_MinimumSubsequenceInNonIncreasingOrder.cs" />
     <Compile Include="Problems\Easy\P1408_StringMatchingInAnArray.cs" />
     <Compile Include="Problems\Easy\P1413_MinimumValueToGetPositiveStepByStepSum.cs" />
+    <Compile Include="Problems\Easy\P1417_ReformatTheString.cs" />
     <Compile Include="Problems\Easy\P1431_KidsWithTheGreatestNumberOfCandies.cs" />
     <Compile Include="Problems\Easy\P5328_TheKWeakestRowsInAMatrix.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
