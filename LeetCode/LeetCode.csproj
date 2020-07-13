@@ -400,6 +400,7 @@
     <Compile Include="Problems\Easy\P1431_KidsWithTheGreatestNumberOfCandies.cs" />
     <Compile Include="Problems\Easy\P1436_DestinationCity.cs" />
     <Compile Include="Problems\Easy\P1446_ConsecutiveCharacters.cs" />
+    <Compile Include="Problems\Easy\P1450_NumberOfStudentsDoingHomeworkAtAGivenTime.cs" />
     <Compile Include="Problems\Easy\P5328_TheKWeakestRowsInAMatrix.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
     <Compile Include="Problems\Hard\MST0812.cs" />
