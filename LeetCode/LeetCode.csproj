@@ -403,6 +403,7 @@
     <Compile Include="Problems\Easy\P1450_NumberOfStudentsDoingHomeworkAtAGivenTime.cs" />
     <Compile Include="Problems\Easy\P1455_CheckIfAWordOccursAsAPrefixOfAnyWordInASentence.cs" />
     <Compile Include="Problems\Easy\P1460_MakeTwoArraysEqualByReversingSubArrays.cs" />
+    <Compile Include="Problems\Easy\P1464_MaximumProductOfTwoElementsInAnArray.cs" />
     <Compile Include="Problems\Easy\P5328_TheKWeakestRowsInAMatrix.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
     <Compile Include="Problems\Hard\MST0812.cs" />
