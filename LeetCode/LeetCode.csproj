@@ -406,6 +406,7 @@
     <Compile Include="Problems\Easy\P1464_MaximumProductOfTwoElementsInAnArray.cs" />
     <Compile Include="Problems\Easy\P1470_ShuffleTheArray.cs" />
     <Compile Include="Problems\Easy\P1475_FinalPricesWithASpecialDiscountInAShop.cs" />
+    <Compile Include="Problems\Easy\P1480_RunningSumOf1dArray.cs" />
     <Compile Include="Problems\Easy\P5328_TheKWeakestRowsInAMatrix.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
     <Compile Include="Problems\Hard\MST0812.cs" />
