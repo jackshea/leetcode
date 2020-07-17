@@ -409,6 +409,7 @@
     <Compile Include="Problems\Easy\P1480_RunningSumOf1dArray.cs" />
     <Compile Include="Problems\Easy\P1486_XorOperationInAnArray.cs" />
     <Compile Include="Problems\Easy\P1491_AverageSalaryExcludingTheMinimumAndMaximumSalary.cs" />
+    <Compile Include="Problems\Easy\P1496_PathCrossing.cs" />
     <Compile Include="Problems\Easy\P5328_TheKWeakestRowsInAMatrix.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
     <Compile Include="Problems\Hard\MST0812.cs" />
