@@ -15,9 +15,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new MST1713();
-            var dic = new[] { "looked", "just", "like", "her", "brother" };
-            var ans = test.Respace(dic, "jesslookedjustliketimherbrother");
+            var test = new P0097_InterleavingString();
+            var ans = test.IsInterleave("aabcc", "dbbca", "aadbbcbcac");
             Console.WriteLine(ans);
             Console.ReadLine();
         }

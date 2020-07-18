@@ -425,6 +425,7 @@
     <Compile Include="Problems\Hard\P0052_NQueensII.cs" />
     <Compile Include="Problems\Hard\P0072_EditDistance.cs" />
     <Compile Include="Problems\Hard\P0076_MinimumWindowSubstring.cs" />
+    <Compile Include="Problems\Hard\P0097_InterleavingString.cs" />
     <Compile Include="Problems\Hard\P0123_BestTimeToBuyAndSellStockIII.cs" />
     <Compile Include="Problems\Hard\P0174_DungeonGame.cs" />
     <Compile Include="Problems\Hard\P0188_BestTimeToBuyAndSellStockIV.cs" />
