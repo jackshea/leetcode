@@ -53,6 +53,7 @@
     <Compile Include="Common\ListNode.cs" />
     <Compile Include="Common\PriorityQueue.cs" />
     <Compile Include="Common\TreeNode.cs" />
+    <Compile Include="Problems\Easy\LCP06.cs" />
     <Compile Include="Problems\Easy\MST0101.cs" />
     <Compile Include="Problems\Easy\MST0102.cs" />
     <Compile Include="Problems\Easy\MST0103.cs" />
