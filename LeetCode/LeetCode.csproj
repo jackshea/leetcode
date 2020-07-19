@@ -55,6 +55,7 @@
     <Compile Include="Common\TreeNode.cs" />
     <Compile Include="Problems\Easy\LCP06.cs" />
     <Compile Include="Problems\Easy\LCP07.cs" />
+    <Compile Include="Problems\Easy\LCP11.cs" />
     <Compile Include="Problems\Easy\MST0101.cs" />
     <Compile Include="Problems\Easy\MST0102.cs" />
     <Compile Include="Problems\Easy\MST0103.cs" />
