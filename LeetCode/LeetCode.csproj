@@ -417,6 +417,7 @@
     <Compile Include="Problems\Easy\P1502_CanMakeArithmeticProgressionFromSequence.cs" />
     <Compile Include="Problems\Easy\P1507_ReformatDate.cs" />
     <Compile Include="Problems\Easy\P1512_NumberOfGoodPairs.cs" />
+    <Compile Include="Problems\Easy\P1518_WaterBottles.cs" />
     <Compile Include="Problems\Easy\P5328_TheKWeakestRowsInAMatrix.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
     <Compile Include="Problems\Hard\MST0812.cs" />
