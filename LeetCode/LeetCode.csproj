@@ -91,6 +91,7 @@
     <Compile Include="Problems\Easy\Offer06.cs" />
     <Compile Include="Problems\Easy\Offer09.cs" />
     <Compile Include="Problems\Easy\Offer10_1.cs" />
+    <Compile Include="Problems\Easy\Offer10_II.cs" />
     <Compile Include="Problems\Easy\Offer15.cs" />
     <Compile Include="Problems\Easy\P0299_BullsAndCows.cs" />
     <Compile Include="Problems\Easy\P0374_GuessNumberHigherOrLower.cs" />
