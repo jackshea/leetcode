@@ -1,27 +1,19 @@
-﻿using System.Text;
-
-namespace LeetCode.Problems.Easy
+﻿namespace LeetCode.Problems.Easy
 {
-    /// 剑指 Offer 05. 替换空格
-    /// https://leetcode-cn.com/problems/ti-huan-kong-ge-lcof/
+    /// 剑指 Offer 15. 二进制中1的个数
+    /// https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/
     public class Offer15
     {
-        public string ReplaceSpace(string s)
+        public int HammingWeight(uint n)
         {
-            StringBuilder sb = new StringBuilder();
-            foreach (var c in s)
+            int ans = 0;
+            while (n != 0)
             {
-                if (c == ' ')
-                {
-                    sb.Append("%20");
-                }
-                else
-                {
-                    sb.Append(c);
-                }
+                n &= n - 1;
+                ans++;
             }
 
-            return sb.ToString();
+            return ans;
         }
     }
 }
