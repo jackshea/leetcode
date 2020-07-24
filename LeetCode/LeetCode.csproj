@@ -101,6 +101,7 @@
     <Compile Include="Problems\Easy\Offer22.cs" />
     <Compile Include="Problems\Easy\Offer24.cs" />
     <Compile Include="Problems\Easy\Offer25.cs" />
+    <Compile Include="Problems\Easy\Offer27.cs" />
     <Compile Include="Problems\Easy\P0299_BullsAndCows.cs" />
     <Compile Include="Problems\Easy\P0374_GuessNumberHigherOrLower.cs" />
     <Compile Include="Problems\Easy\P0392_IsSubsequence.cs" />
