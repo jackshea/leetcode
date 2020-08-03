@@ -117,6 +117,7 @@
     <Compile Include="Problems\Easy\Offer57_II.cs" />
     <Compile Include="Problems\Easy\Offer58_I.cs" />
     <Compile Include="Problems\Easy\Offer58_II.cs" />
+    <Compile Include="Problems\Easy\Offer59_I.cs" />
     <Compile Include="Problems\Easy\P0299_BullsAndCows.cs" />
     <Compile Include="Problems\Easy\P0374_GuessNumberHigherOrLower.cs" />
     <Compile Include="Problems\Easy\P0392_IsSubsequence.cs" />
