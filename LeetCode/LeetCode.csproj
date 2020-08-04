@@ -449,6 +449,7 @@
     <Compile Include="Problems\Easy\P1507_ReformatDate.cs" />
     <Compile Include="Problems\Easy\P1512_NumberOfGoodPairs.cs" />
     <Compile Include="Problems\Easy\P1518_WaterBottles.cs" />
+    <Compile Include="Problems\Easy\P1534_CountGoodTriplets.cs" />
     <Compile Include="Problems\Easy\P5328_TheKWeakestRowsInAMatrix.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
     <Compile Include="Problems\Easy\P5456_CountOddNumbersInAnIntervalRange.cs" />
