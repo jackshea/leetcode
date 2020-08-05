@@ -81,6 +81,7 @@
     <Compile Include="Problems\Easy\MST1001.cs" />
     <Compile Include="Problems\Easy\MST1005.cs" />
     <Compile Include="Problems\Easy\MST1605.cs" />
+    <Compile Include="Problems\Easy\MST1607.cs" />
     <Compile Include="Problems\Easy\MST1611.cs" />
     <Compile Include="Problems\Easy\MST1615.cs" />
     <Compile Include="Problems\Easy\MST1617.cs" />
