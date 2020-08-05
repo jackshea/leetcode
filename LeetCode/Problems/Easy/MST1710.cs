@@ -45,8 +45,6 @@
             }
 
             return -1;
-
-            return ans;
         }
     }
 }
