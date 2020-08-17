@@ -658,6 +658,7 @@
     <Compile Include="Problems\Medium\P0357_CountNumbersWithUniqueDigits.cs" />
     <Compile Include="Problems\Medium\P0365_WaterAndJugProblem.cs" />
     <Compile Include="Problems\Medium\P0378_KthSmallestElementInASortedMatrix.cs" />
+    <Compile Include="Problems\Medium\P0391_BulbSwitcher.cs" />
     <Compile Include="Problems\Medium\P0394_DecodeString.cs" />
     <Compile Include="Problems\Medium\P0416_PartitionEqualSubsetSum.cs" />
     <Compile Include="Problems\Medium\P0435_NonOverlappingIntervals.cs" />
