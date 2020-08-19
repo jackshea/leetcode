@@ -15,10 +15,15 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new P0097_InterleavingString();
-            var ans = test.IsInterleave("aabcc", "dbbca", "aadbbcbcac");
-            Console.WriteLine(ans);
-            Console.ReadLine();
+            var inputArray = new int[] {1,2,3,4,5};
+            var input = Utils.BuildList(inputArray);
+            var test = new P0328_OddEvenLinkedList();
+            var ans = test.OddEvenList(input);
+            var ansArray = Utils.ListToArray(ans);
+            foreach (var i in ansArray)
+            {
+                Console.Write(i+" ");
+            }
         }
     }
 }
