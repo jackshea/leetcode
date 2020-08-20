@@ -670,6 +670,7 @@
     <Compile Include="Problems\Medium\P0494_TargetSum.cs" />
     <Compile Include="Problems\Medium\P0516_LongestPalindromicSubsequence.cs" />
     <Compile Include="Problems\Medium\P0518_CoinChange2.cs" />
+    <Compile Include="Problems\Medium\P0529_MineSweeper.cs" />
     <Compile Include="Problems\Medium\P0560_SubarraySumEqualsK.cs" />
     <Compile Include="Problems\Medium\P0650_2KeysKeyboard.cs" />
     <Compile Include="Problems\Medium\P0739_DailyTemperatures.cs" />
