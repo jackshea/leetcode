@@ -15,15 +15,16 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var inputArray = new int[] {1,2,3,4,5};
-            var input = Utils.BuildList(inputArray);
-            var test = new P0328_OddEvenLinkedList();
-            var ans = test.OddEvenList(input);
-            var ansArray = Utils.ListToArray(ans);
-            foreach (var i in ansArray)
+            var input = new List<IList<string>>
             {
-                Console.Write(i+" ");
-            }
+                new List<string> {"JFK", "KUL"},
+                new List<string> {"JFK", "NRT"},
+                new List<string> {"NRT", "JFK"}
+            };
+            var test = new P0332_ReconstructItinerary();
+            var ans = test.FindItinerary(input);
+            Console.WriteLine(ans);
+            Console.ReadLine();
         }
     }
 }
