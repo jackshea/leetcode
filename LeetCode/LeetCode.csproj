@@ -655,6 +655,7 @@
     <Compile Include="Problems\Medium\P0328_OddEvenLinkedList.cs" />
     <Compile Include="Problems\Medium\P0331_VerifyPreorderSerializationOfABinaryTree.cs" />
     <Compile Include="Problems\Medium\P0332_ReconstructItinerary.cs" />
+    <Compile Include="Problems\Medium\P0334_IncreasingTripletSubsequence.cs" />
     <Compile Include="Problems\Medium\P0337_HouseRobberIII.cs" />
     <Compile Include="Problems\Medium\P0338_CountingBits.cs" />
     <Compile Include="Problems\Medium\P0343_IntegerBreak.cs" />
