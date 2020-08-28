@@ -660,6 +660,7 @@
     <Compile Include="Problems\Medium\P0338_CountingBits.cs" />
     <Compile Include="Problems\Medium\P0341_FlattenNestedListIterator.cs" />
     <Compile Include="Problems\Medium\P0343_IntegerBreak.cs" />
+    <Compile Include="Problems\Medium\P0347_TopKFrequentElements.cs" />
     <Compile Include="Problems\Medium\P0355_DesignTwitter.cs" />
     <Compile Include="Problems\Medium\P0357_CountNumbersWithUniqueDigits.cs" />
     <Compile Include="Problems\Medium\P0365_WaterAndJugProblem.cs" />
