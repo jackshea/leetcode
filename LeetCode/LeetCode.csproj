@@ -672,6 +672,7 @@
     <Compile Include="Problems\Medium\P0445_AddTwoNumbersII.cs" />
     <Compile Include="Problems\Medium\P0452_MinimumNumberOfArrowsToBurstBalloons.cs" />
     <Compile Include="Problems\Medium\P0474_OnesAndZeroes.cs" />
+    <Compile Include="Problems\Medium\P0486_PredictTheWinner.cs" />
     <Compile Include="Problems\Medium\P0491_IncreasingSubsequences.cs" />
     <Compile Include="Problems\Medium\P0494_TargetSum.cs" />
     <Compile Include="Problems\Medium\P0516_LongestPalindromicSubsequence.cs" />
