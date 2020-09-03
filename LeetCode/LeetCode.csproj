@@ -665,6 +665,7 @@
     <Compile Include="Problems\Medium\P0355_DesignTwitter.cs" />
     <Compile Include="Problems\Medium\P0357_CountNumbersWithUniqueDigits.cs" />
     <Compile Include="Problems\Medium\P0365_WaterAndJugProblem.cs" />
+    <Compile Include="Problems\Medium\P0368_LargestDivisibleSubset.cs" />
     <Compile Include="Problems\Medium\P0378_KthSmallestElementInASortedMatrix.cs" />
     <Compile Include="Problems\Medium\P0391_BulbSwitcher.cs" />
     <Compile Include="Problems\Medium\P0394_DecodeString.cs" />
