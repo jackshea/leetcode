@@ -672,6 +672,7 @@
     <Compile Include="Problems\Medium\P0372_SuperPow.cs" />
     <Compile Include="Problems\Medium\P0373_FindKPairsWithSmallestSums.cs" />
     <Compile Include="Problems\Medium\P0375_GuessNumberHigherOrLowerII.cs" />
+    <Compile Include="Problems\Medium\P0376_WiggleSubsequence.cs" />
     <Compile Include="Problems\Medium\P0378_KthSmallestElementInASortedMatrix.cs" />
     <Compile Include="Problems\Medium\P0391_BulbSwitcher.cs" />
     <Compile Include="Problems\Medium\P0394_DecodeString.cs" />
