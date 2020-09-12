@@ -459,6 +459,7 @@
     <Compile Include="Problems\Easy\P1539_KthMissingPositiveNumber.cs" />
     <Compile Include="Problems\Easy\P1544_MakeTheStringGreat.cs" />
     <Compile Include="Problems\Easy\P1550_ThreeConsecutiveOdds.cs" />
+    <Compile Include="Problems\Easy\P1556_ThousandSeparator.cs" />
     <Compile Include="Problems\Easy\P5328_TheKWeakestRowsInAMatrix.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
     <Compile Include="Problems\Easy\P5456_CountOddNumbersInAnIntervalRange.cs" />
