@@ -679,6 +679,7 @@
     <Compile Include="Problems\Medium\P0378_KthSmallestElementInASortedMatrix.cs" />
     <Compile Include="Problems\Medium\P0380_InsertDeleteGetrandomO1.cs" />
     <Compile Include="Problems\Medium\P0382_LinkedListRandomNode.cs" />
+    <Compile Include="Problems\Medium\P0384_ShuffleAnArray.cs" />
     <Compile Include="Problems\Medium\P0391_BulbSwitcher.cs" />
     <Compile Include="Problems\Medium\P0394_DecodeString.cs" />
     <Compile Include="Problems\Medium\P0416_PartitionEqualSubsetSum.cs" />
