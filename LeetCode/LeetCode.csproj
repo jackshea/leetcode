@@ -461,6 +461,7 @@
     <Compile Include="Problems\Easy\P1550_ThreeConsecutiveOdds.cs" />
     <Compile Include="Problems\Easy\P1556_ThousandSeparator.cs" />
     <Compile Include="Problems\Easy\P1560_MostVisitedSectorInACircularTrack.cs" />
+    <Compile Include="Problems\Easy\P1566_DetectPatternOfLengthMRepeatedKOrMoreTimes.cs" />
     <Compile Include="Problems\Easy\P5328_TheKWeakestRowsInAMatrix.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
     <Compile Include="Problems\Easy\P5456_CountOddNumbersInAnIntervalRange.cs" />
