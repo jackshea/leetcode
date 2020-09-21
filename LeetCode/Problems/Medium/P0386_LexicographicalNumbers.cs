@@ -6,11 +6,12 @@ namespace LeetCode.Problems.Medium
     /// https://leetcode-cn.com/problems/lexicographical-numbers/
     public class P0386_LexicographicalNumbers
     {
-        private List<int> ans = new List<int>();
+        private List<int> ans;
         private int max;
 
         public IList<int> LexicalOrder(int n)
         {
+            ans = new List<int>(n);
             max = n;
             DFS(0);
             return ans;
