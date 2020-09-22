@@ -38,14 +38,14 @@ namespace LeetCode.Problems.Hard
                 return 2;
             }
 
-            // 子节点都可监控，无需加摄像头，但当前结点无法监控
-            if (left == 1 && right == 1)
+            // 子节点中有一个有摄像头，则当前节点可监控
+            if (left == 2 || right == 2)
             {
-                return 0;
+                return 1;
             }
 
-            // 其他情况，即子节点其中一个必有摄像头，当前结点可监控，无需加摄像头。
-            return 1;
+            // 其他情况，子节点都没有摄像头
+            return 0;
         }
     }
 }
