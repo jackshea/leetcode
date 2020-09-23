@@ -15,14 +15,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var input = new List<IList<string>>
-            {
-                new List<string> {"JFK", "KUL"},
-                new List<string> {"JFK", "NRT"},
-                new List<string> {"NRT", "JFK"}
-            };
-            var test = new P0332_ReconstructItinerary();
-            var ans = test.FindItinerary(input);
+            var input = "dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext";
+            var test = new P0388_LongestAbsoluteFilePath();
+            var ans = test.LengthLongestPath(input);
             Console.WriteLine(ans);
             Console.ReadLine();
         }
