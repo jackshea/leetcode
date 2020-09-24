@@ -483,6 +483,7 @@
     <Compile Include="Problems\Hard\P0174_DungeonGame.cs" />
     <Compile Include="Problems\Hard\P0188_BestTimeToBuyAndSellStockIV.cs" />
     <Compile Include="Problems\Hard\P0297_SerializeAndDeserializeBinaryTree.cs" />
+    <Compile Include="Problems\Hard\P0390_EliminationGame.cs" />
     <Compile Include="Problems\Hard\P0685_RedundantConnectionII.cs" />
     <Compile Include="Problems\Hard\P0887_SuperEggDrop.cs" />
     <Compile Include="Problems\Hard\P0968_BinaryTreeCameras.cs" />
