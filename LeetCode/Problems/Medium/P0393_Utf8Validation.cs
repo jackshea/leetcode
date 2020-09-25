@@ -35,7 +35,7 @@
                 while (count > 1)
                 {
                     i++;
-                    if (i >= data.Length || (data[++i] & 0b_1100_0000) != 0b_1000_0000)
+                    if (i >= data.Length || (data[i] & 0b_1100_0000) != 0b_1000_0000)
                     {
                         return false;
                     }
