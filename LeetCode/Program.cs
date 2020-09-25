@@ -15,9 +15,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var input = "dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext";
-            var test = new P0388_LongestAbsoluteFilePath();
-            var ans = test.LengthLongestPath(input);
+            var input = new int[] { 197, 130, 1 };
+            var test = new P0393_Utf8Validation();
+            var ans = test.ValidUtf8(input);
             Console.WriteLine(ans);
             Console.ReadLine();
         }

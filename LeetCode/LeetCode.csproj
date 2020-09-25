@@ -689,6 +689,7 @@
     <Compile Include="Problems\Medium\P0386_LexicographicalNumbers.cs" />
     <Compile Include="Problems\Medium\P0388_LongestAbsoluteFilePath.cs" />
     <Compile Include="Problems\Medium\P0391_BulbSwitcher.cs" />
+    <Compile Include="Problems\Medium\P0393_Utf8Validation.cs" />
     <Compile Include="Problems\Medium\P0394_DecodeString.cs" />
     <Compile Include="Problems\Medium\P0416_PartitionEqualSubsetSum.cs" />
     <Compile Include="Problems\Medium\P0435_NonOverlappingIntervals.cs" />
