@@ -4,56 +4,46 @@
     /// https://leetcode-cn.com/problems/utf-8-validation/
     public class P0393_Utf8Validation
     {
-        private int start = 0;
         public bool ValidUtf8(int[] data)
         {
-            if (start >= data.Length)
+            for (int i = 0; i < data.Length; i++)
             {
-                return true;
-            }
-
-            var first = data[start];
-            int count = 0;
-            if ((first & 0b_1000_0000) == 0)
-            {
-                count = 0;
-            }
-            else if ((first & 0b_1110_0000) == 0b_1100_0000)
-            {
-                count = 2;
-            }
-            else if ((first & 0b_1111_0000) == 0b_1110_0000)
-            {
-                count = 3;
-            }
-            else if ((first & 0b_1111_1000) == 0b_1111_0000)
-            {
-                count = 4;
-            }
-            else
-            {
-                return false;
-            }
-
-            start++;
-            for (int i = 0; i < count - 1; i++)
-            {
-                if (start >= data.Length)
+                int d = data[i];
+                int count = 0;
+                if ((d & 0b_1000_0000) == 0)
                 {
-                    return false;
+                    continue;
                 }
 
-                if ((data[start] & 0b_1100_0000) == 0b_1000_0000)
+                if ((d & 0b_1110_0000) == 0b_1100_0000)
                 {
-                    start++;
+                    count = 2;
+                }
+                else if ((d & 0b_1111_0000) == 0b_1110_0000)
+                {
+                    count = 3;
+                }
+                else if ((d & 0b_1111_1000) == 0b_1111_0000)
+                {
+                    count = 4;
                 }
                 else
                 {
                     return false;
                 }
+
+                while (count > 1)
+                {
+                    i++;
+                    if (i >= data.Length || (data[++i] & 0b_1100_0000) != 0b_1000_0000)
+                    {
+                        return false;
+                    }
+                    count--;
+                }
             }
 
-            return ValidUtf8(data);
+            return true;
         }
     }
 }
