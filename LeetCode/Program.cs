@@ -15,9 +15,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var input = new int[] { 197, 130, 1 };
-            var test = new P0393_Utf8Validation();
-            var ans = test.ValidUtf8(input);
+            var input = "ababbc";
+            var test = new P0395_LongestSubstringWithAtLeastKRepeatingCharacters();
+            var ans = test.LongestSubstring(input, 2);
             Console.WriteLine(ans);
             Console.ReadLine();
         }
