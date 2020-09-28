@@ -16,7 +16,7 @@ namespace LeetCode.Problems.Medium
                 f += i * A[i];
             }
 
-            int ans = 0;
+            int ans = f;
             for (int i = 1; i < A.Length; i++)
             {
                 f += sum - A.Length * A[A.Length - i];
