@@ -692,6 +692,7 @@
     <Compile Include="Problems\Medium\P0393_Utf8Validation.cs" />
     <Compile Include="Problems\Medium\P0394_DecodeString.cs" />
     <Compile Include="Problems\Medium\P0395_LongestSubstringWithAtLeastKRepeatingCharacters.cs" />
+    <Compile Include="Problems\Medium\P0396_RotateFunction.cs" />
     <Compile Include="Problems\Medium\P0416_PartitionEqualSubsetSum.cs" />
     <Compile Include="Problems\Medium\P0435_NonOverlappingIntervals.cs" />
     <Compile Include="Problems\Medium\P0445_AddTwoNumbersII.cs" />
