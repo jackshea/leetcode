@@ -612,6 +612,7 @@
     <Compile Include="Problems\Medium\P0142_LinkedListCycleII.cs" />
     <Compile Include="Problems\Medium\P0143_ReorderList.cs" />
     <Compile Include="Problems\Medium\P0144_BinaryTreePreorderTraversal.cs" />
+    <Compile Include="Problems\Medium\P0145_BinaryTreePostorderTraversal.cs" />
     <Compile Include="Problems\Medium\P0146_LRUCache.cs" />
     <Compile Include="Problems\Medium\P0147_InsertionSortList.cs" />
     <Compile Include="Problems\Medium\P0148_SortList.cs" />
