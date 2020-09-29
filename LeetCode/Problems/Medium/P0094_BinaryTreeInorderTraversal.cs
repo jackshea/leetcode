@@ -37,26 +37,19 @@ namespace LeetCode.Problems.Medium
                 return ans;
             }
             Stack<TreeNode> stack = new Stack<TreeNode>();
-            stack.Push(root);
             TreeNode cur = root;
-
-            while (stack.Count != 0)
+            while (cur != null || stack.Count != 0)
             {
-                while (cur.left != null)
+                if (cur != null)
                 {
-                    stack.Push(cur.left);
+                    stack.Push(cur);
                     cur = cur.left;
                 }
-                while (stack.Count != 0)
+                else
                 {
-                    var node = stack.Pop();
-                    ans.Add(node.val);
-                    if (node.right != null)
-                    {
-                        stack.Push(node.right);
-                        cur = node.right;
-                        break;
-                    }
+                    cur = stack.Pop();
+                    ans.Add(cur.val);
+                    cur = cur.right;
                 }
             }
             return ans;

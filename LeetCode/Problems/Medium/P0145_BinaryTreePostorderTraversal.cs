@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using LeetCode.Common;
 
 namespace LeetCode.Problems.Medium
@@ -8,6 +10,36 @@ namespace LeetCode.Problems.Medium
     public class P0145_BinaryTreePostorderTraversal
     {
         public IList<int> PostorderTraversal(TreeNode root)
+        {
+            IList<int> ans = new List<int>();
+            if (root == null)
+            {
+                return ans;
+            }
+            Stack<TreeNode> stack = new Stack<TreeNode>();
+            stack.Push(root);
+
+            while (stack.Count != 0)
+            {
+                var top = stack.Pop();
+                ans.Add(top.val);
+
+                if (top.left != null)
+                {
+                    stack.Push(top.left);
+                }
+
+                if (top.right != null)
+                {
+                    stack.Push(top.right);
+                }
+            }
+
+            ans = ans.Reverse().ToList();
+            return ans;
+        }
+
+        public IList<int> PostorderTraversal1(TreeNode root)
         {
             IList<int> ans = new List<int>();
             if (root == null)
