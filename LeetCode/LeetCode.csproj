@@ -488,6 +488,7 @@
     <Compile Include="Problems\Hard\P0887_SuperEggDrop.cs" />
     <Compile Include="Problems\Hard\P0968_BinaryTreeCameras.cs" />
     <Compile Include="Problems\Hard\P1028_RecoverATreeFromPreorderTraversal.cs" />
+    <Compile Include="Problems\Medium\LCP19.cs" />
     <Compile Include="Problems\Medium\MST0105.cs" />
     <Compile Include="Problems\Medium\MST0107.cs" />
     <Compile Include="Problems\Medium\MST0108.cs" />
