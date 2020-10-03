@@ -1,4 +1,6 @@
-﻿namespace LeetCode.Problems.Easy
+﻿using System.Collections.Generic;
+
+namespace LeetCode.Problems.Easy
 {
     /// 两数之和
     /// https://leetcode-cn.com/problems/two-sum/description/
@@ -6,18 +8,23 @@
     {
         public int[] TwoSum(int[] nums, int target)
         {
+            Dictionary<int, int> dic = new Dictionary<int, int>();
             for (int i = 0; i < nums.Length; i++)
             {
-                for (int j = i + 1; j < nums.Length; j++)
+                dic[nums[i]] = i;
+            }
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (dic.TryGetValue(target - nums[i], out var index))
                 {
-                    if (nums[i] + nums[j] == target)
+                    if (i != index)
                     {
-                        return new[] { i, j };
+                        return new[] { i, index };
                     }
                 }
             }
-
-            return null;
+            return new int[2];
         }
     }
 }
