@@ -15,9 +15,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var input = "ababbc";
-            var test = new P0395_LongestSubstringWithAtLeastKRepeatingCharacters();
-            var ans = test.LongestSubstring(input, 2);
+            var input = 1000000000;
+            var test = new P0400_NthDigit();
+            var ans = test.FindNthDigit(input);
             Console.WriteLine(ans);
             Console.ReadLine();
         }
