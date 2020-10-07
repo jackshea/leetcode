@@ -4,7 +4,7 @@ namespace LeetCode.Problems.Easy
 {
     /// 方阵中战斗力最弱的 K 行
     /// https://leetcode-cn.com/problems/the-k-weakest-rows-in-a-matrix/
-    public class P5328_TheKWeakestRowsInAMatrix
+    public class P1337_TheKWeakestRowsInAMatrix
     {
         public int[] KWeakestRows(int[][] mat, int k)
         {

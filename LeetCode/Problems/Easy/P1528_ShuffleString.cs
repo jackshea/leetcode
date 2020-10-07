@@ -2,7 +2,7 @@
 {
     /// 重新排列字符串
     /// https://leetcode-cn.com/problems/shuffle-string/
-    public class P5472_ShuffleString
+    public class P1528_ShuffleString
     {
         public string RestoreString(string s, int[] indices)
         {
