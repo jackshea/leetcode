@@ -465,6 +465,7 @@
     <Compile Include="Problems\Easy\P1572_MatrixDiagonalSum.cs" />
     <Compile Include="Problems\Easy\P1576_ReplaceAllSToAvoidConsecutiveRepeatingCharacters.cs" />
     <Compile Include="Problems\Easy\P1337_TheKWeakestRowsInAMatrix.cs" />
+    <Compile Include="Problems\Easy\P1588_SumOfAllOddLengthSubarrays.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
     <Compile Include="Problems\Easy\P5456_CountOddNumbersInAnIntervalRange.cs" />
     <Compile Include="Problems\Easy\P1528_ShuffleString.cs" />
