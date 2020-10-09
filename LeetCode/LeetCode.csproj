@@ -701,6 +701,7 @@
     <Compile Include="Problems\Medium\P0397_IntegerReplacement.cs" />
     <Compile Include="Problems\Medium\P0398_RandomPickIndex.cs" />
     <Compile Include="Problems\Medium\P0400_NthDigit.cs" />
+    <Compile Include="Problems\Medium\P0406_QueueReconstructionByHeight.cs" />
     <Compile Include="Problems\Medium\P0416_PartitionEqualSubsetSum.cs" />
     <Compile Include="Problems\Medium\P0435_NonOverlappingIntervals.cs" />
     <Compile Include="Problems\Medium\P0445_AddTwoNumbersII.cs" />
