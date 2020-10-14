@@ -705,6 +705,7 @@
     <Compile Include="Problems\Medium\P0413_ArithmeticSlices.cs" />
     <Compile Include="Problems\Medium\P0416_PartitionEqualSubsetSum.cs" />
     <Compile Include="Problems\Medium\P0419_BattleshipsInABoard.cs" />
+    <Compile Include="Problems\Medium\P0423_ReconstructOriginalDigitsFromEnglish.cs" />
     <Compile Include="Problems\Medium\P0435_NonOverlappingIntervals.cs" />
     <Compile Include="Problems\Medium\P0445_AddTwoNumbersII.cs" />
     <Compile Include="Problems\Medium\P0452_MinimumNumberOfArrowsToBurstBalloons.cs" />
