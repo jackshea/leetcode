@@ -467,6 +467,7 @@
     <Compile Include="Problems\Easy\P1337_TheKWeakestRowsInAMatrix.cs" />
     <Compile Include="Problems\Easy\P1588_SumOfAllOddLengthSubarrays.cs" />
     <Compile Include="Problems\Easy\P1614_MaximumNestingDepthOfTheParentheses.cs" />
+    <Compile Include="Problems\Easy\P5122.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
     <Compile Include="Problems\Easy\P5456_CountOddNumbersInAnIntervalRange.cs" />
     <Compile Include="Problems\Easy\P1528_ShuffleString.cs" />
@@ -740,6 +741,7 @@
     <Compile Include="Problems\Medium\P1162_AsFarFromLandAsPossible.cs" />
     <Compile Include="Problems\Medium\P1248_CountNumberOfNiceSubarrays.cs" />
     <Compile Include="Problems\Medium\P5406_MinimumTimeToCollectAllApplesInATree.cs" />
+    <Compile Include="Problems\Medium\P5528.cs" />
     <Compile Include="Problems\P0417_PacificAtlanticWaterFlow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
