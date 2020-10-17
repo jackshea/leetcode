@@ -727,6 +727,7 @@
     <Compile Include="Problems\Medium\P0841_KeysAndRooms.cs" />
     <Compile Include="Problems\Medium\P1014_BestSightseeingPair.cs" />
     <Compile Include="Problems\Medium\P1615_MaximalNetworkRank.cs" />
+    <Compile Include="Problems\Medium\P1616_SplitTwoStringsToMakePalindrome.cs" />
     <Compile Include="Problems\Medium\P5405_CountTripletsThatCanFormTwoArraysOfEqualXor.cs" />
     <Compile Include="Problems\Medium\P0542_01Matrix.cs" />
     <Compile Include="Problems\Medium\P0695_MaxAreaOfIsland.cs" />
