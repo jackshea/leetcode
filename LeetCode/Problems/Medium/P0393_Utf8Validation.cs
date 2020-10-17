@@ -10,20 +10,20 @@
             {
                 int d = data[i];
                 int count = 0;
-                if ((d & 0b_1000_0000) == 0)
+                if ((d & 0b1000_0000) == 0)
                 {
                     continue;
                 }
 
-                if ((d & 0b_1110_0000) == 0b_1100_0000)
+                if ((d & 0b1110_0000) == 0b1100_0000)
                 {
                     count = 2;
                 }
-                else if ((d & 0b_1111_0000) == 0b_1110_0000)
+                else if ((d & 0b1111_0000) == 0b1110_0000)
                 {
                     count = 3;
                 }
-                else if ((d & 0b_1111_1000) == 0b_1111_0000)
+                else if ((d & 0b1111_1000) == 0b1111_0000)
                 {
                     count = 4;
                 }
@@ -35,7 +35,7 @@
                 while (count > 1)
                 {
                     i++;
-                    if (i >= data.Length || (data[i] & 0b_1100_0000) != 0b_1000_0000)
+                    if (i >= data.Length || (data[i] & 0b1100_0000) != 0b1000_0000)
                     {
                         return false;
                     }
