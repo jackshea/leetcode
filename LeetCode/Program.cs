@@ -15,9 +15,10 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var input = 1000000000;
-            var test = new P0400_NthDigit();
-            var ans = test.FindNthDigit(input);
+            var S = "abcd";
+            var T = "bbcd";
+            var test = new P0844_BackspaceStringCompare();
+            var ans = test.BackspaceCompare(S, T);
             Console.WriteLine(ans);
             Console.ReadLine();
         }

@@ -15,7 +15,7 @@ namespace LeetCode.Problems.Easy
                 return false;
             }
 
-            for (int i = 0; i < s.Count; i++)
+            while (s.Count != 0)
             {
                 if (s.Pop() != t.Pop())
                 {
