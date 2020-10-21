@@ -714,6 +714,7 @@
     <Compile Include="Problems\Medium\P0430_FlattenAMultilevelDoublyLinkedList.cs" />
     <Compile Include="Problems\Medium\P0433_MinimumGeneticMutation.cs" />
     <Compile Include="Problems\Medium\P0435_NonOverlappingIntervals.cs" />
+    <Compile Include="Problems\Medium\P0442_FindAllDuplicatesInAnArray.cs" />
     <Compile Include="Problems\Medium\P0445_AddTwoNumbersII.cs" />
     <Compile Include="Problems\Medium\P0452_MinimumNumberOfArrowsToBurstBalloons.cs" />
     <Compile Include="Problems\Medium\P0474_OnesAndZeroes.cs" />
