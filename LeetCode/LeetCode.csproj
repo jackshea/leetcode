@@ -728,6 +728,7 @@
     <Compile Include="Problems\Medium\P0650_2KeysKeyboard.cs" />
     <Compile Include="Problems\Medium\P0701_InsertIntoABinarySearchTree.cs" />
     <Compile Include="Problems\Medium\P0739_DailyTemperatures.cs" />
+    <Compile Include="Problems\Medium\P0763_PartitionLabels.cs" />
     <Compile Include="Problems\Medium\P0785_IsGraphBipartite.cs" />
     <Compile Include="Problems\Medium\P0841_KeysAndRooms.cs" />
     <Compile Include="Problems\Medium\P1014_BestSightseeingPair.cs" />
