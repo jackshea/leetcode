@@ -719,6 +719,7 @@
     <Compile Include="Problems\Medium\P0445_AddTwoNumbersII.cs" />
     <Compile Include="Problems\Medium\P0449_SerializeAndDeserializeBST.cs" />
     <Compile Include="Problems\Medium\P0450_DeleteNodeInABst.cs" />
+    <Compile Include="Problems\Medium\P0451_SortCharactersByFrequency.cs" />
     <Compile Include="Problems\Medium\P0452_MinimumNumberOfArrowsToBurstBalloons.cs" />
     <Compile Include="Problems\Medium\P0474_OnesAndZeroes.cs" />
     <Compile Include="Problems\Medium\P0486_PredictTheWinner.cs" />
