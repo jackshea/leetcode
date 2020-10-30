@@ -15,10 +15,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var S = "abcd";
-            var T = "bbcd";
-            var test = new P0844_BackspaceStringCompare();
-            var ans = test.BackspaceCompare(S, T);
+            var nums = new int[] { 2, 2, 2, 2, 2, 4, 7 };
+            var test = new P0457_CircularArrayLoop();
+            var ans = test.CircularArrayLoop(nums);
             Console.WriteLine(ans);
             Console.ReadLine();
         }
