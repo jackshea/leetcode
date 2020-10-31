@@ -473,6 +473,7 @@
     <Compile Include="Problems\Easy\P5456_CountOddNumbersInAnIntervalRange.cs" />
     <Compile Include="Problems\Easy\P1528_ShuffleString.cs" />
     <Compile Include="Problems\Easy\P1582_SpecialPositionsInABinaryMatrix.cs" />
+    <Compile Include="Problems\Easy\P5539.cs" />
     <Compile Include="Problems\Easy\P5543.cs" />
     <Compile Include="Problems\Easy\P5546.cs" />
     <Compile Include="Problems\Hard\MST0812.cs" />
