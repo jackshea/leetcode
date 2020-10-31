@@ -757,6 +757,7 @@
     <Compile Include="Problems\Medium\P1248_CountNumberOfNiceSubarrays.cs" />
     <Compile Include="Problems\Medium\P5406_MinimumTimeToCollectAllApplesInATree.cs" />
     <Compile Include="Problems\Medium\P5528.cs" />
+    <Compile Include="Problems\Medium\P5540.cs" />
     <Compile Include="Problems\Medium\P5547.cs" />
     <Compile Include="Problems\P0417_PacificAtlanticWaterFlow.cs" />
     <Compile Include="Program.cs" />
