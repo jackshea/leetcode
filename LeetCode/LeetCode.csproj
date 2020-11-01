@@ -760,6 +760,7 @@
     <Compile Include="Problems\Medium\P5528.cs" />
     <Compile Include="Problems\Medium\P5540.cs" />
     <Compile Include="Problems\Medium\P5547.cs" />
+    <Compile Include="Problems\Medium\P5555.cs" />
     <Compile Include="Problems\P0417_PacificAtlanticWaterFlow.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
