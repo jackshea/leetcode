@@ -15,9 +15,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var nums = new int[] { 2, 2, 2, 2, 2, 4, 7 };
-            var test = new P0457_CircularArrayLoop();
-            var ans = test.CircularArrayLoop(nums);
+            var nums = new int[] { 4, 2, 7, 6, 9, 14, 12 };
+            var test = new P5556();
+            var ans = test.FurthestBuilding(nums, 5, 1);
             Console.WriteLine(ans);
             Console.ReadLine();
         }
