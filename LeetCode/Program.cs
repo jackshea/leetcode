@@ -15,9 +15,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var nums = new int[] { 4, 2, 7, 6, 9, 14, 12 };
-            var test = new P5556();
-            var ans = test.FurthestBuilding(nums, 5, 1);
+            //var nums = new int[] { 4, 2, 7, 6, 9, 14, 12 };
+            var test = new P0464_CanIWin();
+            var ans = test.CanIWin(10, 40);
             Console.WriteLine(ans);
             Console.ReadLine();
         }

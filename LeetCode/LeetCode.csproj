@@ -727,6 +727,7 @@
     <Compile Include="Problems\Medium\P0456_132Pattern.cs" />
     <Compile Include="Problems\Medium\P0457_CircularArrayLoop.cs" />
     <Compile Include="Problems\Medium\P0462_MinimumMovesToEqualArrayElementsII.cs" />
+    <Compile Include="Problems\Medium\P0464_CanIWin.cs" />
     <Compile Include="Problems\Medium\P0474_OnesAndZeroes.cs" />
     <Compile Include="Problems\Medium\P0486_PredictTheWinner.cs" />
     <Compile Include="Problems\Medium\P0491_IncreasingSubsequences.cs" />
