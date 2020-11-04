@@ -486,6 +486,7 @@
     <Compile Include="Problems\Hard\P0045_JumpGameII.cs" />
     <Compile Include="Problems\Hard\P0051_NQueens.cs" />
     <Compile Include="Problems\Hard\P0052_NQueensII.cs" />
+    <Compile Include="Problems\Hard\P0057_InsertInterval.cs" />
     <Compile Include="Problems\Hard\P0072_EditDistance.cs" />
     <Compile Include="Problems\Hard\P0076_MinimumWindowSubstring.cs" />
     <Compile Include="Problems\Hard\P0097_InterleavingString.cs" />

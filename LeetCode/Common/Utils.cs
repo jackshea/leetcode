@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace LeetCode.Common
@@ -67,6 +68,52 @@ namespace LeetCode.Common
 
             last.next = listB;
             return listA;
+        }
+
+        /// 从输入字符串中读取int[][]
+        public static int[][] Read2DArray(string input)
+        {
+            if (input.Length <= 2)
+            {
+                return new int[0][];
+            }
+
+            List<List<int>> ans = new List<List<int>>();
+            for (int i = 1; i < input.Length - 1; i++)
+            {
+                List<int> row = new List<int>();
+                int num = 0;
+                while (input[i] != ']')
+                {
+                    if (char.IsDigit(input[i]))
+                    {
+                        num = num * 10 + (input[i] - '0');
+                    }
+                    else if (input[i] == ',')
+                    {
+                        row.Add(num);
+                        num = 0;
+                    }
+
+                    i++;
+                }
+
+                row.Add(num);
+                ans.Add(row);
+
+                while (i < input.Length - 1 && input[i] != ',')
+                {
+                    i++;
+                }
+            }
+
+            int[][] res = new int[ans.Count][];
+            for (int i = 0; i < res.Length; i++)
+            {
+                res[i] = ans[i].ToArray();
+            }
+
+            return res;
         }
     }
 }

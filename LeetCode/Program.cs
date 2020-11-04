@@ -16,8 +16,10 @@ namespace LeetCode
         static void Main(string[] args)
         {
             //var nums = new int[] { 4, 2, 7, 6, 9, 14, 12 };
-            var test = new P0464_CanIWin();
-            var ans = test.CanIWin(10, 40);
+            string inputIntervals = "[[1,2],[3,5],[6,7],[8,10],[12,16]]";
+            int[][] intervals = Utils.Read2DArray(inputIntervals);
+            var test = new P0057_InsertInterval();
+            var ans = test.Insert(intervals, new[] { 4, 8 });
             Console.WriteLine(ans);
             Console.ReadLine();
         }
