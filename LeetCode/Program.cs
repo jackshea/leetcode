@@ -15,11 +15,11 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            //var nums = new int[] { 4, 2, 7, 6, 9, 14, 12 };
-            string inputIntervals = "[[1,2],[3,5],[6,7],[8,10],[12,16]]";
-            int[][] intervals = Utils.Read2DArray(inputIntervals);
-            var test = new P0057_InsertInterval();
-            var ans = test.Insert(intervals, new[] { 4, 8 });
+            var beginWord = "hit";
+            var endWord = "cog";
+            var wordList = new string[] { "hot", "dot", "dog", "lot", "log", "cog" };
+            var test = new P0127_WordLadder();
+            var ans = test.LadderLength(beginWord, endWord, wordList);
             Console.WriteLine(ans);
             Console.ReadLine();
         }

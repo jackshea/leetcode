@@ -4,41 +4,58 @@ namespace LeetCode.Problems.Medium
 {
     /// 单词接龙
     /// https://leetcode-cn.com/problems/word-ladder/
-    /// 超时。。。
     public class P0127_WordLadder
     {
         public int LadderLength(string beginWord, string endWord, IList<string> wordList)
         {
-            HashSet<string> visited = new HashSet<string>();
-            Queue<string> q = new Queue<string>();
-            q.Enqueue(beginWord);
-            visited.Add(beginWord);
-            int len = 1;
-            while (q.Count > 0)
+            var wordSet = new HashSet<string>();
+            foreach (var word in wordList)
             {
-                int count = q.Count;
-                len++;
-                for (int i = 0; i < count; i++)
-                {
-                    var top = q.Dequeue();
-                    foreach (var word in wordList)
-                    {
-                        if (visited.Contains(word))
-                        {
-                            continue;
-                        }
+                wordSet.Add(word);
+            }
 
-                        if (IsNext(top, word))
+            if (!wordSet.Contains(endWord))
+            {
+                return 0;
+            }
+
+            HashSet<string> beginSet = new HashSet<string>() { beginWord };
+            HashSet<string> endSet = new HashSet<string>() { endWord };
+            int step = 0;
+            while (beginSet.Count > 0)
+            {
+                step++;
+                HashSet<string> curSet = new HashSet<string>();
+                foreach (var bg in beginSet)
+                {
+                    wordSet.Remove(bg);
+                    if (endSet.Contains(bg))
+                    {
+                        return step;
+                    }
+                }
+
+                foreach (var bg in beginSet)
+                {
+                    foreach (var word in wordSet)
+                    {
+                        if (IsNext(bg, word))
                         {
-                            if (endWord == word)
-                            {
-                                return len;
-                            }
-                            visited.Add(word);
-                            q.Enqueue(word);
+                            curSet.Add(word);
                         }
                     }
                 }
+
+                if (curSet.Count < endSet.Count)
+                {
+                    beginSet = curSet;
+                }
+                else
+                {
+                    beginSet = endSet;
+                    endSet = curSet;
+                }
+
             }
 
             return 0;
