@@ -15,11 +15,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var beginWord = "hit";
-            var endWord = "cog";
-            var wordList = new string[] { "hot", "dot", "dog", "lot", "log", "cog" };
-            var test = new P0127_WordLadder();
-            var ans = test.LadderLength(beginWord, endWord, wordList);
+            var test = new P0467_UniqueSubstringsInWraparoundString();
+            var ans = test.FindSubstringInWraproundString("zab");
             Console.WriteLine(ans);
             Console.ReadLine();
         }
