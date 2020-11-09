@@ -15,9 +15,10 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new P0467_UniqueSubstringsInWraparoundString();
-            var ans = test.FindSubstringInWraproundString("zab");
-            Console.WriteLine(ans);
+            var input = Utils.Read2DArray("[[1,3],[-2,2]]");
+            var test = new P0973_KClosestPointsToOrigin();
+            var ans = test.KClosest(input, 1);
+            Console.WriteLine(ans.ListToString());
             Console.ReadLine();
         }
     }
