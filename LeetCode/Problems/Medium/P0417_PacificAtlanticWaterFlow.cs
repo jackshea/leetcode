@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems
+namespace LeetCode.Problems.Medium
 {
     /// 太平洋大西洋水流问题
     /// https://leetcode-cn.com/problems/pacific-atlantic-water-flow/

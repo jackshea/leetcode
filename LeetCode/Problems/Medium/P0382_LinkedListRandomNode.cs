@@ -1,5 +1,5 @@
-﻿using LeetCode.Common;
-using System;
+﻿using System;
+using LeetCode.Common;
 
 namespace LeetCode.Problems.Medium.P0382
 {

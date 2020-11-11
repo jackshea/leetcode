@@ -736,6 +736,7 @@
     <Compile Include="Problems\Medium\P0486_PredictTheWinner.cs" />
     <Compile Include="Problems\Medium\P0491_IncreasingSubsequences.cs" />
     <Compile Include="Problems\Medium\P0494_TargetSum.cs" />
+    <Compile Include="Problems\Hard\P0514_FreedomTrail.cs" />
     <Compile Include="Problems\Medium\P0516_LongestPalindromicSubsequence.cs" />
     <Compile Include="Problems\Medium\P0518_CoinChange2.cs" />
     <Compile Include="Problems\Medium\P0529_MineSweeper.cs" />

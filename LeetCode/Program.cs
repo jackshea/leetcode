@@ -15,10 +15,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var input = Utils.Read2DArray("[[1,3],[-2,2]]");
-            var test = new P0973_KClosestPointsToOrigin();
-            var ans = test.KClosest(input, 1);
-            Console.WriteLine(ans.ListToString());
+            var test = new P0514_FreedomTrail();
+            var ans = test.FindRotateSteps("godding", "godding");
+            Console.WriteLine(ans);
             Console.ReadLine();
         }
     }
