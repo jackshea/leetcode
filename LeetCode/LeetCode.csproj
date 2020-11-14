@@ -468,6 +468,7 @@
     <Compile Include="Problems\Easy\P1337_TheKWeakestRowsInAMatrix.cs" />
     <Compile Include="Problems\Easy\P1588_SumOfAllOddLengthSubarrays.cs" />
     <Compile Include="Problems\Easy\P1592_RearrangeSpacesBetweenWords.cs" />
+    <Compile Include="Problems\Easy\P1598_CrawlerLogFolder.cs" />
     <Compile Include="Problems\Easy\P1614_MaximumNestingDepthOfTheParentheses.cs" />
     <Compile Include="Problems\Easy\P5122.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
