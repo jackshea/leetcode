@@ -737,6 +737,7 @@
     <Compile Include="Problems\Medium\P0470_ImplementRand10UsingRand7.cs" />
     <Compile Include="Problems\Medium\P0473_MatchsticksToSquare.cs" />
     <Compile Include="Problems\Medium\P0474_OnesAndZeroes.cs" />
+    <Compile Include="Problems\Medium\P0477_TotalHammingDistance.cs" />
     <Compile Include="Problems\Medium\P0486_PredictTheWinner.cs" />
     <Compile Include="Problems\Medium\P0491_IncreasingSubsequences.cs" />
     <Compile Include="Problems\Medium\P0494_TargetSum.cs" />
