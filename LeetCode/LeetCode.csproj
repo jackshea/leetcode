@@ -470,6 +470,7 @@
     <Compile Include="Problems\Easy\P1592_RearrangeSpacesBetweenWords.cs" />
     <Compile Include="Problems\Easy\P1598_CrawlerLogFolder.cs" />
     <Compile Include="Problems\Easy\P1603_DesignParkingSystem.cs" />
+    <Compile Include="Problems\Easy\P1608_SpecialArrayWithXElementsGreaterThanOrEqualX.cs" />
     <Compile Include="Problems\Easy\P1614_MaximumNestingDepthOfTheParentheses.cs" />
     <Compile Include="Problems\Easy\P5122.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
