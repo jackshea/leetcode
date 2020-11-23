@@ -15,10 +15,10 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new P0514_FreedomTrail();
-            var ans = test.FindRotateSteps("godding", "godding");
+            var test = new P0498_DiagonalTraverse();
+            var input = Utils.Read2DArray("[[1,2],[3,4]]");
+            var ans = test.FindDiagonalOrder(input);
             Console.WriteLine(ans);
-            Console.ReadLine();
         }
     }
 }
