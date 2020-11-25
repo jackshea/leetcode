@@ -750,6 +750,7 @@
     <Compile Include="Problems\Medium\P0497_RandomPointInNonOverlappingRectangles.cs" />
     <Compile Include="Problems\Medium\P0498_DiagonalTraverse.cs" />
     <Compile Include="Problems\Medium\P0503_NextGreaterElementII.cs" />
+    <Compile Include="Problems\Medium\P0508_MostFrequentSubtreeSum.cs" />
     <Compile Include="Problems\Medium\P0516_LongestPalindromicSubsequence.cs" />
     <Compile Include="Problems\Medium\P0518_CoinChange2.cs" />
     <Compile Include="Problems\Medium\P0529_MineSweeper.cs" />
