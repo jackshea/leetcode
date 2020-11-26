@@ -495,6 +495,7 @@
     <Compile Include="Problems\Hard\P0076_MinimumWindowSubstring.cs" />
     <Compile Include="Problems\Hard\P0097_InterleavingString.cs" />
     <Compile Include="Problems\Hard\P0123_BestTimeToBuyAndSellStockIII.cs" />
+    <Compile Include="Problems\Hard\P0164_MaximumGap.cs" />
     <Compile Include="Problems\Hard\P0174_DungeonGame.cs" />
     <Compile Include="Problems\Hard\P0188_BestTimeToBuyAndSellStockIV.cs" />
     <Compile Include="Problems\Hard\P0297_SerializeAndDeserializeBinaryTree.cs" />
