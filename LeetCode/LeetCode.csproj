@@ -130,6 +130,7 @@
     <Compile Include="Problems\Easy\P0392_IsSubsequence.cs" />
     <Compile Include="Problems\Easy\P0436_FindRightInterval.cs" />
     <Compile Include="Problems\Easy\P0501_FindModeInBinarySearchTree.cs" />
+    <Compile Include="Problems\Easy\P0513_FindBottomLeftTreeValue.cs" />
     <Compile Include="Problems\Easy\P0690_EmployeeImportance.cs" />
     <Compile Include="Problems\Easy\P0746_MinCostClimbingStairsComments.cs" />
     <Compile Include="Problems\Easy\P0606_ConstructStringFromBinaryTree.cs" />
