@@ -773,6 +773,7 @@
     <Compile Include="Problems\Medium\P0785_IsGraphBipartite.cs" />
     <Compile Include="Problems\Medium\P0841_KeysAndRooms.cs" />
     <Compile Include="Problems\Medium\P0845_LongestMountainInArray.cs" />
+    <Compile Include="Problems\Medium\P0861_ScoreAfterFlippingMatrix.cs" />
     <Compile Include="Problems\Medium\P0973_KClosestPointsToOrigin.cs" />
     <Compile Include="Problems\Medium\P1014_BestSightseeingPair.cs" />
     <Compile Include="Problems\Medium\P1024_VideoStitching.cs" />
