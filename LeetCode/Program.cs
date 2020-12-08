@@ -15,9 +15,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new P0498_DiagonalTraverse();
-            var input = Utils.Read2DArray("[[1,2],[3,4]]");
-            var ans = test.FindDiagonalOrder(input);
+            var test = new P0842_SplitArrayIntoFibonacciSequence();
+            var ans = test.SplitIntoFibonacci("123456579");
             Console.WriteLine(ans);
         }
     }
