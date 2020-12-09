@@ -15,8 +15,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new P0842_SplitArrayIntoFibonacciSequence();
-            var ans = test.SplitIntoFibonacci("123456579");
+            var test = new P0522_LongestUncommonSubsequenceII();
+            var ans = test.FindLUSlength(new string[] {"a", "b", "c", "d", "e", "f", "a", "b", "c", "d", "e", "f"});
             Console.WriteLine(ans);
         }
     }
