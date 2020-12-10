@@ -762,6 +762,7 @@
     <Compile Include="Problems\Medium\P0518_CoinChange2.cs" />
     <Compile Include="Problems\Medium\P0519_RandomFlipMatrix.cs" />
     <Compile Include="Problems\Medium\P0522_LongestUncommonSubsequenceII.cs" />
+    <Compile Include="Problems\Medium\P0523_ContinuousSubarraySum.cs" />
     <Compile Include="Problems\Medium\P0529_MineSweeper.cs" />
     <Compile Include="Problems\Medium\P0560_SubarraySumEqualsK.cs" />
     <Compile Include="Problems\Medium\P0621_TaskScheduler.cs" />
