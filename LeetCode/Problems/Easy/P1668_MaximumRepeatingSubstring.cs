@@ -8,33 +8,15 @@ namespace LeetCode.Problems.Easy
     {
         public int MaxRepeating(string sequence, string word)
         {
-            int ans = 0;
-            int repeat = 0;
-            int start = 0;
-            while (start <= sequence.Length)
+            int k = 1;
+            string sub = word;
+            while (sequence.Contains(sub))
             {
-                var indexOf = sequence.IndexOf(word, start);
-
-                if (indexOf == start)
-                {
-                    repeat++;
-                }
-                else
-                {
-                    repeat = 1;
-                }
-
-                ans = Math.Max(ans, repeat);
-
-                if (indexOf < 0)
-                {
-                    break;
-                }
-
-                start = indexOf + word.Length;
+                sub += word;
+                k++;
             }
 
-            return ans;
+            return k;
         }
     }
 }
