@@ -8,7 +8,7 @@ namespace LeetCode.Problems.Easy
     {
         public int MaxRepeating(string sequence, string word)
         {
-            int k = 1;
+            int k = 0;
             string sub = word;
             while (sequence.Contains(sub))
             {
