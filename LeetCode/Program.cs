@@ -15,8 +15,9 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            var test = new P0522_LongestUncommonSubsequenceII();
-            var ans = test.FindLUSlength(new string[] {"a", "b", "c", "d", "e", "f", "a", "b", "c", "d", "e", "f"});
+            var test = new P1668_MaximumRepeatingSubstring();
+            //var ans = test.MaxRepeating("aaabaaaabaaabaaaabaaaabaaaabaaaaba", "aaaba");
+            var ans = test.MaxRepeating("ababc", "ba");
             Console.WriteLine(ans);
         }
     }
