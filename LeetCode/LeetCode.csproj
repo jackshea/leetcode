@@ -773,6 +773,7 @@
     <Compile Include="Problems\Medium\P0650_2KeysKeyboard.cs" />
     <Compile Include="Problems\Medium\P0695_SplitArrayIntoConsecutiveSubsequences.cs" />
     <Compile Include="Problems\Medium\P0701_InsertIntoABinarySearchTree.cs" />
+    <Compile Include="Problems\Medium\P0738_MonotoneIncreasingDigits.cs" />
     <Compile Include="Problems\Medium\P0739_DailyTemperatures.cs" />
     <Compile Include="Problems\Medium\P0763_PartitionLabels.cs" />
     <Compile Include="Problems\Medium\P0767_ReorganizeString.cs" />
