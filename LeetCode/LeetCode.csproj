@@ -768,6 +768,7 @@
     <Compile Include="Problems\Medium\P0524_LongestWordInDictionaryThroughDeleting.cs" />
     <Compile Include="Problems\Medium\P0525_ContiguousArray.cs" />
     <Compile Include="Problems\Medium\P0526_BeautifulArrangement.cs" />
+    <Compile Include="Problems\Medium\P0528_RandomPickWithWeight.cs" />
     <Compile Include="Problems\Medium\P0529_MineSweeper.cs" />
     <Compile Include="Problems\Medium\P0560_SubarraySumEqualsK.cs" />
     <Compile Include="Problems\Medium\P0621_TaskScheduler.cs" />
