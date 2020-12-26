@@ -500,6 +500,7 @@
     <Compile Include="Problems\Hard\P0057_InsertInterval.cs" />
     <Compile Include="Problems\Hard\P0072_EditDistance.cs" />
     <Compile Include="Problems\Hard\P0076_MinimumWindowSubstring.cs" />
+    <Compile Include="Problems\Hard\P0085_MaximalRectangle.cs" />
     <Compile Include="Problems\Hard\P0097_InterleavingString.cs" />
     <Compile Include="Problems\Hard\P0123_BestTimeToBuyAndSellStockIII.cs" />
     <Compile Include="Problems\Hard\P0135_Candy.cs" />
