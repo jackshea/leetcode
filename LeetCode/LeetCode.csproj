@@ -782,6 +782,7 @@
     <Compile Include="Problems\Medium\P0540_SingleElementInASortedArray.cs" />
     <Compile Include="Problems\Medium\P0547_FriendCircles.cs" />
     <Compile Include="Problems\Medium\P0553_OptimalDivision.cs" />
+    <Compile Include="Problems\Medium\P0554_BrickWall.cs" />
     <Compile Include="Problems\Medium\P0560_SubarraySumEqualsK.cs" />
     <Compile Include="Problems\Medium\P0621_TaskScheduler.cs" />
     <Compile Include="Problems\Medium\P0649_Dota2Senate.cs" />
