@@ -480,6 +480,7 @@
     <Compile Include="Problems\Easy\P1668_MaximumRepeatingSubstring.cs" />
     <Compile Include="Problems\Easy\P1672_RichestCustomerWealth.cs" />
     <Compile Include="Problems\Easy\P1678_GoalParserInterpretation.cs" />
+    <Compile Include="Problems\Easy\P1684_CountTheNumberOfConsistentStrings.cs" />
     <Compile Include="Problems\Easy\P5122.cs" />
     <Compile Include="Problems\Easy\P5404_BuildAnArrayWithStackOperations.cs" />
     <Compile Include="Problems\Easy\P5456_CountOddNumbersInAnIntervalRange.cs" />
