@@ -729,6 +729,7 @@
     <Compile Include="Problems\Medium\P0396_RotateFunction.cs" />
     <Compile Include="Problems\Medium\P0397_IntegerReplacement.cs" />
     <Compile Include="Problems\Medium\P0398_RandomPickIndex.cs" />
+    <Compile Include="Problems\Medium\P0399_EvaluateDivision.cs" />
     <Compile Include="Problems\Medium\P0400_NthDigit.cs" />
     <Compile Include="Problems\Medium\P0402_RemoveKDigits.cs" />
     <Compile Include="Problems\Medium\P0406_QueueReconstructionByHeight.cs" />
