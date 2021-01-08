@@ -791,6 +791,7 @@
     <Compile Include="Problems\Medium\P0560_SubarraySumEqualsK.cs" />
     <Compile Include="Problems\Medium\P0565_ArrayNesting.cs" />
     <Compile Include="Problems\Medium\P0567_PermutationInString.cs" />
+    <Compile Include="Problems\Medium\P0576_OutOfBoundaryPaths.cs" />
     <Compile Include="Problems\Medium\P0621_TaskScheduler.cs" />
     <Compile Include="Problems\Medium\P0649_Dota2Senate.cs" />
     <Compile Include="Problems\Medium\P0650_2KeysKeyboard.cs" />
