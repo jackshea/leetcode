@@ -2,7 +2,7 @@
 
 namespace LeetCode.Problems.Medium
 {
-    public class P1143_LngestCmmonSubsequence
+    public class P1143_LongestCmmonSubsequence
     {
         /// 最长公共子序列
         /// https://leetcode-cn.com/problems/longest-common-subsequence/
