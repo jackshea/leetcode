@@ -20,7 +20,7 @@ namespace LeetCodeTests.Problems.Easy
                 Assert.IsTrue(test.IsPerfectSquare(sqr), sqr.ToString());
             }
 
-            for (int i = 1; i <= 1000000; i++)
+            for (int i = 1; i <= 1000; i++)
             {
                 Assert.AreEqual(sq.Contains(i), test.IsPerfectSquare(i));
             }
