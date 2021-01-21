@@ -10,19 +10,13 @@ namespace LeetCode.Common
         {
             StringBuilder sb = new StringBuilder();
             sb.Append("[");
-            bool isFirst = true;
             foreach (var element in list)
             {
-                if (!isFirst)
-                {
-                    sb.Append(", ");
-                }
-
-                isFirst = false;
                 sb.Append(element);
+                sb.Append(",");
             }
 
-            sb.Append("]");
+            sb[sb.Length - 1] = ']';
             return sb.ToString();
         }
 
@@ -114,6 +108,19 @@ namespace LeetCode.Common
             }
 
             return res;
+        }
+
+        public static string Write2DArray<T>(IEnumerable<IEnumerable<T>> arrays)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append('[');
+            foreach (var array in arrays)
+            {
+                sb.Append(array.ListToString() + ',');
+            }
+
+            sb[sb.Length - 1] = ']';
+            return sb.ToString();
         }
     }
 }
