@@ -23,6 +23,10 @@ namespace LeetCode.Common
             heap = new T[capacity];
         }
 
+        public PriorityQueue(int capacity, Comparison<T> comparison) : this(capacity, Comparer<T>.Create(comparison))
+        {
+        }
+
         public int Count { get; private set; }
 
         public void Push(T v)
