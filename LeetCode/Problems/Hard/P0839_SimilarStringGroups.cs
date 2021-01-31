@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace LeetCode.Problems.Hard
+﻿namespace LeetCode.Problems.Hard
 {
     /// 相似字符串组
     /// https://leetcode-cn.com/problems/similar-string-groups/
@@ -23,30 +21,23 @@ namespace LeetCode.Problems.Hard
             return uf.SetCount;
         }
 
+        // 因为已经是异位词，相似只要判断不同的字母数量是不是0或2
         private bool IsSimilar(string a, string b)
         {
-            if (a == b)
-            {
-                return true;
-            }
-            List<int> diffIdx = new List<int>();
+            int diffCnt = 0;
             for (int i = 0; i < a.Length; i++)
             {
                 if (a[i] != b[i])
                 {
-                    diffIdx.Add(i);
-                    if (diffIdx.Count > 2)
+                    diffCnt++;
+                    if (diffCnt > 2)
                     {
                         return false;
                     }
                 }
             }
-            if (diffIdx.Count != 2)
-            {
-                return false;
-            }
 
-            return a[diffIdx[0]] == b[diffIdx[1]] && a[diffIdx[1]] == b[diffIdx[0]];
+            return true;
         }
 
         public class FindUnion
