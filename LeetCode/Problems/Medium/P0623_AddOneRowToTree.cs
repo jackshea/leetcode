@@ -60,4 +60,24 @@ namespace LeetCode.Problems.Medium
             return root;
         }
     }
+
+    public class P0623_AddOneRowToTree1
+    {
+        public TreeNode AddOneRow(TreeNode root, int v, int d)
+        {
+            if (d == 0 || d == 1)
+            {
+                TreeNode t = new TreeNode(v);
+                if (d == 1) t.left = root;
+                else t.right = root;
+                return t;
+            }
+            if (root != null && d > 1)
+            {
+                root.left = AddOneRow(root.left, v, d > 2 ? d - 1 : 1);
+                root.right = AddOneRow(root.right, v, d > 2 ? d - 1 : 0);
+            }
+            return root;
+        }
+    }
 }
