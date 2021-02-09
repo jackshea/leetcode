@@ -53,4 +53,41 @@ namespace LeetCode.Problems.Medium
                 || array[idx - 1] > array[idx] && array[idx] < array[idx + 1];
         }
     }
+
+    // DP解法
+    public class P0978_LongestTurbulentSubarray1
+    {
+        public int MaxTurbulenceSize(int[] arr)
+        {
+            if (arr.Length < 2)
+            {
+                return arr.Length;
+            }
+
+            int ans = 1;
+            int increase = 1, decrease = 1;
+            for (int i = 1; i < arr.Length; i++)
+            {
+                if (arr[i - 1] < arr[i])
+                {
+                    increase = decrease + 1;
+                    decrease = 1;
+                    ans = Math.Max(ans, increase);
+                }
+                else if (arr[i - 1] > arr[i])
+                {
+                    decrease = increase + 1;
+                    increase = 1;
+                    ans = Math.Max(ans, decrease);
+                }
+                else
+                {
+                    increase = 1;
+                    decrease = 1;
+                }
+            }
+
+            return ans;
+        }
+    }
 }
