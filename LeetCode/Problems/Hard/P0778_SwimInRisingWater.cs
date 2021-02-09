@@ -5,6 +5,7 @@ namespace LeetCode.Problems.Hard
 {
     /// 水位上升的泳池中游泳
     /// https://leetcode-cn.com/problems/swim-in-rising-water/
+    /// 使用 Dijkstra 算法
     public class P0778_SwimInRisingWater
     {
         private int[][] direction = { new[] { -1, 0 }, new[] { 1, 0 }, new[] { 0, -1 }, new[] { 0, 1 } };
@@ -120,6 +121,78 @@ namespace LeetCode.Problems.Hard
                 }
 
                 heap[n] = v;
+            }
+        }
+    }
+
+    /// 使用 并查集
+    public class P0778_SwimInRisingWater1
+    {
+        private int[][] directions = { new[] { -1, 0 }, new[] { 1, 0 }, new[] { 0, -1 }, new[] { 0, 1 } };
+
+        public int SwimInWater(int[][] grid)
+        {
+            var n = grid.Length;
+            int[] index = new int[n * n];
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n; j++)
+                {
+                    index[grid[i][j]] = i * n + j;
+                }
+            }
+
+            var uf = new UnionFind(n * n);
+            for (int i = 0; i < index.Length; i++)
+            {
+                int x = index[i] / n;
+                int y = index[i] % n;
+                foreach (var d in directions)
+                {
+                    int nx = x + d[0];
+                    int ny = y + d[1];
+
+                    if (nx >= 0 && nx < n && ny >= 0 && ny < n && grid[nx][ny] <= grid[x][y])
+                    {
+                        int nIdx = nx * n + ny;
+                        uf.Union(index[i], nIdx);
+                        if (uf.Find(0) == uf.Find(n * n - 1))
+                        {
+                            return i;
+                        }
+                    }
+                }
+            }
+
+            return -1;
+        }
+
+        public class UnionFind
+        {
+            private int[] ancestor;
+
+            public UnionFind(int n)
+            {
+                ancestor = new int[n];
+                for (int i = 0; i < n; i++)
+                {
+                    ancestor[i] = i;
+                }
+            }
+
+            public int Find(int x)
+            {
+                if (ancestor[x] != x)
+                {
+                    ancestor[x] = Find(ancestor[x]);
+                }
+
+                return ancestor[x];
+            }
+
+            public void Union(int a, int b)
+            {
+                ancestor[Find(a)] = Find(b);
             }
         }
     }
