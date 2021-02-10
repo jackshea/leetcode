@@ -16,13 +16,13 @@
                 if (item.Contains('='))
                 {
                     var itemSplit = item.Split('=');
-                    handleItem(itemSplit[0]);
+                    HandleItem(itemSplit[0]);
                     sign = -1;
-                    handleItem(itemSplit[1]);
+                    HandleItem(itemSplit[1]);
                 }
                 else
                 {
-                    handleItem(item);
+                    HandleItem(item);
                 }
             }
 
@@ -39,7 +39,7 @@
             return "x=" + -number / xFactor;
         }
 
-        private void handleItem(string item)
+        private void HandleItem(string item)
         {
             if (string.IsNullOrEmpty(item))
             {
