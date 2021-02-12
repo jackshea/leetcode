@@ -2,6 +2,8 @@
 
 namespace LeetCode.Problems.Medium
 {
+    /// 函数的独占时间
+    /// https://leetcode-cn.com/problems/exclusive-time-of-functions/
     public class P0636_ExclusiveTimeOfFunctions
     {
         public int[] ExclusiveTime(int n, IList<string> logs)
