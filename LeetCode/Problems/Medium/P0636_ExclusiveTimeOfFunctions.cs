@@ -7,21 +7,28 @@ namespace LeetCode.Problems.Medium
         public int[] ExclusiveTime(int n, IList<string> logs)
         {
             int[] spends = new int[n];
-            var preLog = new LogItem(logs[0]);
+            Stack<LogItem> stack = new Stack<LogItem>();
+            stack.Push(new LogItem(logs[0]));
+            int preTime = stack.Peek().Time;
 
             for (int i = 1; i < logs.Count; i++)
             {
                 var logItem = new LogItem(logs[i]);
                 if (logItem.Action == "start")
                 {
-                    spends[preLog.Id] += logItem.Time - preLog.Time - (i == 1 ? 0 : 1);
+                    if (stack.Count != 0)
+                    {
+                        spends[stack.Peek().Id] += logItem.Time - preTime;
+                    }
+                    stack.Push(logItem);
+                    preTime = logItem.Time;
                 }
                 else
                 {
-                    spends[logItem.Id] += logItem.Time - preLog.Time + (preLog.Action == "start" ? 1 : 0);
+                    spends[logItem.Id] += logItem.Time - preTime + 1;
+                    stack.Pop();
+                    preTime = logItem.Time + 1;
                 }
-
-                preLog = logItem;
             }
 
             return spends;
