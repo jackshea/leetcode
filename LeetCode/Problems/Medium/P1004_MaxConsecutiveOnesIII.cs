@@ -32,4 +32,19 @@ namespace LeetCode.Problems.Medium
             return ans;
         }
     }
+
+
+    public class P1004_MaxConsecutiveOnesIII_1
+    {
+        public int LongestOnes(int[] A, int K)
+        {
+            int l = 0, r = 0;
+            while (r < A.Length)
+            {
+                if (A[r++] == 0) K--;
+                if (K < 0 && A[l++] == 0) K++;
+            }
+            return r - l;
+        }
+    }
 }
