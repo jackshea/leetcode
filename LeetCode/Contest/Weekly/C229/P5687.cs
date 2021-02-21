@@ -37,4 +37,37 @@ namespace LeetCode.Contest.Weekly.C229
             return ans;
         }
     }
+
+    public class P5687_1
+    {
+        public int MaximumScore(int[] nums, int[] multipliers)
+        {
+            var n = multipliers.Length;
+            int[][] dp = new int[n + 1][];
+            for (int i = 0; i < dp.Length; i++)
+            {
+                dp[i] = new int[n + 1];
+                Array.Fill(dp[i], int.MinValue / 2);
+            }
+
+            dp[0][0] = 0;
+            for (int i = 0; i < n; i++)
+            {
+                for (int j = 0; j < n - i; j++)
+                {
+                    // dp为左边取i个,右边取j个乘积的最大值
+                    dp[i + 1][j] = Math.Max(dp[i + 1][j], dp[i][j] + nums[i] * multipliers[i + j]);
+                    dp[i][j + 1] = Math.Max(dp[i][j + 1], dp[i][j] + nums[nums.Length - 1 - j] * multipliers[i + j]);
+                }
+            }
+
+            int ans = int.MinValue / 2;
+            for (int i = 0; i <= n; i++)
+            {
+                ans = Math.Max(ans, dp[i][n - i]);
+            }
+
+            return ans;
+        }
+    }
 }
