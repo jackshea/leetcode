@@ -10,30 +10,19 @@
             int ans = 0;
             for (int i = 0; i < n; i++)
             {
-                int left = i, right = i;
-                while (left >= 0 && right < n)
+                for (int j = 0; j < 2; j++)
                 {
-                    if (s[left--] == s[right++])
+                    int left = i, right = i + j;
+                    while (left >= 0 && right < n)
                     {
-                        ans++;
-                    }
-                    else
-                    {
-                        break;
-                    }
-                }
-
-                left = i;
-                right = i + 1;
-                while (left >= 0 && right < n)
-                {
-                    if (s[left--] == s[right++])
-                    {
-                        ans++;
-                    }
-                    else
-                    {
-                        break;
+                        if (s[left--] == s[right++])
+                        {
+                            ans++;
+                        }
+                        else
+                        {
+                            break;
+                        }
                     }
                 }
             }
