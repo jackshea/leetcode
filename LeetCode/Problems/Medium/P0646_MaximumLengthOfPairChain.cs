@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace LeetCode.Problems.Medium.Tests
+namespace LeetCode.Problems.Medium
 {
     /// 最长数对链
     /// https://leetcode-cn.com/problems/maximum-length-of-pair-chain/

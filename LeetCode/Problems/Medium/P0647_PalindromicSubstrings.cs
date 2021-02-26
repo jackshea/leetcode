@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems.Medium.Tests
+﻿namespace LeetCode.Problems.Medium
 {
     /// 回文子串
     /// https://leetcode-cn.com/problems/palindromic-substrings/
