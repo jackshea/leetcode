@@ -7,7 +7,6 @@
         public int IntegerReplacement(int n)
         {
             int ans = 0;
-            int mark = 0;
             while (n > 1)
             {
                 if ((n & 1) == 0)

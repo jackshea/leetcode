@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace LeetCode.Problems.Medium
+﻿namespace LeetCode.Problems.Medium
 {
     /// 下一个更大元素 III
     /// https://leetcode-cn.com/problems/next-greater-element-iii/
@@ -27,17 +25,13 @@ namespace LeetCode.Problems.Medium
             }
             Swap(charArray, findIdx, justGt);
             Reverse(charArray, findIdx + 1, charArray.Length - 1);
-            int ans = 0;
-            try
+
+            if (int.TryParse(new string(charArray), out var ans))
             {
-                ans = int.Parse(new string(charArray));
-            }
-            catch (Exception e)
-            {
-                return -1;
+                return ans;
             }
 
-            return ans;
+            return -1;
         }
 
         private void Swap(char[] charArray, int i, int j)
