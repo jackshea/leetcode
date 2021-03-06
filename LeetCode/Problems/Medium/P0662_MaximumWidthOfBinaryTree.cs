@@ -48,4 +48,33 @@ namespace LeetCode.Problems.Medium
             return ans;
         }
     }
+
+    /// DFS
+    public class P0662_MaximumWidthOfBinaryTree1
+    {
+        private Dictionary<int, int> dep2left = new Dictionary<int, int>();
+        private int ans = 1;
+        public int WidthOfBinaryTree(TreeNode root)
+        {
+            DFS(root, 0, 0);
+            return ans;
+        }
+
+        private void DFS(TreeNode node, int depth, int index)
+        {
+            if (node == null)
+            {
+                return;
+            }
+
+            if (!dep2left.ContainsKey(depth))
+            {
+                dep2left.Add(depth, index);
+            }
+
+            ans = Math.Max(ans, index - dep2left[depth] + 1);
+            DFS(node.left, depth + 1, index * 2);
+            DFS(node.right, depth + 1, index * 2 + 1);
+        }
+    }
 }
