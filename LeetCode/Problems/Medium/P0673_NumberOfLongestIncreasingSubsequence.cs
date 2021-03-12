@@ -18,7 +18,7 @@ namespace LeetCode.Problems.Medium
             int[] counts = new int[n];
             Array.Fill(counts, 1);
 
-            for (int i = 0; i < nums.Length; i++)
+            for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < i; j++)
                 {
@@ -29,7 +29,7 @@ namespace LeetCode.Problems.Medium
                             lens[i] = lens[j] + 1;
                             counts[i] = counts[j];
                         }
-                        else
+                        else if (lens[j] + 1 == lens[i])
                         {
                             counts[i] += counts[j];
                         }
@@ -41,7 +41,7 @@ namespace LeetCode.Problems.Medium
             int ans = 0;
             for (int i = 0; i < n; i++)
             {
-                if (lens[i]==longest)
+                if (lens[i] == longest)
                 {
                     ans += counts[i];
                 }
