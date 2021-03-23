@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 
 namespace LeetCode.Problems.Medium
 {
@@ -7,46 +6,40 @@ namespace LeetCode.Problems.Medium
     /// https://leetcode-cn.com/problems/flatten-nested-list-iterator/
     public class NestedIterator
     {
-        private Stack<NestedInteger> stack = new Stack<NestedInteger>();
+        private List<int> nums = new List<int>();
+        private int idx;
 
         public NestedIterator(IList<NestedInteger> nestedList)
         {
-            for (int i = nestedList.Count - 1; i >= 0; i--)
+            foreach (var nestedInteger in nestedList)
             {
-                stack.Push(nestedList[i]);
+                DFS(nestedInteger);
+            }
+        }
+
+        private void DFS(NestedInteger nestedInteger)
+        {
+            if (nestedInteger.IsInteger())
+            {
+                nums.Add(nestedInteger.GetInteger());
+            }
+            else
+            {
+                foreach (var item in nestedInteger.GetList())
+                {
+                    DFS(item);
+                }
             }
         }
 
         public bool HasNext()
         {
-            if (stack.Count == 0)
-            {
-                return false;
-            }
-
-            var current = stack.Peek();
-            while (!current.IsInteger())
-            {
-                stack.Pop();
-                var list = current.GetList();
-                for (int i = list.Count - 1; i >= 0; i--)
-                {
-                    stack.Push(list[i]);
-                }
-                if (stack.Count == 0)
-                {
-                    return false;
-                }
-
-                current = stack.Peek();
-            }
-
-            return true;
+            return idx < nums.Count;
         }
 
         public int Next()
         {
-            return stack.Pop().GetInteger();
+            return nums[idx++];
         }
     }
 
