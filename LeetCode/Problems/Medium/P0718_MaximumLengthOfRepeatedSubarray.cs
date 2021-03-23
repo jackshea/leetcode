@@ -2,7 +2,7 @@
 {
     /// 最长重复子数组
     /// https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray/
-    public class P0781_MaximumLengthOfRepeatedSubarray
+    public class P0718_MaximumLengthOfRepeatedSubarray
     {
         public int FindLength(int[] A, int[] B)
         {
