@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace LeetCode.Common
 {
-    /// 优先队列。 队首默认是最大值。
+    /// 优先队列。 队首默认是最小值。
     public class PriorityQueue<T>
     {
         private readonly IComparer<T> comparer;
@@ -53,7 +53,7 @@ namespace LeetCode.Common
         private void SiftUp(int n)
         {
             var v = heap[n];
-            for (var n2 = n / 2; n > 0 && comparer.Compare(v, heap[n2]) > 0; n = n2, n2 /= 2) heap[n] = heap[n2];
+            for (var n2 = n / 2; n > 0 && comparer.Compare(v, heap[n2]) < 0; n = n2, n2 /= 2) heap[n] = heap[n2];
             heap[n] = v;
         }
 
@@ -62,8 +62,8 @@ namespace LeetCode.Common
             var v = heap[n];
             for (var n2 = n * 2; n2 < Count; n = n2, n2 *= 2)
             {
-                if (n2 + 1 < Count && comparer.Compare(heap[n2 + 1], heap[n2]) > 0) n2++;
-                if (comparer.Compare(v, heap[n2]) >= 0) break;
+                if (n2 + 1 < Count && comparer.Compare(heap[n2 + 1], heap[n2]) < 0) n2++;
+                if (comparer.Compare(v, heap[n2]) <= 0) break;
                 heap[n] = heap[n2];
             }
 
