@@ -20,9 +20,10 @@ namespace LeetCode.Problems.Medium
             int remain = len % k;
             ListNode[] ans = new ListNode[k];
             cur = root;
+            ListNode head = new ListNode(-1);
             for (int i = 0; i < k; i++)
             {
-                ListNode head = new ListNode(-1);
+                head.next = null;
                 ListNode subCur = head;
                 int extra = i < remain ? 1 : 0;
                 for (int j = 0; j < subLen + extra; j++)
