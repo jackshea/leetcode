@@ -27,7 +27,7 @@ namespace LeetCode.Common.Tests
                 ans[i] = pq.Pop();
             }
 
-            Assert.AreEqual(new int[] { 5, 4, 4, 3, 3, 2, 2, 1, 1 }, ans);
+            CollectionAssert.AreEqual(new int[] { 1, 1, 2, 2, 3, 3, 4, 4, 5 }, ans);
         }
 
         [Test()]
@@ -46,8 +46,7 @@ namespace LeetCode.Common.Tests
                 ans[i] = pq.Pop();
             }
 
-            Assert.AreEqual(new int[] { 1, 1, 2, 2, 3, 3, 4, 4, 5 }, ans);
+            CollectionAssert.AreEqual(new int[] { 5, 4, 4, 3, 3, 2, 2, 1, 1 }, ans);
         }
-
     }
 }
