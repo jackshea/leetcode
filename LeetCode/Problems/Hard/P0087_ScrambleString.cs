@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems.Medium
+namespace LeetCode.Problems.Hard
 {
     /// 扰乱字符串
     /// https://leetcode-cn.com/problems/scramble-string/
