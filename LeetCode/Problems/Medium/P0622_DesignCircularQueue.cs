@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems.Medium.P0622
+﻿namespace LeetCode.Problems.Medium
 {
     /// 设计循环队列
     /// https://leetcode-cn.com/problems/design-circular-queue/

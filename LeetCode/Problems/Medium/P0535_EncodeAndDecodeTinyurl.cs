@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems.Medium.EncodeAndDecodeTinyurl
+namespace LeetCode.Problems.Medium
 {
     /// TinyURL 的加密与解密
     /// https://leetcode-cn.com/problems/encode-and-decode-tinyurl/

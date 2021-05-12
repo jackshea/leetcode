@@ -1,4 +1,4 @@
-﻿namespace LeetCode.Problems.Medium.Tests
+﻿namespace LeetCode.Problems.Medium
 {
     /// 解码异或后的排列
     /// https://leetcode-cn.com/problems/decode-xored-permutation/

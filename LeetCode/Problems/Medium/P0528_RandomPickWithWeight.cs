@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq;
 
-namespace LeetCode.Problems.Medium.P0528
+namespace LeetCode.Problems.Medium
 {
     /// 按权重随机选择
     /// https://leetcode-cn.com/problems/random-pick-with-weight/
