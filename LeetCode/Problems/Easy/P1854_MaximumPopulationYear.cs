@@ -1,0 +1,34 @@
+﻿using System;
+
+namespace LeetCode.Problems.Easy
+{
+    /// 人口最多的年份
+    /// https://leetcode-cn.com/problems/maximum-population-year/
+    public class P1854_MaximumPopulationYear
+    {
+        public int MaximumPopulation(int[][] logs)
+        {
+            int[] pop = new int[101];
+            foreach (var log in logs)
+            {
+                for (int i = log[0] - 1950; i < log[1] - 1950; i++)
+                {
+                    pop[i]++;
+                }
+            }
+
+            int ans = 0;
+            int max = 0;
+            for (int i = 0; i < pop.Length; i++)
+            {
+                if (pop[i] > max)
+                {
+                    max = pop[i];
+                    ans = i;
+                }
+            }
+
+            return ans + 1950;
+        }
+    }
+}
