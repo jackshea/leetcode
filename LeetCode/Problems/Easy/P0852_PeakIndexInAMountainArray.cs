@@ -10,7 +10,7 @@
             while (left < right)
             {
                 int mid = (left + right) / 2;
-                if (A[mid] > A[mid - 1] && A[mid] > A[mid + 1])
+                if ((mid - 1 < 0 || A[mid] > A[mid - 1]) && (mid + 1 >= A.Length || A[mid] > A[mid + 1]))
                 {
                     return mid;
                 }
