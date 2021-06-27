@@ -77,6 +77,7 @@ namespace LeetCode.Common
             {
                 List<int> row = new List<int>();
                 int num = 0;
+                int sign = 1;
                 while (input[i] != ']')
                 {
                     if (char.IsDigit(input[i]))
@@ -85,14 +86,19 @@ namespace LeetCode.Common
                     }
                     else if (input[i] == ',')
                     {
-                        row.Add(num);
+                        row.Add(num * sign);
+                        sign = 1;
                         num = 0;
+                    }
+                    else if (input[i] == '-')
+                    {
+                        sign = -1;
                     }
 
                     i++;
                 }
 
-                row.Add(num);
+                row.Add(num * sign);
                 ans.Add(row);
 
                 while (i < input.Length - 1 && input[i] != ',')
