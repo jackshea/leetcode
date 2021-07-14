@@ -18,6 +18,10 @@ namespace LeetCode.Problems.Medium
             {
                 int diff = Math.Abs(nums1[i] - nums2[i]);
                 sum += diff;
+                if (sum > MOD)
+                {
+                    sum %= MOD;
+                }
                 var idx = Array.BinarySearch(sort, nums2[i]);
                 if (idx < 0)
                 {
@@ -34,7 +38,7 @@ namespace LeetCode.Problems.Medium
                 }
             }
 
-            return (sum - maxDelta) % MOD;
+            return (sum - maxDelta + MOD) % MOD;
         }
     }
 }
