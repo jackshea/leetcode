@@ -19,7 +19,7 @@ namespace LeetCode.Problems.Hard
                     return a.Item1.CompareTo(b.Item1);
                 }
 
-                if (a.Item2!=b.Item2)
+                if (a.Item2 != b.Item2)
                 {
                     return a.Item2.CompareTo(b.Item2);
                 }
@@ -31,14 +31,13 @@ namespace LeetCode.Problems.Hard
             int lastcol = int.MinValue;
             foreach (Tuple<int, int, int> tuple in nodes)
             {
-                int col = tuple.Item1, row = tuple.Item2, value = tuple.Item3;
-                if (col != lastcol)
+                if (tuple.Item1 != lastcol)
                 {
-                    lastcol = col;
+                    lastcol = tuple.Item1;
                     ans.Add(new List<int>());
                     size++;
                 }
-                ans[size - 1].Add(value);
+                ans[size - 1].Add(tuple.Item3);
             }
             return ans;
         }
@@ -49,9 +48,9 @@ namespace LeetCode.Problems.Hard
             {
                 return;
             }
-            nodes.Add(new Tuple<int, int, int>(row, col, node.val));
+            nodes.Add(new Tuple<int, int, int>(col, row, node.val));
             DFS(node.left, row + 1, col - 1);
-            DFS(node.left, row + 1, col + 1);
+            DFS(node.right, row + 1, col + 1);
         }
     }
 }
