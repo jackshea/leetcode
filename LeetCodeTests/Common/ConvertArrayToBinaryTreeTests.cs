@@ -19,7 +19,7 @@ namespace LeetCodeTests.Common
             root.left.left.left = new TreeNode(4);
             root.left.left.right = new TreeNode(4);
 
-            var binaryTree = ConvertArrayToBinaryTree.Build(values);
+            var binaryTree = Utils.BuildBinaryTree(values);
             var isSameTree = new P0100_SameTree().IsSameTree(binaryTree, root);
 
             Assert.IsTrue(isSameTree);

@@ -15,7 +15,7 @@ namespace LeetCode.Problems.Medium.Tests
         [Test()]
         public void PrintTreeTest()
         {
-            var treeNode = ConvertArrayToBinaryTree.Build(new int?[] { 1, 2 });
+            var treeNode = Utils.BuildBinaryTree(new int?[] { 1, 2 });
             var test = new P0655_PrintBinaryTree();
             var printTree = test.PrintTree(treeNode);
             Assert.AreEqual("[[,1,],[2,,]]", Utils.Write2DArray(printTree));

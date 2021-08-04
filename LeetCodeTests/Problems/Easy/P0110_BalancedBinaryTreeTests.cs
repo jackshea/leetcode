@@ -11,7 +11,7 @@ namespace LeetCodeTests.Problems.Easy
         public void IsBalancedTest()
         {
             var values = new int?[] { 1, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 4, 4, null, null, 5, 5 };
-            var root = ConvertArrayToBinaryTree.Build(values);
+            var root = Utils.BuildBinaryTree(values);
 
             Assert.IsTrue(new P0110_BalancedBinaryTree().IsBalanced(root));
         }

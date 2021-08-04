@@ -12,7 +12,7 @@ namespace LeetCodeTests.Problems.Easy
         {
             var values = new int?[] { 1, 2 };
 
-            var root = ConvertArrayToBinaryTree.Build(values);
+            var root = Utils.BuildBinaryTree(values);
 
             Assert.AreEqual(2, new P0111_MinimumDepthOfBinaryTree().MinDepth(root));
         }

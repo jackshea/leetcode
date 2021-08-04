@@ -11,7 +11,7 @@ namespace LeetCodeTests.Problems.Easy
         public void IsUnivalTreeTest()
         {
             var test = new P0965_UnivaluedBinaryTree();
-            var root = ConvertArrayToBinaryTree.Build(new int?[]{9, 9, 6, 9, 9});
+            var root = Utils.BuildBinaryTree(new int?[]{9, 9, 6, 9, 9});
             Assert.IsFalse(test.IsUnivalTree(root));
         }
     }

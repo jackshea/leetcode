@@ -13,7 +13,7 @@ namespace LeetCodeTests.Problems.Easy
             var inputNodes = new int?[] { 1, -2, -3, 1, 3, -2, null, -1 };
             var inputSum = -1;
 
-            var bTree = ConvertArrayToBinaryTree.Build(inputNodes);
+            var bTree = Utils.BuildBinaryTree(inputNodes);
             var expected = 4;
 
             Assert.AreEqual(expected, new P0437_PathSumIII().PathSum(bTree, inputSum));
@@ -25,7 +25,7 @@ namespace LeetCodeTests.Problems.Easy
             var inputNodes = new int?[] { -1 };
             var inputSum = -1;
 
-            var bTree = ConvertArrayToBinaryTree.Build(inputNodes);
+            var bTree = Utils.BuildBinaryTree(inputNodes);
             var expected = 1;
 
             Assert.AreEqual(expected, new P0437_PathSumIII().PathSum(bTree, inputSum));
@@ -37,7 +37,7 @@ namespace LeetCodeTests.Problems.Easy
             var inputNodes = new int?[] { 1, -2, -3 };
             var inputSum = -1;
 
-            var bTree = ConvertArrayToBinaryTree.Build(inputNodes);
+            var bTree = Utils.BuildBinaryTree(inputNodes);
             var expected = 1;
 
             Assert.AreEqual(expected, new P0437_PathSumIII().PathSum(bTree, inputSum));
@@ -49,7 +49,7 @@ namespace LeetCodeTests.Problems.Easy
             var inputNodes = new int?[] { -2, 1, 3 };
             var inputSum = -1;
 
-            var bTree = ConvertArrayToBinaryTree.Build(inputNodes);
+            var bTree = Utils.BuildBinaryTree(inputNodes);
             var expected = 1;
 
             Assert.AreEqual(expected, new P0437_PathSumIII().PathSum(bTree, inputSum));
@@ -150,7 +150,7 @@ namespace LeetCodeTests.Problems.Easy
             };
             var inputSum = 0;
 
-            var bTree = ConvertArrayToBinaryTree.Build(inputNodes);
+            var bTree = Utils.BuildBinaryTree(inputNodes);
             var expected = 66;
 
             Assert.AreEqual(expected, new P0437_PathSumIII().PathSum(bTree, inputSum));

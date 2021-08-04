@@ -12,7 +12,7 @@ namespace LeetCodeTests.Problems.Easy
         {
             var input = new int?[] { 1, 0, 1, 0, 1, 0, 1 };
             var test = new P1022_SumOfRootToLeafBinaryNumbers();
-            Assert.AreEqual(22, test.SumRootToLeaf(ConvertArrayToBinaryTree.Build(input)));
+            Assert.AreEqual(22, test.SumRootToLeaf(Utils.BuildBinaryTree(input)));
         }
     }
 }
