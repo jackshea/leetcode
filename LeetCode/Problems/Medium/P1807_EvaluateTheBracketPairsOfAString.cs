@@ -36,7 +36,7 @@ namespace LeetCode.Problems.Medium
                         sb.Append("?");
                     }
 
-                    word = new StringBuilder();
+                    word.Length = 0;
                 }
                 else
                 {
