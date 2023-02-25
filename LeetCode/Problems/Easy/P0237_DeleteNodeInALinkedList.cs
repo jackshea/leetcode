@@ -1,15 +1,14 @@
 ﻿using LeetCode.Common;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 删除链表中的节点
+/// https://leetcode-cn.com/problems/delete-node-in-a-linked-list/
+public class P0237_DeleteNodeInALinkedList
 {
-    /// 删除链表中的节点
-    /// https://leetcode-cn.com/problems/delete-node-in-a-linked-list/
-    public class P0237_DeleteNodeInALinkedList
+    public void DeleteNode(ListNode node)
     {
-        public void DeleteNode(ListNode node)
-        {
-            node.val = node.next.val;
-            node.next = node.next.next;
-        }
+        node.val = node.next.val;
+        node.next = node.next.next;
     }
 }

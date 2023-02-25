@@ -1,51 +1,50 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 最小栈
+/// https://leetcode-cn.com/problems/min-stack/description/
+public class MinStack
 {
-    /// 最小栈
-    /// https://leetcode-cn.com/problems/min-stack/description/
-    public class MinStack
+    private readonly LinkedList<StackNode> stack;
+
+    public MinStack()
     {
-        private LinkedList<StackNode> stack;
+        stack = new LinkedList<StackNode>();
+    }
 
-        public MinStack()
+    public void Push(int x)
+    {
+        if (stack.Count == 0)
         {
-            stack = new LinkedList<StackNode>();
+            stack.AddLast(new StackNode { Value = x, MinValue = x });
         }
-
-        public void Push(int x)
+        else
         {
-            if (stack.Count == 0)
-            {
-                stack.AddLast(new StackNode { Value = x, MinValue = x });
-            }
-            else
-            {
-                int min = Math.Min(GetMin(), x);
-                stack.AddLast(new StackNode { Value = x, MinValue = min });
-            }
-        }
-
-        public void Pop()
-        {
-            stack.RemoveLast();
-        }
-
-        public int Top()
-        {
-            return stack.Last.Value.Value;
-        }
-
-        public int GetMin()
-        {
-            return stack.Last.Value.MinValue;
+            var min = Math.Min(GetMin(), x);
+            stack.AddLast(new StackNode { Value = x, MinValue = min });
         }
     }
 
-    public struct StackNode
+    public void Pop()
     {
-        public int Value;
-        public int MinValue;
+        stack.RemoveLast();
     }
+
+    public int Top()
+    {
+        return stack.Last.Value.Value;
+    }
+
+    public int GetMin()
+    {
+        return stack.Last.Value.MinValue;
+    }
+}
+
+public struct StackNode
+{
+    public int Value;
+    public int MinValue;
 }

@@ -1,23 +1,19 @@
-﻿namespace LeetCode.Problems.Easy
-{
-    /// 逐步求和得到正数的最小值
-    /// https://leetcode-cn.com/problems/minimum-value-to-get-positive-step-by-step-sum/
-    public class P1413_MinimumValueToGetPositiveStepByStepSum
-    {
-        public int MinStartValue(int[] nums)
-        {
-            int sum = 0;
-            int min = 0;
-            foreach (var num in nums)
-            {
-                sum += num;
-                if (sum < min)
-                {
-                    min = sum;
-                }
-            }
+﻿namespace LeetCode.Problems.Easy;
 
-            return -min + 1;
+/// 逐步求和得到正数的最小值
+/// https://leetcode-cn.com/problems/minimum-value-to-get-positive-step-by-step-sum/
+public class P1413_MinimumValueToGetPositiveStepByStepSum
+{
+    public int MinStartValue(int[] nums)
+    {
+        var sum = 0;
+        var min = 0;
+        foreach (var num in nums)
+        {
+            sum += num;
+            if (sum < min) min = sum;
         }
+
+        return -min + 1;
     }
 }

@@ -1,64 +1,48 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 亲密字符串
+/// https://leetcode-cn.com/problems/buddy-strings/
+public class P0859_BuddyStrings
 {
-    /// 亲密字符串
-    /// https://leetcode-cn.com/problems/buddy-strings/
-    public class P0859_BuddyStrings
+    public bool BuddyStrings(string A, string B)
     {
-        public bool BuddyStrings(string A, string B)
-        {
-            if (A.Length != B.Length)
-            {
-                return false;
-            }
+        if (A.Length != B.Length) return false;
 
-            int? diffIndex = null;
-            bool changed = false;
+        int? diffIndex = null;
+        var changed = false;
 
-            for (int i = 0; i < A.Length; i++)
+        for (var i = 0; i < A.Length; i++)
+            if (A[i] != B[i])
             {
-                if (A[i] != B[i])
+                if (changed) return false;
+
+                if (diffIndex.HasValue)
                 {
-                    if (changed)
-                    {
-                        return false;
-                    }
-
-                    if (diffIndex.HasValue)
-                    {
-                        if (A[i] == B[diffIndex.Value] && A[diffIndex.Value] == B[i])
-                        {
-                            changed = true;
-                        }
-                        else
-                        {
-                            return false;
-                        }
-                    }
+                    if (A[i] == B[diffIndex.Value] && A[diffIndex.Value] == B[i])
+                        changed = true;
                     else
-                    {
-                        diffIndex = i;
-                    }
+                        return false;
                 }
-            }
-
-            // 字符串相等的情况,必须要有重复字符
-            if (!changed)
-            {
-                HashSet<char> charSet = new HashSet<char>();
-                foreach (var c in A)
+                else
                 {
-                    if (charSet.Contains(c))
-                    {
-                        return true;
-                    }
-
-                    charSet.Add(c);
+                    diffIndex = i;
                 }
             }
 
-            return changed;
+        // 字符串相等的情况,必须要有重复字符
+        if (!changed)
+        {
+            var charSet = new HashSet<char>();
+            foreach (var c in A)
+            {
+                if (charSet.Contains(c)) return true;
+
+                charSet.Add(c);
+            }
         }
+
+        return changed;
     }
 }

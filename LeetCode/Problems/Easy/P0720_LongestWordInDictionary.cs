@@ -1,33 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 词典中最长的单词
+/// https://leetcode-cn.com/problems/longest-word-in-dictionary/
+public class P0720_LongestWordInDictionary
 {
-    /// 词典中最长的单词
-    /// https://leetcode-cn.com/problems/longest-word-in-dictionary/
-    public class P0720_LongestWordInDictionary
+    public string LongestWord(string[] words)
     {
-        public string LongestWord(string[] words)
-        {
-            Array.Sort(words);
-            string ans = string.Empty;
-            HashSet<string> set = new HashSet<string>();
-            set.Add(ans);
+        Array.Sort(words);
+        var ans = string.Empty;
+        var set = new HashSet<string>();
+        set.Add(ans);
 
-            foreach (var word in words)
+        foreach (var word in words)
+            if (set.Contains(word.Substring(0, word.Length - 1)))
             {
-                if (set.Contains(word.Substring(0, word.Length - 1)))
-                {
-                    if (word.Length > ans.Length)
-                    {
-                        ans = word;
-                    }
+                if (word.Length > ans.Length) ans = word;
 
-                    set.Add(word);
-                }
+                set.Add(word);
             }
 
-            return ans;
-        }
+        return ans;
     }
 }

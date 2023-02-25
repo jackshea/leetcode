@@ -1,36 +1,25 @@
-﻿namespace LeetCode.Problems.Medium
+﻿namespace LeetCode.Problems.Medium;
+
+/// 搜索二维矩阵 II
+/// https://leetcode-cn.com/problems/search-a-2d-matrix-ii/
+public class P0240_SearchA2dMatrixII
 {
-    /// 搜索二维矩阵 II
-    /// https://leetcode-cn.com/problems/search-a-2d-matrix-ii/
-    public class P0240_SearchA2dMatrixII
+    public bool SearchMatrix(int[,] matrix, int target)
     {
-        public bool SearchMatrix(int[,] matrix, int target)
+        if (matrix == null || matrix.Length == 0) return false;
+
+        var i = matrix.GetLength(0) - 1;
+        var j = 0;
+        while (j < matrix.GetLength(1) && i >= 0)
         {
-            if (matrix == null || matrix.Length == 0)
-            {
-                return false;
-            }
+            if (target == matrix[i, j]) return true;
 
-            int i = matrix.GetLength(0) - 1;
-            int j = 0;
-            while (j < matrix.GetLength(1) && i >= 0)
-            {
-                if (target == matrix[i, j])
-                {
-                    return true;
-                }
-
-                if (target < matrix[i, j])
-                {
-                    i--;
-                }
-                else
-                {
-                    j++;
-                }
-            }
-
-            return false;
+            if (target < matrix[i, j])
+                i--;
+            else
+                j++;
         }
+
+        return false;
     }
 }

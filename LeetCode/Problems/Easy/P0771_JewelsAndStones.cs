@@ -1,29 +1,21 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 宝石与石头
+/// https://leetcode-cn.com/problems/jewels-and-stones/
+public class P0771_JewelsAndStones
 {
-    /// 宝石与石头
-    /// https://leetcode-cn.com/problems/jewels-and-stones/
-    public class P0771_JewelsAndStones
+    public int NumJewelsInStones(string J, string S)
     {
-        public int NumJewelsInStones(string J, string S)
-        {
-            HashSet<char> jewelType = new HashSet<char>();
-            foreach (var type in J)
-            {
-                jewelType.Add(type);
-            }
+        var jewelType = new HashSet<char>();
+        foreach (var type in J) jewelType.Add(type);
 
-            int count = 0;
-            foreach (var stone in S)
-            {
-                if (jewelType.Contains(stone))
-                {
-                    count++;
-                }
-            }
+        var count = 0;
+        foreach (var stone in S)
+            if (jewelType.Contains(stone))
+                count++;
 
-            return count;
-        }
+        return count;
     }
 }

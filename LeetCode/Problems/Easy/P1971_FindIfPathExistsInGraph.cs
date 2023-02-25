@@ -1,47 +1,37 @@
-﻿namespace LeetCode.Problems.Easy
-{
-    /// 寻找图中是否存在路径
-    /// https://leetcode.cn/problems/find-if-path-exists-in-graph/
-    public class P1971_FindIfPathExistsInGraph
-    {
-        public bool ValidPath(int n, int[][] edges, int source, int destination)
-        {
-            var uf = new UnionFind(n);
-            for (int i = 0; i < edges.Length; i++)
-            {
-                uf.Union(edges[i][0],edges[i][1]);
-            }
+﻿namespace LeetCode.Problems.Easy;
 
-            return uf.Find(source) == uf.Find(destination);
+/// 寻找图中是否存在路径
+/// https://leetcode.cn/problems/find-if-path-exists-in-graph/
+public class P1971_FindIfPathExistsInGraph
+{
+    public bool ValidPath(int n, int[][] edges, int source, int destination)
+    {
+        var uf = new UnionFind(n);
+        for (var i = 0; i < edges.Length; i++) uf.Union(edges[i][0], edges[i][1]);
+
+        return uf.Find(source) == uf.Find(destination);
+    }
+
+    private class UnionFind
+    {
+        private readonly int[] ancestor;
+
+        public UnionFind(int n)
+        {
+            ancestor = new int[n];
+            for (var i = 0; i < ancestor.Length; i++) ancestor[i] = i;
         }
 
-        class UnionFind
+        public int Find(int a)
         {
-            private int[] ancestor;
+            if (ancestor[a] != a) ancestor[a] = Find(ancestor[a]);
 
-            public UnionFind(int n)
-            {
-                ancestor = new int[n];
-                for (int i = 0; i < ancestor.Length; i++)
-                {
-                    ancestor[i] = i;
-                }
-            }
+            return ancestor[a];
+        }
 
-            public int Find(int a)
-            {
-                if (ancestor[a] != a)
-                {
-                    ancestor[a] = Find(ancestor[a]);
-                }
-
-                return ancestor[a];
-            }
-
-            public void Union(int a, int b)
-            {
-                ancestor[Find(a)] = Find(b);
-            }
+        public void Union(int a, int b)
+        {
+            ancestor[Find(a)] = Find(b);
         }
     }
 }

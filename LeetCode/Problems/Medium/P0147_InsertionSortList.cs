@@ -1,44 +1,37 @@
 ﻿using LeetCode.Common;
 
-namespace LeetCode.Problems.Medium
+namespace LeetCode.Problems.Medium;
+
+/// 对链表进行插入排序
+/// https://leetcode-cn.com/problems/insertion-sort-list/
+public class P0147_InsertionSortList
 {
-    /// 对链表进行插入排序
-    /// https://leetcode-cn.com/problems/insertion-sort-list/
-    public class P0147_InsertionSortList
+    public ListNode InsertionSortList(ListNode head)
     {
-        public ListNode InsertionSortList(ListNode head)
+        if (head == null || head.next == null) return head;
+
+        var fakeHead = new ListNode(int.MinValue);
+        fakeHead.next = head;
+        var sorted = head;
+        var unsorted = head.next;
+        while (unsorted != null)
         {
-            if (head == null || head.next == null)
+            if (unsorted.val >= sorted.val)
             {
-                return head;
+                sorted = unsorted;
+                unsorted = unsorted.next;
+                continue;
             }
 
-            ListNode fakeHead = new ListNode(int.MinValue);
-            fakeHead.next = head;
-            ListNode sorted = head;
-            ListNode unsorted = head.next;
-            while (unsorted != null)
-            {
-                if (unsorted.val >= sorted.val)
-                {
-                    sorted = unsorted;
-                    unsorted = unsorted.next;
-                    continue;
-                }
+            head = fakeHead;
+            while (head.next.val < unsorted.val) head = head.next;
 
-                head = fakeHead;
-                while (head.next.val < unsorted.val)
-                {
-                    head = head.next;
-                }
-
-                sorted.next = unsorted.next;
-                unsorted.next = head.next;
-                head.next = unsorted;
-                unsorted = sorted.next;
-            }
-
-            return fakeHead.next;
+            sorted.next = unsorted.next;
+            unsorted.next = head.next;
+            head.next = unsorted;
+            unsorted = sorted.next;
         }
+
+        return fakeHead.next;
     }
 }

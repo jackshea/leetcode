@@ -1,56 +1,46 @@
 ﻿using System.Linq;
 
-namespace LeetCode.Problems.Medium
-{
-    /// 在 D 天内送达包裹的能力
-    /// https://leetcode-cn.com/problems/capacity-to-ship-packages-within-d-days/
-    public class P1011_CapacityToShipPackagesWithinDDays
-    {
-        public int ShipWithinDays(int[] weights, int D)
-        {
-            int left = weights.Max();
-            int right = weights.Sum();
-            while (left < right)
-            {
-                int mid = left + (right - left) / 2;
-                int realDays = Days(weights, mid);
-                if (realDays > D)
-                {
-                    left = mid + 1;
-                }
-                else
-                {
-                    right = mid;
-                }
-            }
+namespace LeetCode.Problems.Medium;
 
-            return left;
+/// 在 D 天内送达包裹的能力
+/// https://leetcode-cn.com/problems/capacity-to-ship-packages-within-d-days/
+public class P1011_CapacityToShipPackagesWithinDDays
+{
+    public int ShipWithinDays(int[] weights, int D)
+    {
+        var left = weights.Max();
+        var right = weights.Sum();
+        while (left < right)
+        {
+            var mid = left + (right - left) / 2;
+            var realDays = Days(weights, mid);
+            if (realDays > D)
+                left = mid + 1;
+            else
+                right = mid;
         }
 
-        // 已知载重量，求所需天数
-        public int Days(int[] weights, int cap)
-        {
-            int day = 1;
-            int sum = 0;
-            foreach (var weight in weights)
-            {
-                if (sum + weight <= cap)
-                {
-                    sum += weight;
-                }
-                else
-                {
-                    sum = weight;
-                    day++;
-                }
-            }
+        return left;
+    }
 
-            if (sum > cap)
+    // 已知载重量，求所需天数
+    public int Days(int[] weights, int cap)
+    {
+        var day = 1;
+        var sum = 0;
+        foreach (var weight in weights)
+            if (sum + weight <= cap)
             {
+                sum += weight;
+            }
+            else
+            {
+                sum = weight;
                 day++;
             }
 
-            return day;
-        }
+        if (sum > cap) day++;
+
+        return day;
     }
 }

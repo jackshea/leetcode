@@ -1,57 +1,47 @@
-﻿namespace LeetCode.Problems.Easy
+﻿namespace LeetCode.Problems.Easy;
+
+/// 验证回文串
+/// https://leetcode-cn.com/problems/valid-palindrome/description/
+public class P0125_ValidPalindrome
 {
-    /// 验证回文串
-    /// https://leetcode-cn.com/problems/valid-palindrome/description/
-    public class P0125_ValidPalindrome
+    public bool IsPalindrome(string s)
     {
-        public bool IsPalindrome(string s)
+        var left = 0;
+        var right = s.Length - 1;
+        while (left < right)
         {
-            int left = 0;
-            int right = s.Length - 1;
-            while (left < right)
+            if (!ValidChar(s[left]))
             {
-                if (!ValidChar(s[left]))
-                {
-                    left++;
-                    continue;
-                }
-
-                if (!ValidChar(s[right]))
-                {
-                    right--;
-                    continue;
-                }
-
-                if (!IgnoreCaseCompareChar(s[left], s[right]))
-                {
-                    return false;
-                }
-
                 left++;
+                continue;
+            }
+
+            if (!ValidChar(s[right]))
+            {
                 right--;
+                continue;
             }
 
-            return true;
+            if (!IgnoreCaseCompareChar(s[left], s[right])) return false;
+
+            left++;
+            right--;
         }
 
-        private bool ValidChar(char c)
-        {
-            return c >= '0' && c <= '9' || c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z';
-        }
+        return true;
+    }
 
-        private bool IgnoreCaseCompareChar(char a, char b)
-        {
-            if (a >= 'A' && a <= 'Z')
-            {
-                a = (char)(a + 32);
-            }
+    private bool ValidChar(char c)
+    {
+        return (c >= '0' && c <= '9') || (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
+    }
 
-            if (b >= 'A' && b <= 'Z')
-            {
-                b = (char)(b + 32);
-            }
+    private bool IgnoreCaseCompareChar(char a, char b)
+    {
+        if (a >= 'A' && a <= 'Z') a = (char)(a + 32);
 
-            return a == b;
-        }
+        if (b >= 'A' && b <= 'Z') b = (char)(b + 32);
+
+        return a == b;
     }
 }

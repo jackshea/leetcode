@@ -1,38 +1,37 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 删除最外层的括号
+/// https://leetcode-cn.com/problems/remove-outermost-parentheses/
+public class P1021_RemoveOutermostParentheses
 {
-    /// 删除最外层的括号
-    /// https://leetcode-cn.com/problems/remove-outermost-parentheses/
-    public class P1021_RemoveOutermostParentheses
+    public string RemoveOuterParentheses(string S)
     {
-        public string RemoveOuterParentheses(string S)
+        var ans = new StringBuilder();
+        var stack = new Stack<char>();
+        var last = 0;
+        for (var i = 0; i < S.Length; i++)
         {
-            StringBuilder ans = new StringBuilder();
-            var stack = new Stack<char>();
-            var last = 0;
-            for (var i = 0; i < S.Length; i++)
+            var c = S[i];
+            switch (c)
             {
-                var c = S[i];
-                switch (c)
-                {
-                    case '(':
-                        stack.Push(c);
-                        break;
-                    case ')':
-                        stack.Pop();
-                        if (stack.Count == 0)
-                        {
-                            ans.Append(S.Substring(last + 1, i - last - 1));
-                            last = i + 1;
-                        }
+                case '(':
+                    stack.Push(c);
+                    break;
+                case ')':
+                    stack.Pop();
+                    if (stack.Count == 0)
+                    {
+                        ans.Append(S.Substring(last + 1, i - last - 1));
+                        last = i + 1;
+                    }
 
-                        break;
-                }
+                    break;
             }
-
-            return ans.ToString();
         }
+
+        return ans.ToString();
     }
 }

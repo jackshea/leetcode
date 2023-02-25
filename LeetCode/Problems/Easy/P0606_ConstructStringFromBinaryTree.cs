@@ -1,42 +1,32 @@
-﻿using LeetCode.Common;
-using System.Text;
+﻿using System.Text;
+using LeetCode.Common;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 根据二叉树创建字符串
+/// https://leetcode-cn.com/problems/construct-string-from-binary-tree/
+public class P0606_ConstructStringFromBinaryTree
 {
-    /// 根据二叉树创建字符串
-    /// https://leetcode-cn.com/problems/construct-string-from-binary-tree/
-    public class P0606_ConstructStringFromBinaryTree
+    private readonly StringBuilder result = new();
+
+    public string Tree2str(TreeNode t)
     {
-        private StringBuilder result = new StringBuilder();
+        if (t == null) return "";
+        Traval(t);
+        result.Remove(0, 1);
+        result.Remove(result.Length - 1, 1);
+        return result.ToString();
+    }
 
-        public string Tree2str(TreeNode t)
-        {
-            if (t == null)
-            {
-                return "";
-            }
-            Traval(t);
-            result.Remove(0, 1);
-            result.Remove(result.Length - 1, 1);
-            return result.ToString();
-        }
+    public void Traval(TreeNode node)
+    {
+        if (node == null) return;
 
-        public void Traval(TreeNode node)
-        {
-            if (node == null)
-            {
-                return;
-            }
-
-            result.Append('(');
-            result.Append(node.val);
-            if (node.left == null && node.right != null)
-            {
-                result.Append("()");
-            }
-            Traval(node.left);
-            Traval(node.right);
-            result.Append(')');
-        }
+        result.Append('(');
+        result.Append(node.val);
+        if (node.left == null && node.right != null) result.Append("()");
+        Traval(node.left);
+        Traval(node.right);
+        result.Append(')');
     }
 }

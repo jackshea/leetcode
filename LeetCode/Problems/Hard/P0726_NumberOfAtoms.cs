@@ -2,107 +2,107 @@
 using System.Linq;
 using System.Text;
 
-namespace LeetCode.Problems.Hard
+namespace LeetCode.Problems.Hard;
+
+/// 原子的数量
+/// https://leetcode-cn.com/problems/number-of-atoms/
+public class P0726_NumberOfAtoms
 {
-    /// 原子的数量
-    /// https://leetcode-cn.com/problems/number-of-atoms/
-    public class P0726_NumberOfAtoms
+    private int index;
+
+    public string CountOfAtoms(string formula)
     {
-        private int index = 0;
-        public string CountOfAtoms(string formula)
+        var stack = new Stack<Dictionary<string, int>>();
+        var current = new Dictionary<string, int>();
+
+        while (index < formula.Length)
         {
-            Stack<Dictionary<string, int>> stack = new Stack<Dictionary<string, int>>();
-            Dictionary<string, int> current = new Dictionary<string, int>();
-
-            while (index < formula.Length)
+            var c = formula[index];
+            if (c == '(')
             {
-                var c = formula[index];
-                if (c == '(')
-                {
-                    stack.Push(current);
-                    current = new Dictionary<string, int>();
-                    index++;
-                }
-                else if (c == ')')
-                {
-                    var top = stack.Pop();
-                    index++;
-                    int count = ReadNumber(formula);
-                    var currentKeys = current.Keys.ToList();
-                    foreach (var key in currentKeys)
-                    {
-                        current[key] *= count;
-                        top.TryGetValue(key, out var cnt);
-                        top[key] = current[key] + cnt;
-                    }
-
-                    current = top;
-                }
-                else
-                {
-                    string atom = ReadAtom(formula);
-                    int count = ReadNumber(formula);
-                    current.TryGetValue(atom, out var cnt);
-                    current[atom] = cnt + count;
-                }
+                stack.Push(current);
+                current = new Dictionary<string, int>();
+                index++;
             }
-
-            StringBuilder sb = new StringBuilder();
-            List<string> keys = current.Keys.ToList();
-            keys.Sort();
-            foreach (var key in keys)
+            else if (c == ')')
             {
-                sb.Append(key);
-                sb.Append(current[key] <= 1 ? "" : current[key].ToString());
-            }
+                var top = stack.Pop();
+                index++;
+                var count = ReadNumber(formula);
+                var currentKeys = current.Keys.ToList();
+                foreach (var key in currentKeys)
+                {
+                    current[key] *= count;
+                    top.TryGetValue(key, out var cnt);
+                    top[key] = current[key] + cnt;
+                }
 
-            return sb.ToString();
+                current = top;
+            }
+            else
+            {
+                var atom = ReadAtom(formula);
+                var count = ReadNumber(formula);
+                current.TryGetValue(atom, out var cnt);
+                current[atom] = cnt + count;
+            }
         }
 
-        private string ReadAtom(string formula)
+        var sb = new StringBuilder();
+        var keys = current.Keys.ToList();
+        keys.Sort();
+        foreach (var key in keys)
         {
-            StringBuilder sb = new StringBuilder();
-            while (index < formula.Length)
-            {
-                char c = formula[index];
-                if (c >= 'A' && c <= 'Z' && sb.Length == 0)
-                {
-                    sb.Append(c);
-                    index++;
-                }
-                else if (c >= 'a' && c <= 'z')
-                {
-                    sb.Append(c);
-                    index++;
-                    break;
-                }
-                else
-                {
-                    break;
-                }
-            }
-
-            return sb.ToString();
+            sb.Append(key);
+            sb.Append(current[key] <= 1 ? "" : current[key].ToString());
         }
 
-        private int ReadNumber(string formula)
-        {
-            int num = 0;
-            while (index < formula.Length)
-            {
-                char c = formula[index];
-                if (char.IsDigit(c))
-                {
-                    num = num * 10 + c - '0';
-                    index++;
-                }
-                else
-                {
-                    break;
-                }
-            }
+        return sb.ToString();
+    }
 
-            return num == 0 ? 1 : num;
+    private string ReadAtom(string formula)
+    {
+        var sb = new StringBuilder();
+        while (index < formula.Length)
+        {
+            var c = formula[index];
+            if (c >= 'A' && c <= 'Z' && sb.Length == 0)
+            {
+                sb.Append(c);
+                index++;
+            }
+            else if (c >= 'a' && c <= 'z')
+            {
+                sb.Append(c);
+                index++;
+                break;
+            }
+            else
+            {
+                break;
+            }
         }
+
+        return sb.ToString();
+    }
+
+    private int ReadNumber(string formula)
+    {
+        var num = 0;
+        while (index < formula.Length)
+        {
+            var c = formula[index];
+            if (char.IsDigit(c))
+            {
+                num = num * 10 + c - '0';
+                index++;
+            }
+            else
+            {
+                break;
+            }
+        }
+
+        return num == 0 ? 1 : num;
     }
 }

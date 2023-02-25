@@ -1,53 +1,52 @@
 ﻿using LeetCode.Problems.Easy;
 using NUnit.Framework;
 
-namespace LeetCodeTests.Problems.Easy
+namespace LeetCodeTests.Problems.Easy;
+
+[TestFixture]
+public class P0205_IsomorphicStringsTests
 {
-    [TestFixture()]
-    public class P0205_IsomorphicStringsTests
+    [Test]
+    public void IsIsomorphicTest()
     {
-        [Test()]
-        public void IsIsomorphicTest()
-        {
-            string s = "egg";
-            string t = "add";
+        var s = "egg";
+        var t = "add";
 
-            var isIsomorphic = new P0205_IsomorphicStrings().IsIsomorphic(s, t);
+        var isIsomorphic = new P0205_IsomorphicStrings().IsIsomorphic(s, t);
 
-            Assert.IsTrue(isIsomorphic);
-        }
+        Assert.IsTrue(isIsomorphic);
+    }
 
-        [Test()]
-        public void IsIsomorphicTest_1()
-        {
-            string s = "foo";
-            string t = "bar";
+    [Test]
+    public void IsIsomorphicTest_1()
+    {
+        var s = "foo";
+        var t = "bar";
 
-            var isIsomorphic = new P0205_IsomorphicStrings().IsIsomorphic(s, t);
+        var isIsomorphic = new P0205_IsomorphicStrings().IsIsomorphic(s, t);
 
-            Assert.IsFalse(isIsomorphic);
-        }
+        Assert.IsFalse(isIsomorphic);
+    }
 
-        [Test()]
-        public void IsIsomorphicTest_2()
-        {
-            string s = "paper";
-            string t = "title";
+    [Test]
+    public void IsIsomorphicTest_2()
+    {
+        var s = "paper";
+        var t = "title";
 
-            var isIsomorphic = new P0205_IsomorphicStrings().IsIsomorphic(s, t);
+        var isIsomorphic = new P0205_IsomorphicStrings().IsIsomorphic(s, t);
 
-            Assert.IsTrue(isIsomorphic);
-        }
+        Assert.IsTrue(isIsomorphic);
+    }
 
-        [Test()]
-        public void IsIsomorphicTest_3()
-        {
-            string s = "ab";
-            string t = "aa";
+    [Test]
+    public void IsIsomorphicTest_3()
+    {
+        var s = "ab";
+        var t = "aa";
 
-            var isIsomorphic = new P0205_IsomorphicStrings().IsIsomorphic(s, t);
+        var isIsomorphic = new P0205_IsomorphicStrings().IsIsomorphic(s, t);
 
-            Assert.IsFalse(isIsomorphic);
-        }
+        Assert.IsFalse(isIsomorphic);
     }
 }

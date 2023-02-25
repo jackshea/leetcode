@@ -1,33 +1,31 @@
 ﻿using LeetCode.Common;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 找树左下角的值
+/// https://leetcode-cn.com/problems/find-bottom-left-tree-value/
+public class P0513_FindBottomLeftTreeValue
 {
-    /// 找树左下角的值
-    /// https://leetcode-cn.com/problems/find-bottom-left-tree-value/
-    public class P0513_FindBottomLeftTreeValue
+    private int leftValue;
+    private int maxDepth = -1;
+
+    public int FindBottomLeftValue(TreeNode root)
     {
-        private int leftValue;
-        private int maxDepth = -1;
-        public int FindBottomLeftValue(TreeNode root)
+        DFS(root, 0);
+        return leftValue;
+    }
+
+    private void DFS(TreeNode root, int depth)
+    {
+        if (root == null) return;
+
+        if (maxDepth < depth)
         {
-            DFS(root, 0);
-            return leftValue;
+            leftValue = root.val;
+            maxDepth = depth;
         }
 
-        private void DFS(TreeNode root, int depth)
-        {
-            if (root == null)
-            {
-                return;
-            }
-
-            if (maxDepth < depth)
-            {
-                leftValue = root.val;
-                maxDepth = depth;
-            }
-            DFS(root.left, depth + 1);
-            DFS(root.right, depth + 1);
-        }
+        DFS(root.left, depth + 1);
+        DFS(root.right, depth + 1);
     }
 }

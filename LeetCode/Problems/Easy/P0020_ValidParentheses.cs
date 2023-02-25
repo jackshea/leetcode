@@ -1,44 +1,31 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 有效的括号
+/// https://leetcode-cn.com/problems/valid-parentheses/description/
+public class P0020_ValidParentheses
 {
-    /// 有效的括号
-    /// https://leetcode-cn.com/problems/valid-parentheses/description/
-    public class P0020_ValidParentheses
+    public bool IsValid(string s)
     {
-        public bool IsValid(string s)
+        var stack = new Stack<char>();
+        foreach (var c in s)
         {
-            Stack<char> stack = new Stack<char>();
-            foreach (var c in s)
+            if (c == '(' || c == '[' || c == '{')
             {
-                if (c == '(' || c == '[' || c == '{')
-                {
-                    stack.Push(c);
-                    continue;
-                }
-
-                if (stack.Count == 0)
-                {
-                    return false;
-                }
-
-                if (c == ')' && stack.Pop() != '(')
-                {
-                    return false;
-                }
-
-                if (c == ']' && stack.Pop() != '[')
-                {
-                    return false;
-                }
-
-                if (c == '}' && stack.Pop() != '{')
-                {
-                    return false;
-                }
+                stack.Push(c);
+                continue;
             }
 
-            return stack.Count != 0;
+            if (stack.Count == 0) return false;
+
+            if (c == ')' && stack.Pop() != '(') return false;
+
+            if (c == ']' && stack.Pop() != '[') return false;
+
+            if (c == '}' && stack.Pop() != '{') return false;
         }
+
+        return stack.Count != 0;
     }
 }

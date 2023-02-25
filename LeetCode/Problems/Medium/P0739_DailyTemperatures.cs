@@ -1,35 +1,35 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems.Medium
+namespace LeetCode.Problems.Medium;
+
+/// 每日温度
+/// https://leetcode-cn.com/problems/daily-temperatures/
+public class P0739_DailyTemperatures
 {
-    /// 每日温度
-    /// https://leetcode-cn.com/problems/daily-temperatures/
-    public class P0739_DailyTemperatures
+    public int[] DailyTemperatures(int[] T)
     {
-        public int[] DailyTemperatures(int[] T)
+        var stack = new Stack<int>();
+        var ans = new int[T.Length];
+        for (var i = 0; i < T.Length; i++)
         {
-            Stack<int> stack = new Stack<int>();
-            int[] ans = new int[T.Length];
-            for (int i = 0; i < T.Length; i++)
+            var t = T[i];
+            while (stack.Count != 0)
             {
-                int t = T[i];
-                while (stack.Count != 0)
+                var topIndex = stack.Peek();
+                if (T[topIndex] < t)
                 {
-                    var topIndex = stack.Peek();
-                    if (T[topIndex] < t)
-                    {
-                        stack.Pop();
-                        ans[topIndex] = i - topIndex;
-                    }
-                    else
-                    {
-                        break;
-                    }
+                    stack.Pop();
+                    ans[topIndex] = i - topIndex;
                 }
-                stack.Push(i);
+                else
+                {
+                    break;
+                }
             }
 
-            return ans;
+            stack.Push(i);
         }
+
+        return ans;
     }
 }

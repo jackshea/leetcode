@@ -1,23 +1,16 @@
-﻿namespace LeetCode.Problems.Hard
+﻿namespace LeetCode.Problems.Hard;
+
+/// 黑板异或游戏
+/// https://leetcode-cn.com/problems/chalkboard-xor-game/
+public class P0810_ChalkboardXorGame
 {
-    /// 黑板异或游戏
-    /// https://leetcode-cn.com/problems/chalkboard-xor-game/
-    public class P0810_ChalkboardXorGame
+    public bool XorGame(int[] nums)
     {
-        public bool XorGame(int[] nums)
-        {
-            if (nums.Length%2==0)
-            {
-                return true;
-            }
+        if (nums.Length % 2 == 0) return true;
 
-            int xor = 0;
-            foreach (var num in nums)
-            {
-                xor ^= num;
-            }
+        var xor = 0;
+        foreach (var num in nums) xor ^= num;
 
-            return xor == 0;
-        }
+        return xor == 0;
     }
 }

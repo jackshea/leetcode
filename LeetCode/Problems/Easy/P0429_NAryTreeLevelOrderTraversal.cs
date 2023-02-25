@@ -1,51 +1,48 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems.Easy
-{
-    /// N叉树的层序遍历
-    /// https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/
-    public class P0429_NAryTreeLevelOrderTraversal
-    {
-        public IList<IList<int>> LevelOrder(Node root)
-        {
-            IList<IList<int>> result = new List<IList<int>>();
-            if (root == null)
-                return result;
+namespace LeetCode.Problems.Easy;
 
-            IList<Node> currentDeepNodes = new List<Node> { root };
-            while (currentDeepNodes.Count > 0)
+/// N叉树的层序遍历
+/// https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/
+public class P0429_NAryTreeLevelOrderTraversal
+{
+    public IList<IList<int>> LevelOrder(Node root)
+    {
+        IList<IList<int>> result = new List<IList<int>>();
+        if (root == null)
+            return result;
+
+        IList<Node> currentDeepNodes = new List<Node> { root };
+        while (currentDeepNodes.Count > 0)
+        {
+            IList<int> rowResult = new List<int>();
+            var nextDeepNodes = new List<Node>();
+            foreach (var node in currentDeepNodes)
             {
-                IList<int> rowResult = new List<int>();
-                var nextDeepNodes = new List<Node>();
-                foreach (var node in currentDeepNodes)
-                {
-                    rowResult.Add(node.val);
-                    if (node.children != null && node.children.Count > 0)
-                    {
-                        nextDeepNodes.AddRange(node.children);
-                    }
-                }
-                result.Add(rowResult);
-                currentDeepNodes = nextDeepNodes;
+                rowResult.Add(node.val);
+                if (node.children != null && node.children.Count > 0) nextDeepNodes.AddRange(node.children);
             }
 
-            return result;
+            result.Add(rowResult);
+            currentDeepNodes = nextDeepNodes;
         }
 
-        public class Node
+        return result;
+    }
+
+    public class Node
+    {
+        public IList<Node> children;
+        public int val;
+
+        public Node()
         {
-            public int val;
-            public IList<Node> children;
+        }
 
-            public Node()
-            {
-            }
-
-            public Node(int _val, IList<Node> _children)
-            {
-                val = _val;
-                children = _children;
-            }
+        public Node(int _val, IList<Node> _children)
+        {
+            val = _val;
+            children = _children;
         }
     }
 }

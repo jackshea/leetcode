@@ -1,12 +1,11 @@
-﻿namespace LeetCode.Problems.Easy
+﻿namespace LeetCode.Problems.Easy;
+
+/// 换酒问题
+/// https://leetcode-cn.com/problems/water-bottles/
+public class P1518_WaterBottles
 {
-    /// 换酒问题
-    /// https://leetcode-cn.com/problems/water-bottles/
-    public class P1518_WaterBottles
+    public int NumWaterBottles(int numBottles, int numExchange)
     {
-        public int NumWaterBottles(int numBottles, int numExchange)
-        {
-            return numBottles + (numBottles - 1) / (numExchange - 1);
-        }
+        return numBottles + (numBottles - 1) / (numExchange - 1);
     }
 }

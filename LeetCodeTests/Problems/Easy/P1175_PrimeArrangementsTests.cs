@@ -1,16 +1,15 @@
 ﻿using LeetCode.Problems.Easy;
 using NUnit.Framework;
 
-namespace LeetCodeTests.Problems.Easy
+namespace LeetCodeTests.Problems.Easy;
+
+[TestFixture]
+public class P1175_PrimeArrangementsTests
 {
-    [TestFixture()]
-    public class P1175_PrimeArrangementsTests
+    [Test]
+    public void NumPrimeArrangementsTest()
     {
-        [Test()]
-        public void NumPrimeArrangementsTest()
-        {
-            var test = new P1175_PrimeArrangements();
-            Assert.AreEqual(612735986, test.NumPrimeArrangements(16));
-        }
+        var test = new P1175_PrimeArrangements();
+        Assert.AreEqual(612735986, test.NumPrimeArrangements(16));
     }
 }

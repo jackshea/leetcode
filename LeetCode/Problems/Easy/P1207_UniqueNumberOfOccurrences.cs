@@ -1,38 +1,28 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 独一无二的出现次数
+/// https://leetcode-cn.com/problems/unique-number-of-occurrences/
+public class P1207_UniqueNumberOfOccurrences
 {
-    /// 独一无二的出现次数
-    /// https://leetcode-cn.com/problems/unique-number-of-occurrences/
-    public class P1207_UniqueNumberOfOccurrences
+    public bool UniqueOccurrences(int[] arr)
     {
-        public bool UniqueOccurrences(int[] arr)
+        var numberOfOccurrences = new Dictionary<int, int>();
+        foreach (var n in arr)
+            if (numberOfOccurrences.ContainsKey(n))
+                numberOfOccurrences[n]++;
+            else
+                numberOfOccurrences[n] = 1;
+
+        var exist = new HashSet<int>();
+        foreach (var v in numberOfOccurrences.Values)
         {
-            var numberOfOccurrences = new Dictionary<int, int>();
-            foreach (var n in arr)
-            {
-                if (numberOfOccurrences.ContainsKey(n))
-                {
-                    numberOfOccurrences[n]++;
-                }
-                else
-                {
-                    numberOfOccurrences[n] = 1;
-                }
-            }
+            if (exist.Contains(v)) return false;
 
-            var exist = new HashSet<int>();
-            foreach (var v in numberOfOccurrences.Values)
-            {
-                if (exist.Contains(v))
-                {
-                    return false;
-                }
-
-                exist.Add(v);
-            }
-
-            return true;
+            exist.Add(v);
         }
+
+        return true;
     }
 }

@@ -1,32 +1,27 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems.Medium
+namespace LeetCode.Problems.Medium;
+
+/// 和为K的子数组
+/// https://leetcode-cn.com/problems/subarray-sum-equals-k/
+public class P0560_SubarraySumEqualsK
 {
-    /// 和为K的子数组
-    /// https://leetcode-cn.com/problems/subarray-sum-equals-k/
-    public class P0560_SubarraySumEqualsK
+    public int SubarraySum(int[] nums, int k)
     {
-        public int SubarraySum(int[] nums, int k)
+        var dic = new Dictionary<int, int>();
+        dic.Add(0, 1);
+        int sum = 0, ans = 0;
+        foreach (var num in nums)
         {
-            Dictionary<int, int> dic = new Dictionary<int, int>();
-            dic.Add(0, 1);
-            int sum = 0, ans = 0;
-            foreach (var num in nums)
-            {
-                sum += num;
+            sum += num;
 
-                if (dic.TryGetValue(sum - k, out int sumk))
-                {
-                    ans += sumk;
-                }
+            if (dic.TryGetValue(sum - k, out var sumk)) ans += sumk;
 
-                int pre = 0;
-                dic.TryGetValue(sum, out pre);
-                dic[sum] = 1 + pre;
-
-            }
-
-            return ans;
+            var pre = 0;
+            dic.TryGetValue(sum, out pre);
+            dic[sum] = 1 + pre;
         }
+
+        return ans;
     }
 }

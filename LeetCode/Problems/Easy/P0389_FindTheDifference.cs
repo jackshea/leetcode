@@ -1,24 +1,17 @@
-﻿namespace LeetCode.Problems.Easy
+﻿namespace LeetCode.Problems.Easy;
+
+/// 找不同
+/// https://leetcode-cn.com/problems/find-the-difference/
+public class P0389_FindTheDifference
 {
-    /// 找不同
-    /// https://leetcode-cn.com/problems/find-the-difference/
-    public class P0389_FindTheDifference
+    public char FindTheDifference(string s, string t)
     {
-        public char FindTheDifference(string s, string t)
-        {
-            int sumS = 0;
-            foreach (var c in s)
-            {
-                sumS += c;
-            }
+        var sumS = 0;
+        foreach (var c in s) sumS += c;
 
-            int sumT = 0;
-            foreach (var c in t)
-            {
-                sumT += c;
-            }
+        var sumT = 0;
+        foreach (var c in t) sumT += c;
 
-            return (char) (sumT - sumS);
-        }
+        return (char)(sumT - sumS);
     }
 }

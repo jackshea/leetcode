@@ -1,33 +1,29 @@
 ﻿using System;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 分发饼干
+/// https://leetcode-cn.com/problems/assign-cookies/
+public class P0455_AssignCookies
 {
-    /// 分发饼干
-    /// https://leetcode-cn.com/problems/assign-cookies/
-    public class P0455_AssignCookies
+    public int FindContentChildren(int[] g, int[] s)
     {
-        public int FindContentChildren(int[] g, int[] s)
+        Array.Sort(g);
+        Array.Sort(s);
+        var gIndex = 0;
+        var result = 0;
+
+        for (var i = 0; i < s.Length; i++)
         {
-            Array.Sort(g);
-            Array.Sort(s);
-            int gIndex = 0;
-            int result = 0;
+            if (gIndex >= g.Length) break;
 
-            for (var i = 0; i < s.Length; i++)
+            if (g[gIndex] <= s[i])
             {
-                if (gIndex >= g.Length)
-                {
-                    break;
-                }
-
-                if (g[gIndex] <= s[i])
-                {
-                    result++;
-                    gIndex++;
-                }
+                result++;
+                gIndex++;
             }
-
-            return result;
         }
+
+        return result;
     }
 }

@@ -1,27 +1,23 @@
 ﻿using NUnit.Framework;
-using LeetCode.Problems.Medium;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace LeetCode.Problems.Medium.Tests
+namespace LeetCode.Problems.Medium.Tests;
+
+[TestFixture]
+public class MST1009Tests
 {
-    [TestFixture()]
-    public class MST1009Tests
+    [Test]
+    public void SearchMatrixTest()
     {
-        [Test()]
-        public void SearchMatrixTest()
+        int[,] input =
         {
-            int[,] input = {{1, 4, 7, 11, 15},
-                {2, 5, 8, 12, 19},
-                {3, 6, 9, 16, 22},
-                {10, 13, 14, 17, 24},
-                {18, 21, 23, 26, 30}};
-            var test = new MST1009();
-            Assert.IsTrue(test.SearchMatrix(input, 5));
-            Assert.IsFalse(test.SearchMatrix(input, 20));
-        }
+            { 1, 4, 7, 11, 15 },
+            { 2, 5, 8, 12, 19 },
+            { 3, 6, 9, 16, 22 },
+            { 10, 13, 14, 17, 24 },
+            { 18, 21, 23, 26, 30 }
+        };
+        var test = new MST1009();
+        Assert.IsTrue(test.SearchMatrix(input, 5));
+        Assert.IsFalse(test.SearchMatrix(input, 20));
     }
 }

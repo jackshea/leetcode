@@ -1,42 +1,41 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 字母大小写全排列
+/// https://leetcode-cn.com/problems/letter-case-permutation/
+public class P0784_LetterCasePermutation
 {
-    /// 字母大小写全排列
-    /// https://leetcode-cn.com/problems/letter-case-permutation/
-    public class P0784_LetterCasePermutation
+    private readonly IList<string> ans = new List<string>();
+    private char[] chars;
+
+    public IList<string> LetterCasePermutation(string S)
     {
-        private IList<string> ans = new List<string>();
-        private char[] chars;
+        chars = S.ToCharArray();
+        Permutation(0);
+        return ans;
+    }
 
-        public IList<string> LetterCasePermutation(string S)
+    private void Permutation(int start)
+    {
+        if (start >= chars.Length)
         {
-            chars = S.ToCharArray();
-            Permutation(0);
-            return ans;
+            ans.Add(new string(chars));
+            return;
         }
 
-        private void Permutation(int start)
-        {
-            if (start >= chars.Length)
-            {
-                ans.Add(new string(chars));
-                return;
-            }
+        Permutation(start + 1);
 
+        if (!char.IsDigit(chars[start]))
+        {
+            chars[start] = CapsSwitch(chars[start]);
             Permutation(start + 1);
-
-            if (!char.IsDigit(chars[start]))
-            {
-                chars[start] = CapsSwitch(chars[start]);
-                Permutation(start + 1);
-            }
         }
+    }
 
-        /// 大小写转换
-        private char CapsSwitch(char c)
-        {
-            return (char)(c ^ 32);
-        }
+    /// 大小写转换
+    private char CapsSwitch(char c)
+    {
+        return (char)(c ^ 32);
     }
 }

@@ -1,56 +1,51 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 用栈实现队列
+/// https://leetcode-cn.com/problems/implement-queue-using-stacks/
+public class P0232_ImplementQueueUsingStacks
 {
-    /// 用栈实现队列
-    /// https://leetcode-cn.com/problems/implement-queue-using-stacks/
-    public class P0232_ImplementQueueUsingStacks
+    private readonly Stack<int> _head = new();
+    private readonly Stack<int> _tail = new();
+
+    /**
+     * Push element x to the back of queue.
+     */
+    public void Push(int x)
     {
-        private Stack<int> _head = new Stack<int>();
-        private Stack<int> _tail = new Stack<int>();
+        _tail.Push(x);
+    }
 
-        /** Push element x to the back of queue. */
-        public void Push(int x)
-        {
-            _tail.Push(x);
-        }
+    /**
+     * Removes the element from in front of queue and returns that element.
+     */
+    public int Pop()
+    {
+        if (_head.Count > 0) return _head.Pop();
 
-        /** Removes the element from in front of queue and returns that element. */
-        public int Pop()
-        {
-            if (_head.Count > 0)
-            {
-                return _head.Pop();
-            }
+        while (_tail.Count > 0) _head.Push(_tail.Pop());
 
-            while (_tail.Count > 0)
-            {
-                _head.Push(_tail.Pop());
-            }
+        return _head.Pop();
+    }
 
-            return _head.Pop();
-        }
+    /**
+     * Get the front element.
+     */
+    public int Peek()
+    {
+        if (_head.Count > 0) return _head.Peek();
 
-        /** Get the front element. */
-        public int Peek()
-        {
-            if (_head.Count > 0)
-            {
-                return _head.Peek();
-            }
+        while (_tail.Count > 0) _head.Push(_tail.Pop());
 
-            while (_tail.Count > 0)
-            {
-                _head.Push(_tail.Pop());
-            }
+        return _head.Peek();
+    }
 
-            return _head.Peek();
-        }
-
-        /** Returns whether the queue is empty. */
-        public bool Empty()
-        {
-            return _head.Count == 0 && _tail.Count == 0;
-        }
+    /**
+     * Returns whether the queue is empty.
+     */
+    public bool Empty()
+    {
+        return _head.Count == 0 && _tail.Count == 0;
     }
 }

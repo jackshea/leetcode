@@ -1,38 +1,28 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems.Medium
+namespace LeetCode.Problems.Medium;
+
+/// 汇总区间
+/// https://leetcode-cn.com/problems/summary-ranges/
+public class P0228_SummaryRanges
 {
-    /// 汇总区间
-    /// https://leetcode-cn.com/problems/summary-ranges/
-    public class P0228_SummaryRanges
+    public IList<string> SummaryRanges(int[] nums)
     {
-        public IList<string> SummaryRanges(int[] nums)
-        {
-            IList<string> ans = new List<string>();
-            if (nums.Length == 0)
+        IList<string> ans = new List<string>();
+        if (nums.Length == 0) return ans;
+
+        var start = 0;
+        for (var i = 0; i < nums.Length; i++)
+            if (i == nums.Length - 1 || nums[i] != nums[i + 1] - 1)
             {
-                return ans;
+                if (start == i)
+                    ans.Add(nums[start].ToString());
+                else
+                    ans.Add($"{nums[start]}->{nums[i]}");
+
+                start = i + 1;
             }
 
-            int start = 0;
-            for (int i = 0; i < nums.Length; i++)
-            {
-                if (i == nums.Length - 1 || nums[i] != nums[i + 1] - 1)
-                {
-                    if (start == i)
-                    {
-                        ans.Add(nums[start].ToString());
-                    }
-                    else
-                    {
-                        ans.Add($"{nums[start]}->{nums[i]}");
-                    }
-
-                    start = i + 1;
-                }
-            }
-
-            return ans;
-        }
+        return ans;
     }
 }

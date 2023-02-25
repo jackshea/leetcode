@@ -1,40 +1,41 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 相对名次
+/// https://leetcode-cn.com/problems/relative-ranks/
+public class P0506_RelativeRanks
 {
-    /// 相对名次
-    /// https://leetcode-cn.com/problems/relative-ranks/
-    public class P0506_RelativeRanks
+    public string[] FindRelativeRanks(int[] nums)
     {
-        public string[] FindRelativeRanks(int[] nums)
+        var rank = new List<int>();
+        for (var i = 0; i < nums.Length; i++) rank.Add(i);
+
+        rank.Sort((a, b) => nums[b].CompareTo(nums[a]));
+
+        var result = new string[nums.Length];
+        for (var i = 0; i < nums.Length; i++)
         {
-            List<int> rank = new List<int>();
-            for (int i = 0; i < nums.Length; i++)
+            var rankName = string.Empty;
+            switch (i)
             {
-                rank.Add(i);
+                case 0:
+                    rankName = "Gold Medal";
+                    break;
+                case 1:
+                    rankName = "Silver Medal";
+                    break;
+                case 2:
+                    rankName = "Bronze Medal";
+                    break;
+                default:
+                    rankName = (i + 1).ToString();
+                    break;
             }
 
-            rank.Sort((a, b) => nums[b].CompareTo(nums[a]));
-
-            string[] result = new string[nums.Length];
-            for (int i = 0; i < nums.Length; i++)
-            {
-                string rankName = string.Empty;
-                switch (i)
-                {
-                    case 0:
-                        rankName = "Gold Medal"; break;
-                    case 1:
-                        rankName = "Silver Medal"; break;
-                    case 2:
-                        rankName = "Bronze Medal"; break;
-                    default:
-                        rankName = (i + 1).ToString(); break;
-                }
-                result[rank[i]] = rankName;
-            }
-
-            return result;
+            result[rank[i]] = rankName;
         }
+
+        return result;
     }
 }

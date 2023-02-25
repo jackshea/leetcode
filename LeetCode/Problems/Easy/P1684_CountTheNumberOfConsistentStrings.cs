@@ -1,39 +1,30 @@
 ﻿using System.Collections.Generic;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 统计一致字符串的数目
+/// https://leetcode-cn.com/problems/count-the-number-of-consistent-strings/
+public class P1684_CountTheNumberOfConsistentStrings
 {
-    /// 统计一致字符串的数目
-    /// https://leetcode-cn.com/problems/count-the-number-of-consistent-strings/
-    public class P1684_CountTheNumberOfConsistentStrings
+    public int CountConsistentStrings(string allowed, string[] words)
     {
-        public int CountConsistentStrings(string allowed, string[] words)
+        var charSet = new HashSet<char>();
+        foreach (var c in allowed) charSet.Add(c);
+
+        var ans = 0;
+        foreach (var word in words)
         {
-            HashSet<char> charSet = new HashSet<char>();
-            foreach (var c in allowed)
-            {
-                charSet.Add(c);
-            }
-
-            int ans = 0;
-            foreach (var word in words)
-            {
-                bool check = true;
-                foreach (char c in word)
+            var check = true;
+            foreach (var c in word)
+                if (!charSet.Contains(c))
                 {
-                    if (!charSet.Contains(c))
-                    {
-                        check = false;
-                        break;
-                    }
+                    check = false;
+                    break;
                 }
 
-                if (check)
-                {
-                    ans++;
-                }
-            }
-
-            return ans;
+            if (check) ans++;
         }
+
+        return ans;
     }
 }

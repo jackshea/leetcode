@@ -1,33 +1,32 @@
 ﻿using LeetCode.Common;
 
-namespace LeetCode.Problems.Medium
+namespace LeetCode.Problems.Medium;
+
+/// 环路检测
+/// https://leetcode-cn.com/problems/linked-list-cycle-lcci/
+public class MST0208
 {
-    /// 环路检测
-    /// https://leetcode-cn.com/problems/linked-list-cycle-lcci/
-    public class MST0208
+    public ListNode DetectCycle(ListNode head)
     {
-        public ListNode DetectCycle(ListNode head)
+        var slow = head;
+        var fast = head;
+        while (fast?.next != null)
         {
-            ListNode slow = head;
-            ListNode fast = head;
-            while (fast?.next != null)
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast)
             {
-                slow = slow.next;
-                fast = fast.next.next;
-                if (slow == fast)
+                fast = head;
+                while (fast != slow)
                 {
-                    fast = head;
-                    while (fast != slow)
-                    {
-                        fast = fast.next;
-                        slow = slow.next;
-                    }
-
-                    return fast;
+                    fast = fast.next;
+                    slow = slow.next;
                 }
-            }
 
-            return null;
+                return fast;
+            }
         }
+
+        return null;
     }
 }

@@ -1,55 +1,48 @@
 ﻿using LeetCode.Common;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 回文链表
+/// https://leetcode-cn.com/problems/palindrome-linked-list/
+public class P0234_PalindromeLinkedList
 {
-    /// 回文链表
-    /// https://leetcode-cn.com/problems/palindrome-linked-list/
-    public class P0234_PalindromeLinkedList
+    public bool IsPalindrome(ListNode head)
     {
-        public bool IsPalindrome(ListNode head)
+        if (head?.next == null) return true;
+
+        var slow = head;
+        var fast = head;
+        while (fast.next?.next != null)
         {
-            if (head?.next == null)
-            {
-                return true;
-            }
-
-            ListNode slow = head;
-            ListNode fast = head;
-            while (fast.next?.next != null)
-            {
-                slow = slow.next;
-                fast = fast.next.next;
-            }
-
-            slow = ReverseList(slow.next);
-
-            while (slow != null)
-            {
-                if (head.val != slow.val)
-                {
-                    return false;
-                }
-
-                head = head.next;
-                slow = slow.next;
-            }
-
-            return true;
+            slow = slow.next;
+            fast = fast.next.next;
         }
 
-        public ListNode ReverseList(ListNode head)
-        {
-            ListNode curNode = head;
-            ListNode preNode = null;
-            while (curNode != null)
-            {
-                var postNode = curNode.next;
-                curNode.next = preNode;
-                preNode = curNode;
-                curNode = postNode;
-            }
+        slow = ReverseList(slow.next);
 
-            return preNode;
+        while (slow != null)
+        {
+            if (head.val != slow.val) return false;
+
+            head = head.next;
+            slow = slow.next;
         }
+
+        return true;
+    }
+
+    public ListNode ReverseList(ListNode head)
+    {
+        var curNode = head;
+        ListNode preNode = null;
+        while (curNode != null)
+        {
+            var postNode = curNode.next;
+            curNode.next = preNode;
+            preNode = curNode;
+            curNode = postNode;
+        }
+
+        return preNode;
     }
 }

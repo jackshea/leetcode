@@ -1,66 +1,57 @@
-﻿namespace LeetCode.Problems.Hard
+﻿namespace LeetCode.Problems.Hard;
+
+/// 情侣牵手
+/// https://leetcode-cn.com/problems/couples-holding-hands/
+public class P0765_CouplesHoldingHands
 {
-    /// 情侣牵手
-    /// https://leetcode-cn.com/problems/couples-holding-hands/
-    public class P0765_CouplesHoldingHands
+    public int MinSwapsCouples(int[] row)
     {
-        public int MinSwapsCouples(int[] row)
+        var n = row.Length;
+        var uf = new UnionFind(n);
+        for (var i = 0; i < n; i += 2)
         {
-            var n = row.Length;
-            var uf = new UnionFind(n);
-            for (int i = 0; i < n; i += 2)
-            {
-                uf.Union(row[i], row[i + 1]);
-                uf.Union(row[i], Partner(row[i]));
-                uf.Union(row[i + 1], Partner(row[i + 1]));
-            }
-
-            return n / 2 - uf.SetCount;
+            uf.Union(row[i], row[i + 1]);
+            uf.Union(row[i], Partner(row[i]));
+            uf.Union(row[i + 1], Partner(row[i + 1]));
         }
 
-        private int Partner(int n)
+        return n / 2 - uf.SetCount;
+    }
+
+    private int Partner(int n)
+    {
+        return n % 2 == 0 ? n + 1 : n - 1;
+    }
+
+    public class UnionFind
+    {
+        private readonly int[] ancestor;
+
+        public UnionFind(int n)
         {
-            return n % 2 == 0 ? n + 1 : n - 1;
+            ancestor = new int[n];
+            for (var i = 0; i < n; i++) ancestor[i] = i;
+
+            SetCount = n;
         }
 
-        public class UnionFind
+        public int SetCount { get; private set; }
+
+        public int Find(int x)
         {
-            public int SetCount { get; private set; }
-            private int[] ancestor;
+            if (ancestor[x] != x) ancestor[x] = Find(ancestor[x]);
 
-            public UnionFind(int n)
-            {
-                ancestor = new int[n];
-                for (int i = 0; i < n; i++)
-                {
-                    ancestor[i] = i;
-                }
+            return ancestor[x];
+        }
 
-                SetCount = n;
-            }
+        public void Union(int a, int b)
+        {
+            var aa = Find(a);
+            var ba = Find(b);
+            if (aa == ba) return;
 
-            public int Find(int x)
-            {
-                if (ancestor[x] != x)
-                {
-                    ancestor[x] = Find(ancestor[x]);
-                }
-
-                return ancestor[x];
-            }
-
-            public void Union(int a, int b)
-            {
-                var aa = Find(a);
-                var ba = Find(b);
-                if (aa == ba)
-                {
-                    return;
-                }
-
-                ancestor[aa] = ba;
-                SetCount--;
-            }
+            ancestor[aa] = ba;
+            SetCount--;
         }
     }
 }

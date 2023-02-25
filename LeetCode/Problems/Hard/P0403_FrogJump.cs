@@ -1,41 +1,28 @@
-﻿namespace LeetCode.Problems.Hard
+﻿namespace LeetCode.Problems.Hard;
+
+/// 青蛙过河
+/// https://leetcode-cn.com/problems/frog-jump/
+public class P0403_FrogJump
 {
-    /// 青蛙过河
-    /// https://leetcode-cn.com/problems/frog-jump/
-    public class P0403_FrogJump
+    public bool CanCross(int[] stones)
     {
-        public bool CanCross(int[] stones)
+        for (var i = 1; i < stones.Length; i++)
+            if (stones[i] - stones[i - 1] > i)
+                return false;
+
+        var n = stones.Length;
+        var dp = new bool[n, n];
+        dp[0, 0] = true;
+        for (var i = 1; i < n; i++)
+        for (var j = i - 1; j >= 0; j--)
         {
-            for (int i = 1; i < stones.Length; i++)
-            {
-                if (stones[i] - stones[i - 1] > i)
-                {
-                    return false;
-                }
-            }
+            var k = stones[i] - stones[j];
+            if (k > j + 1) break;
 
-            int n = stones.Length;
-            bool[,] dp = new bool[n, n];
-            dp[0, 0] = true;
-            for (int i = 1; i < n; i++)
-            {
-                for (int j = i - 1; j >= 0; j--)
-                {
-                    int k = stones[i] - stones[j];
-                    if (k > j + 1)
-                    {
-                        break;
-                    }
-
-                    dp[i, k] = dp[j, k - 1] || dp[j, k] || dp[j, k + 1];
-                    if (i == n - 1 && dp[i, k])
-                    {
-                        return true;
-                    }
-                }
-            }
-
-            return false;
+            dp[i, k] = dp[j, k - 1] || dp[j, k] || dp[j, k + 1];
+            if (i == n - 1 && dp[i, k]) return true;
         }
+
+        return false;
     }
 }

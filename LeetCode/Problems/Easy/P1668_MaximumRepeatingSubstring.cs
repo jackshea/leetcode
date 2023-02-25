@@ -1,22 +1,19 @@
-﻿using System;
+﻿namespace LeetCode.Problems.Easy;
 
-namespace LeetCode.Problems.Easy
+/// 最大重复子字符串
+/// https://leetcode-cn.com/problems/maximum-repeating-substring/
+public class P1668_MaximumRepeatingSubstring
 {
-    /// 最大重复子字符串
-    /// https://leetcode-cn.com/problems/maximum-repeating-substring/
-    public class P1668_MaximumRepeatingSubstring
+    public int MaxRepeating(string sequence, string word)
     {
-        public int MaxRepeating(string sequence, string word)
+        var k = 0;
+        var sub = word;
+        while (sequence.Contains(sub))
         {
-            int k = 0;
-            string sub = word;
-            while (sequence.Contains(sub))
-            {
-                sub += word;
-                k++;
-            }
-
-            return k;
+            sub += word;
+            k++;
         }
+
+        return k;
     }
 }

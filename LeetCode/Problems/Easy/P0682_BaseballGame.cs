@@ -1,38 +1,35 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 棒球比赛
+/// https://leetcode-cn.com/problems/baseball-game/
+public class P0682_BaseballGame
 {
-    /// 棒球比赛
-    /// https://leetcode-cn.com/problems/baseball-game/
-    public class P0682_BaseballGame
+    public int CalPoints(string[] ops)
     {
-        public int CalPoints(string[] ops)
-        {
-            Stack<int> score = new Stack<int>();
-            foreach (var op in ops)
+        var score = new Stack<int>();
+        foreach (var op in ops)
+            switch (op)
             {
-                switch (op)
-                {
-                    case "+":
-                        int temp = score.Pop();
-                        int currentScore = temp + score.Peek();
-                        score.Push(temp);
-                        score.Push(currentScore);
-                        break;
-                    case "D":
-                        score.Push(score.Peek() * 2);
-                        break;
-                    case "C":
-                        score.Pop();
-                        break;
-                    default:
-                        score.Push(int.Parse(op));
-                        break;
-                }
+                case "+":
+                    var temp = score.Pop();
+                    var currentScore = temp + score.Peek();
+                    score.Push(temp);
+                    score.Push(currentScore);
+                    break;
+                case "D":
+                    score.Push(score.Peek() * 2);
+                    break;
+                case "C":
+                    score.Pop();
+                    break;
+                default:
+                    score.Push(int.Parse(op));
+                    break;
             }
 
-            return score.Sum();
-        }
+        return score.Sum();
     }
 }

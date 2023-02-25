@@ -1,32 +1,24 @@
-﻿namespace LeetCode.Problems.Easy
+﻿namespace LeetCode.Problems.Easy;
+
+/// 二分查找
+/// https://leetcode-cn.com/problems/binary-search/
+public class P0704_BinarySearch
 {
-    /// 二分查找
-    /// https://leetcode-cn.com/problems/binary-search/
-    public class P0704_BinarySearch
+    public int Search(int[] nums, int target)
     {
-        public int Search(int[] nums, int target)
+        var left = 0;
+        var right = nums.Length - 1;
+        while (left <= right)
         {
-            int left = 0;
-            int right = nums.Length - 1;
-            while (left <= right)
-            {
-                int mid = (left + right) / 2;
-                if (nums[mid] == target)
-                {
-                    return mid;
-                }
+            var mid = (left + right) / 2;
+            if (nums[mid] == target) return mid;
 
-                if (nums[mid] < target)
-                {
-                    left = mid + 1;
-                }
-                else
-                {
-                    right = mid - 1;
-                }
-            }
-
-            return -1;
+            if (nums[mid] < target)
+                left = mid + 1;
+            else
+                right = mid - 1;
         }
+
+        return -1;
     }
 }

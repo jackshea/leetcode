@@ -1,39 +1,31 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 唯一摩尔斯密码词
+/// https://leetcode-cn.com/problems/unique-morse-code-words/
+public class P0804_UniqueMorseCodeWords
 {
-    /// 唯一摩尔斯密码词
-    /// https://leetcode-cn.com/problems/unique-morse-code-words/
-    public class P0804_UniqueMorseCodeWords
+    private readonly string[] morseCodes =
     {
-        private string[] morseCodes = new string[]
-        {
-            ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.",
-            "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."
-        };
+        ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.",
+        "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--.."
+    };
 
-        public int UniqueMorseRepresentations(string[] words)
-        {
-            HashSet<string> set = new HashSet<string>();
-            foreach (var word in words)
-            {
-                set.Add(Translate(word));
-            }
+    public int UniqueMorseRepresentations(string[] words)
+    {
+        var set = new HashSet<string>();
+        foreach (var word in words) set.Add(Translate(word));
 
-            return set.Count;
-        }
-
-        private string Translate(string word)
-        {
-            StringBuilder sb = new StringBuilder();
-            foreach (var c in word)
-            {
-                sb.Append(morseCodes[c - 'a']);
-            }
-
-            return sb.ToString();
-        }
+        return set.Count;
     }
 
+    private string Translate(string word)
+    {
+        var sb = new StringBuilder();
+        foreach (var c in word) sb.Append(morseCodes[c - 'a']);
+
+        return sb.ToString();
+    }
 }

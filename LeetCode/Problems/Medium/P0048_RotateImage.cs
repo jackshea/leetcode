@@ -1,31 +1,30 @@
-﻿namespace LeetCode.Problems.Medium
+﻿namespace LeetCode.Problems.Medium;
+
+/// 旋转图像
+/// https://leetcode-cn.com/problems/rotate-image/
+public class P0048_RotateImage
 {
-    /// 旋转图像
-    /// https://leetcode-cn.com/problems/rotate-image/
-    public class P0048_RotateImage
+    public void Rotate(int[][] matrix)
     {
-        public void Rotate(int[][] matrix)
+        var n = matrix.Length;
+        var left = 0;
+        var right = n - 2;
+        var row = 0;
+
+        while (left <= right)
         {
-            var n = matrix.Length;
-            int left = 0;
-            int right = n - 2;
-            int row = 0;
-
-            while (left <= right)
+            for (var i = left; i <= right; i++)
             {
-                for (int i = left; i <= right; i++)
-                {
-                    int temp = matrix[row][i];
-                    matrix[row][i] = matrix[n - 1 - i][row];
-                    matrix[n - 1 - i][row] = matrix[n - 1 - row][n - 1 - i];
-                    matrix[n - 1 - row][n - 1 - i] = matrix[i][n - 1 - row];
-                    matrix[i][n - 1 - row] = temp;
-                }
-
-                left++;
-                right--;
-                row++;
+                var temp = matrix[row][i];
+                matrix[row][i] = matrix[n - 1 - i][row];
+                matrix[n - 1 - i][row] = matrix[n - 1 - row][n - 1 - i];
+                matrix[n - 1 - row][n - 1 - i] = matrix[i][n - 1 - row];
+                matrix[i][n - 1 - row] = temp;
             }
+
+            left++;
+            right--;
+            row++;
         }
     }
 }

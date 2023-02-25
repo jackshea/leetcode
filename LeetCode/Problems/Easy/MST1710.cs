@@ -1,50 +1,39 @@
-﻿namespace LeetCode.Problems.Easy
+﻿namespace LeetCode.Problems.Easy;
+
+/// 面试题 17.10. 主要元素
+/// https://leetcode-cn.com/problems/find-majority-element-lcci/
+public class MST1710
 {
-    /// 面试题 17.10. 主要元素
-    /// https://leetcode-cn.com/problems/find-majority-element-lcci/
-    public class MST1710
+    public int MajorityElement(int[] nums)
     {
-        public int MajorityElement(int[] nums)
+        var count = 1;
+        var ans = nums[0];
+        for (var i = 1; i < nums.Length; i++)
         {
-            int count = 1;
-            int ans = nums[0];
-            for (int i = 1; i < nums.Length; i++)
+            var num = nums[i];
+            if (count == 0)
             {
-                int num = nums[i];
-                if (count == 0)
-                {
-                    ans = num;
-                    count++;
-                    continue;
-                }
-                if (ans == num)
-                {
-                    count++;
-                }
-                else
-                {
-                    count--;
-                }
+                ans = num;
+                count++;
+                continue;
             }
 
-            if (count > 0)
-            {
-                int checkCount = 0;
-                foreach (var num in nums)
-                {
-                    if (ans == num)
-                    {
-                        checkCount++;
-                    }
-                }
-
-                if (checkCount > nums.Length / 2)
-                {
-                    return ans;
-                }
-            }
-
-            return -1;
+            if (ans == num)
+                count++;
+            else
+                count--;
         }
+
+        if (count > 0)
+        {
+            var checkCount = 0;
+            foreach (var num in nums)
+                if (ans == num)
+                    checkCount++;
+
+            if (checkCount > nums.Length / 2) return ans;
+        }
+
+        return -1;
     }
 }

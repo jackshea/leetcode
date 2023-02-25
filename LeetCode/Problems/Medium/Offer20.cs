@@ -1,277 +1,272 @@
-﻿namespace LeetCode.Problems.Medium
+﻿namespace LeetCode.Problems.Medium;
+
+/// 剑指 Offer 20. 表示数值的字符串
+/// https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/
+public class Offer20
 {
-    /// 剑指 Offer 20. 表示数值的字符串
-    /// https://leetcode-cn.com/problems/biao-shi-shu-zhi-de-zi-fu-chuan-lcof/
-    public class Offer20
+    public bool IsNumber(string s)
     {
-        public bool IsNumber(string s)
+        s = s.Trim();
+        IState curState = new InitialState();
+        foreach (var c in s)
         {
-            s = s.Trim();
-            IState curState = new InitialState();
-            foreach (var c in s)
-            {
-                var charType = ToCharType(c);
-                curState = curState.Transfer(charType);
-                if (curState == States.IllegalState)
-                {
-                    return false;
-                }
-            }
-
-            return curState.IsNumber();
+            var charType = ToCharType(c);
+            curState = curState.Transfer(charType);
+            if (curState == States.IllegalState) return false;
         }
 
-        private CharType ToCharType(char c)
-        {
-            if (c >= '0' && c <= '9')
-            {
-                return CharType.Number;
-            }
-            else if (c == 'E' || c == 'e')
-            {
-                return CharType.Exp;
-            }
-            else if (c == '.')
-            {
-                return CharType.Point;
-            }
-            else if (c == '+' || c == '-')
-            {
-                return CharType.Sign;
-            }
-            else
-            {
-                return CharType.Illegal;
-            }
-        }
+        return curState.IsNumber();
     }
 
-    public interface IState
+    private CharType ToCharType(char c)
     {
-        IState Transfer(CharType charType);
-        bool IsNumber();
+        if (c >= '0' && c <= '9')
+            return CharType.Number;
+        if (c == 'E' || c == 'e')
+            return CharType.Exp;
+        if (c == '.')
+            return CharType.Point;
+        if (c == '+' || c == '-')
+            return CharType.Sign;
+        return CharType.Illegal;
+    }
+}
+
+public interface IState
+{
+    IState Transfer(CharType charType);
+    bool IsNumber();
+}
+
+public class States
+{
+    public static InitialState InitialState = new();
+    public static IllegalState IllegalState = new();
+    public static IntSignState IntSignState = new();
+    public static IntegerState IntegerState = new();
+    public static PointState PointState = new();
+    public static PointWithoutIntState PointWithoutIntState = new();
+    public static FractionState FractionState = new();
+    public static ExpState ExpState = new();
+    public static ExpSignState ExpSignState = new();
+    public static ExpNumberState ExpNumberState = new();
+}
+
+/// 初始状态
+public class InitialState : IState
+{
+    public IState Transfer(CharType charType)
+    {
+        switch (charType)
+        {
+            case CharType.Number:
+                return States.IntegerState;
+            case CharType.Point:
+                return States.PointWithoutIntState;
+            case CharType.Sign:
+                return States.IntSignState;
+        }
+
+        return States.IllegalState;
     }
 
-    public class States
+    public bool IsNumber()
     {
-        public static InitialState InitialState = new InitialState();
-        public static IllegalState IllegalState = new IllegalState();
-        public static IntSignState IntSignState = new IntSignState();
-        public static IntegerState IntegerState = new IntegerState();
-        public static PointState PointState = new PointState();
-        public static PointWithoutIntState PointWithoutIntState = new PointWithoutIntState();
-        public static FractionState FractionState = new FractionState();
-        public static ExpState ExpState = new ExpState();
-        public static ExpSignState ExpSignState = new ExpSignState();
-        public static ExpNumberState ExpNumberState = new ExpNumberState();
+        return false;
+    }
+}
+
+/// 非法状态
+public class IllegalState : IState
+{
+    public IState Transfer(CharType charType)
+    {
+        return States.IllegalState;
     }
 
-    /// 初始状态
-    public class InitialState : IState
+    public bool IsNumber()
     {
-        public IState Transfer(CharType charType)
+        return false;
+    }
+}
+
+/// 整数符号
+public class IntSignState : IState
+{
+    public IState Transfer(CharType charType)
+    {
+        switch (charType)
         {
-            switch (charType)
-            {
-                case CharType.Number:
-                    return States.IntegerState;
-                case CharType.Point:
-                    return States.PointWithoutIntState;
-                case CharType.Sign:
-                    return States.IntSignState;
-            }
-            return States.IllegalState;
+            case CharType.Number:
+                return States.IntegerState;
+            case CharType.Point:
+                return States.PointWithoutIntState;
         }
 
-        public bool IsNumber()
-        {
-            return false;
-        }
+        return States.IllegalState;
     }
 
-    /// 非法状态
-    public class IllegalState : IState
+    public bool IsNumber()
     {
-        public IState Transfer(CharType charType)
+        return false;
+    }
+}
+
+/// 整数部分
+public class IntegerState : IState
+{
+    public IState Transfer(CharType charType)
+    {
+        switch (charType)
         {
-            return States.IllegalState;
+            case CharType.Number:
+                return States.IntegerState;
+            case CharType.Exp:
+                return States.ExpState;
+            case CharType.Point:
+                return States.PointState;
         }
 
-        public bool IsNumber()
-        {
-            return false;
-        }
+        return States.IllegalState;
     }
 
-    /// 整数符号
-    public class IntSignState : IState
+    public bool IsNumber()
     {
-        public IState Transfer(CharType charType)
+        return true;
+    }
+}
+
+/// 有整数部分的小数点
+public class PointState : IState
+{
+    public IState Transfer(CharType charType)
+    {
+        switch (charType)
         {
-            switch (charType)
-            {
-                case CharType.Number:
-                    return States.IntegerState;
-                case CharType.Point:
-                    return States.PointWithoutIntState;
-            }
-            return States.IllegalState;
+            case CharType.Number:
+                return States.FractionState;
+            case CharType.Exp:
+                return States.ExpState;
         }
 
-        public bool IsNumber()
-        {
-            return false;
-        }
+        return States.IllegalState;
     }
 
-    /// 整数部分
-    public class IntegerState : IState
+    public bool IsNumber()
     {
-        public IState Transfer(CharType charType)
+        return true;
+    }
+}
+
+/// 无整数部分的小数点
+public class PointWithoutIntState : IState
+{
+    public IState Transfer(CharType charType)
+    {
+        switch (charType)
         {
-            switch (charType)
-            {
-                case CharType.Number:
-                    return States.IntegerState;
-                case CharType.Exp:
-                    return States.ExpState;
-                case CharType.Point:
-                    return States.PointState;
-            }
-            return States.IllegalState;
+            case CharType.Number:
+                return States.FractionState;
         }
 
-        public bool IsNumber()
-        {
-            return true;
-        }
+        return States.IllegalState;
     }
 
-    /// 有整数部分的小数点
-    public class PointState : IState
+    public bool IsNumber()
     {
-        public IState Transfer(CharType charType)
+        return false;
+    }
+}
+
+/// 小数部分
+public class FractionState : IState
+{
+    public IState Transfer(CharType charType)
+    {
+        switch (charType)
         {
-            switch (charType)
-            {
-                case CharType.Number:
-                    return States.FractionState;
-                case CharType.Exp:
-                    return States.ExpState;
-            }
-            return States.IllegalState;
+            case CharType.Number:
+                return States.FractionState;
+            case CharType.Exp:
+                return States.ExpState;
         }
 
-        public bool IsNumber()
-        {
-            return true;
-        }
+        return States.IllegalState;
     }
 
-    /// 无整数部分的小数点
-    public class PointWithoutIntState : IState
+    public bool IsNumber()
     {
-        public IState Transfer(CharType charType)
+        return true;
+    }
+}
+
+/// 指数E
+public class ExpState : IState
+{
+    public IState Transfer(CharType charType)
+    {
+        switch (charType)
         {
-            switch (charType)
-            {
-                case CharType.Number:
-                    return States.FractionState;
-            }
-            return States.IllegalState;
+            case CharType.Number:
+                return States.ExpNumberState;
+            case CharType.Sign:
+                return States.ExpSignState;
         }
 
-        public bool IsNumber()
-        {
-            return false;
-        }
+        return States.IllegalState;
     }
 
-    /// 小数部分
-    public class FractionState : IState
+    public bool IsNumber()
     {
-        public IState Transfer(CharType charType)
+        return false;
+    }
+}
+
+/// 指数部分的正负号
+public class ExpSignState : IState
+{
+    public IState Transfer(CharType charType)
+    {
+        switch (charType)
         {
-            switch (charType)
-            {
-                case CharType.Number:
-                    return States.FractionState;
-                case CharType.Exp:
-                    return States.ExpState;
-            }
-            return States.IllegalState;
+            case CharType.Number:
+                return States.ExpNumberState;
         }
 
-        public bool IsNumber()
-        {
-            return true;
-        }
+        return States.IllegalState;
     }
 
-    /// 指数E
-    public class ExpState : IState
+    public bool IsNumber()
     {
-        public IState Transfer(CharType charType)
+        return false;
+    }
+}
+
+/// 指数数字部分
+public class ExpNumberState : IState
+{
+    public IState Transfer(CharType charType)
+    {
+        switch (charType)
         {
-            switch (charType)
-            {
-                case CharType.Number:
-                    return States.ExpNumberState;
-                case CharType.Sign:
-                    return States.ExpSignState;
-            }
-            return States.IllegalState;
+            case CharType.Number:
+                return States.ExpNumberState;
         }
-        public bool IsNumber()
-        {
-            return false;
-        }
+
+        return States.IllegalState;
     }
 
-    /// 指数部分的正负号
-    public class ExpSignState : IState
+    public bool IsNumber()
     {
-        public IState Transfer(CharType charType)
-        {
-            switch (charType)
-            {
-                case CharType.Number:
-                    return States.ExpNumberState;
-            }
-            return States.IllegalState;
-        }
-
-        public bool IsNumber()
-        {
-            return false;
-        }
+        return true;
     }
+}
 
-    /// 指数数字部分
-    public class ExpNumberState : IState
-    {
-        public IState Transfer(CharType charType)
-        {
-            switch (charType)
-            {
-                case CharType.Number:
-                    return States.ExpNumberState;
-            }
-            return States.IllegalState;
-        }
-
-        public bool IsNumber()
-        {
-            return true;
-        }
-    }
-
-    public enum CharType
-    {
-        Number,
-        Exp,
-        Point,
-        Sign,
-        Illegal,
-    }
+public enum CharType
+{
+    Number,
+    Exp,
+    Point,
+    Sign,
+    Illegal
 }

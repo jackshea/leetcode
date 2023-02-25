@@ -1,33 +1,28 @@
-﻿using System;
+﻿namespace LeetCode.Problems.Medium;
 
-namespace LeetCode.Problems.Medium
+/// 区间子数组个数
+/// https://leetcode-cn.com/problems/number-of-subarrays-with-bounded-maximum/
+public class P0795_NumberOfSubarraysWithBoundedMaximum
 {
-    /// 区间子数组个数
-    /// https://leetcode-cn.com/problems/number-of-subarrays-with-bounded-maximum/
-    public class P0795_NumberOfSubarraysWithBoundedMaximum
+    public int NumSubarrayBoundedMax(int[] A, int L, int R)
     {
-        public int NumSubarrayBoundedMax(int[] A, int L, int R)
-        {
-            return Count(A, R) - Count(A, L - 1);
-        }
+        return Count(A, R) - Count(A, L - 1);
+    }
 
-        public int Count(int[] A, int bound)
-        {
-            int ans = 0, cur = 0;
-            foreach (var num in A)
+    public int Count(int[] A, int bound)
+    {
+        int ans = 0, cur = 0;
+        foreach (var num in A)
+            if (num <= bound)
             {
-                if (num <= bound)
-                {
-                    cur++;
-                    ans += cur;
-                }
-                else
-                {
-                    cur = 0;
-                }
+                cur++;
+                ans += cur;
+            }
+            else
+            {
+                cur = 0;
             }
 
-            return ans;
-        }
+        return ans;
     }
 }

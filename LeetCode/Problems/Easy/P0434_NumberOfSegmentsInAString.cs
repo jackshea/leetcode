@@ -1,28 +1,24 @@
-﻿namespace LeetCode.Problems.Easy
-{
-    /// 字符串中的单词数
-    /// https://leetcode-cn.com/problems/number-of-segments-in-a-string/
-    public class P0434_NumberOfSegmentsInAString
-    {
-        public int CountSegments(string s)
-        {
-            bool isLastSeparator = true;
-            int count = 0;
-            foreach (char c in s)
-            {
-                if (isLastSeparator && c != ' ')
-                {
-                    count++;
-                    isLastSeparator = false;
-                }
+﻿namespace LeetCode.Problems.Easy;
 
-                if (c == ' ')
-                {
-                    isLastSeparator = true;
-                }
+/// 字符串中的单词数
+/// https://leetcode-cn.com/problems/number-of-segments-in-a-string/
+public class P0434_NumberOfSegmentsInAString
+{
+    public int CountSegments(string s)
+    {
+        var isLastSeparator = true;
+        var count = 0;
+        foreach (var c in s)
+        {
+            if (isLastSeparator && c != ' ')
+            {
+                count++;
+                isLastSeparator = false;
             }
 
-            return count;
+            if (c == ' ') isLastSeparator = true;
         }
+
+        return count;
     }
 }

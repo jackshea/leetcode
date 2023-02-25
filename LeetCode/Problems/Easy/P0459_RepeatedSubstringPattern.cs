@@ -1,41 +1,31 @@
-﻿namespace LeetCode.Problems.Easy
+﻿namespace LeetCode.Problems.Easy;
+
+/// 重复的子字符串
+/// https://leetcode-cn.com/problems/repeated-substring-pattern/
+public class P0459_RepeatedSubstringPattern
 {
-    /// 重复的子字符串
-    /// https://leetcode-cn.com/problems/repeated-substring-pattern/
-    public class P0459_RepeatedSubstringPattern
+    public bool RepeatedSubstringPattern(string s)
     {
-        public bool RepeatedSubstringPattern(string s)
+        var len = s.Length;
+        for (var i = 1; i <= len / 2; i++)
         {
-            int len = s.Length;
-            for (int i = 1; i <= len / 2; i++)
-            {
-                if (len % i != 0)
-                {
-                    continue;
-                }
+            if (len % i != 0) continue;
 
-                string substring = s.Substring(0, i);
-                if (IsRepeated(s,substring))
-                {
-                    return true;
-                }
-            }
-
-            return false;
+            var substring = s.Substring(0, i);
+            if (IsRepeated(s, substring)) return true;
         }
 
-        private bool IsRepeated(string source, string substring)
-        {
-            for (int i = 0; i < source.Length; i++)
-            {
-                var subLen = substring.Length;
-                if (source[i] != substring[i % subLen])
-                {
-                    return false;
-                }
-            }
+        return false;
+    }
 
-            return true;
+    private bool IsRepeated(string source, string substring)
+    {
+        for (var i = 0; i < source.Length; i++)
+        {
+            var subLen = substring.Length;
+            if (source[i] != substring[i % subLen]) return false;
         }
+
+        return true;
     }
 }

@@ -1,61 +1,49 @@
 ﻿using LeetCode.Common;
 
-namespace LeetCode.Problems.Easy
+namespace LeetCode.Problems.Easy;
+
+/// 链表相交
+/// https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/
+public class MST0207
 {
-    /// 链表相交
-    /// https://leetcode-cn.com/problems/intersection-of-two-linked-lists-lcci/
-    public class MST0207
+    public ListNode GetIntersectionNode(ListNode headA, ListNode headB)
     {
-        public ListNode GetIntersectionNode(ListNode headA, ListNode headB)
+        var lenA = Length(headA);
+        var lenB = Length(headB);
+        if (lenA > lenB)
+            headA = Forward(headA, lenA - lenB);
+        else
+            headB = Forward(headB, lenB - lenA);
+
+        while (headA != null)
         {
-            var lenA = Length(headA);
-            var lenB = Length(headB);
-            if (lenA > lenB)
-            {
-                headA = Forward(headA, lenA - lenB);
-            }
-            else
-            {
-                headB = Forward(headB, lenB - lenA);
-            }
+            if (headA == headB) return headA;
 
-            while (headA != null)
-            {
-                if (headA == headB)
-                {
-                    return headA;
-                }
-
-                headA = headA.next;
-                headB = headB.next;
-            }
-
-            return null;
+            headA = headA.next;
+            headB = headB.next;
         }
 
-        private int Length(ListNode list)
+        return null;
+    }
+
+    private int Length(ListNode list)
+    {
+        var len = 0;
+        while (list != null)
         {
-            int len = 0;
-            while (list != null)
-            {
-                len++;
+            len++;
+            list = list.next;
+        }
+
+        return len;
+    }
+
+    private ListNode Forward(ListNode list, int k)
+    {
+        for (var i = 0; i < k; i++)
+            if (list != null)
                 list = list.next;
-            }
 
-            return len;
-        }
-
-        private ListNode Forward(ListNode list, int k)
-        {
-            for (int i = 0; i < k; i++)
-            {
-                if (list != null)
-                {
-                    list = list.next;
-                }
-            }
-
-            return list;
-        }
+        return list;
     }
 }

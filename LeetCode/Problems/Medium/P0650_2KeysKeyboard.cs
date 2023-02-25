@@ -1,22 +1,19 @@
-﻿namespace LeetCode.Problems.Medium
+﻿namespace LeetCode.Problems.Medium;
+
+/// 只有两个键的键盘
+/// https://leetcode-cn.com/problems/2-keys-keyboard/
+public class P0650_2KeysKeyboard
 {
-    /// 只有两个键的键盘
-    /// https://leetcode-cn.com/problems/2-keys-keyboard/
-    public class P0650_2KeysKeyboard
+    public int MinSteps(int n)
     {
-        public int MinSteps(int n)
-        {
-            int ans = 0;
-            for (int i = 2; i <= n; i++)
+        var ans = 0;
+        for (var i = 2; i <= n; i++)
+            while (n % i == 0)
             {
-                while (n % i == 0)
-                {
-                    ans += i;
-                    n /= i;
-                }
+                ans += i;
+                n /= i;
             }
 
-            return ans;
-        }
+        return ans;
     }
 }

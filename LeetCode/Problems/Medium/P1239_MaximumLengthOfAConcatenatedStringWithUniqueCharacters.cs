@@ -1,68 +1,61 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace LeetCode.Problems.Medium
+namespace LeetCode.Problems.Medium;
+
+/// 串联字符串的最大长度
+/// https://leetcode-cn.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/
+public class P1239_MaximumLengthOfAConcatenatedStringWithUniqueCharacters
 {
-    /// 串联字符串的最大长度
-    /// https://leetcode-cn.com/problems/maximum-length-of-a-concatenated-string-with-unique-characters/
-    public class P1239_MaximumLengthOfAConcatenatedStringWithUniqueCharacters
+    private int ans;
+
+    public int MaxLength(IList<string> arr)
     {
-        private int ans;
-
-        public int MaxLength(IList<string> arr)
+        var masks = new List<int>();
+        foreach (var word in arr)
         {
-            List<int> masks = new List<int>();
-            foreach (var word in arr)
+            var mask = 0;
+            foreach (var c in word)
             {
-                int mask = 0;
-                foreach (var c in word)
+                var bit = 1 << (c - 'a');
+                if ((mask & bit) != 0)
                 {
-                    int bit = 1 << (c - 'a');
-                    if ((mask & bit) != 0)
-                    {
-                        mask = -1;
-                        break;
-                    }
-
-                    mask |= bit;
+                    mask = -1;
+                    break;
                 }
 
-                if (mask > 0)
-                {
-                    masks.Add(mask);
-                }
+                mask |= bit;
             }
 
-            Backtrack(masks, 0, 0);
-            return ans;
+            if (mask > 0) masks.Add(mask);
         }
 
-        public void Backtrack(List<int> masks, int start, int curMask)
+        Backtrack(masks, 0, 0);
+        return ans;
+    }
+
+    public void Backtrack(List<int> masks, int start, int curMask)
+    {
+        if (start >= masks.Count)
         {
-            if (start >= masks.Count)
-            {
-                ans = Math.Max(ans, HammingWeight(curMask));
-                return;
-            }
-
-            var mask = masks[start];
-            if ((curMask & mask) == 0)
-            {
-                Backtrack(masks, start + 1, curMask | mask);
-            }
-            Backtrack(masks, start + 1, curMask);
+            ans = Math.Max(ans, HammingWeight(curMask));
+            return;
         }
 
-        public int HammingWeight(int n)
+        var mask = masks[start];
+        if ((curMask & mask) == 0) Backtrack(masks, start + 1, curMask | mask);
+        Backtrack(masks, start + 1, curMask);
+    }
+
+    public int HammingWeight(int n)
+    {
+        var ans = 0;
+        while (n != 0)
         {
-            int ans = 0;
-            while (n != 0)
-            {
-                n &= n - 1;
-                ans++;
-            }
-
-            return ans;
+            n &= n - 1;
+            ans++;
         }
+
+        return ans;
     }
 }
